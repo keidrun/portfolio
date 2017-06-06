@@ -7,7 +7,9 @@
     "build": "webpack --progress",
     "lint": "eslint src",
     "flow": "flow",
-    "flow-typed": "flow-typed install"
+    "flow-typed": "flow-typed install",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o storybook-static"
   },
   "keywords": [],
   "author": "keid",
@@ -49,6 +51,7 @@
     "remove-flow-types-loader": "^1.0.0",
     "style-loader": "^0.18.1",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^2.4.5",
+    "@storybook/react": "^3.0.1"
   }
 }

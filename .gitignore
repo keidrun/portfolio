@@ -1,15 +1,17 @@
-# dist
-dist/*
-!dist/index.html
+# production
+build
+
+# storybook
+storybook-static
 
 # flow
 flow-typed
 
-# testing
-/coverage
+# npm lock file
+package-lock.json
 
-# production
-/build
+# testing
+coverage
 
 # misc
 .DS_Store
@@ -76,4 +78,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
