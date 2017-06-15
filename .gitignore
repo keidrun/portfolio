@@ -13,6 +13,9 @@ package-lock.json
 # testing
 coverage
 
+# ndenv
+.node-version
+
 # misc
 .DS_Store
 .env.local
