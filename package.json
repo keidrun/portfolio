@@ -10,6 +10,7 @@
     "clean": "rimraf dist",
     "build":
       "npm run clean && NODE_ENV=production webpack -p && rimraf dist/**/*.map",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages",
     "lint": "eslint src",
     "flow": "flow",
     "flow-typed": "flow-typed install",
