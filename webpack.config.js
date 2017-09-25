@@ -1,31 +1,37 @@
 const webpack = require('webpack');
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const VENDOR_LIBS = ['react', 'react-dom'];
 
 module.exports = {
-  entry: ['./src/main.jsx', './src/main.css', './public/index.html'],
+  entry: {
+    bundle: ['./src/main.jsx', './src/main.css', './src/index.html'],
+    vendor: VENDOR_LIBS,
+  },
   output: {
-    path: `${__dirname}/build`,
-    filename: 'static/js/bundle.js',
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].[hash].js',
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        enforce: 'pre',
         use: ['remove-flow-types-loader'],
-        include: `${__dirname}/src`,
+        enforce: 'pre',
+        include: path.join(__dirname, 'src'),
       },
       {
         test: /\.(js|jsx)$/,
+        use: ['eslint-loader'],
         enforce: 'pre',
         exclude: /node_modules/,
-        use: ['eslint-loader'],
       },
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
         use: 'babel-loader',
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
@@ -39,8 +45,13 @@ module.exports = {
         use: 'html-loader',
       },
       {
-        test: /\.(jpe?g|gif|png|svg)$/,
-        use: 'file-loader',
+        test: /\.(jpe?g|png|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: { limit: 40000 },
+          },
+        ],
       },
     ],
   },
@@ -48,13 +59,17 @@ module.exports = {
     extensions: ['.js', '.jsx', '.json'],
   },
   plugins: [
-    new ExtractTextPlugin('static/css/bundle.css'),
-    new CopyWebpackPlugin(
-      [{ from: './public/', to: `${__dirname}/build` }],
-      { copyUnmodified: true }
-    ),
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ['vendor', 'manifest'],
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+    }),
+    new ExtractTextPlugin('bundle.css'),
     new webpack.HotModuleReplacementPlugin(), // react-hot-loader
-    new webpack.optimize.UglifyJsPlugin({ sourceMap: true }), // --optimize-minimize
   ],
   devtool: 'source-map',
   devServer: {
