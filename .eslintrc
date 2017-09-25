@@ -18,13 +18,14 @@
   "rules": {
     "comma-dangle": "off", // ignore airbnb rule
     "react/sort-comp": "off", // ignore airbnb rule
+    "jsx-a11y/href-no-hash": "off", // ignore airbnb rule
     "flowtype/define-flow-type": "warn", // warn level flow rule
     "flowtype/use-flow-type": "warn" // warn level flow rule
-   },
+  },
   "settings": {
-    "flowtype": { // flow settings
+    "flowtype": {
+      // flow settings
       "onlyFilesWithFlowAnnotation": true
     }
   }
-
 }
