@@ -12,8 +12,7 @@
     "lint": "eslint src",
     "flow": "flow",
     "flow-typed": "flow-typed update",
-    "deploy": "yarn run build && git subtree push --prefix public origin gh-pages",
-    "deploy-f": "yarn run build && git push origin `git subtree split --prefix public master`:gh-pages --force"
+    "deploy": "yarn run build && git subtree push --prefix public origin gh-pages"
   },
   "keywords": [],
   "author": "keidrun",
