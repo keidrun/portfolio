@@ -1,30 +1,17 @@
 {
   "env": {
     "browser": true,
-    "node": true,
     "es6": true
   },
-  "ecmaFeatures": {
-    "jsx": true
-  },
   "parser": "babel-eslint",
-  "extends": [
-    "airbnb", // airbnb rules
-    "plugin:flowtype/recommended" // flow rules
-  ],
-  "plugins": [
-    "flowtype" // flow
-  ],
+  "extends": ["airbnb", "plugin:flowtype/recommended"],
+  "plugins": ["flowtype"],
   "rules": {
-    "comma-dangle": "off", // ignore airbnb rule
-    "react/sort-comp": "off", // ignore airbnb rule
-    "jsx-a11y/href-no-hash": "off", // ignore airbnb rule
-    "flowtype/define-flow-type": "warn", // warn level flow rule
-    "flowtype/use-flow-type": "warn" // warn level flow rule
+    "flowtype/define-flow-type": "warn",
+    "flowtype/use-flow-type": "warn"
   },
   "settings": {
     "flowtype": {
-      // flow settings
       "onlyFilesWithFlowAnnotation": true
     }
   }

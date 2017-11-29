@@ -1,0 +1,36 @@
+.my-header {
+  padding-top: 15rem;
+  padding-bottom: 13rem;
+  margin-bottom: 0;
+  background-color: #364f6b;
+  background-image: linear-gradient( rgba(67, 221, 230, 0.5), rgba(67, 221, 230, 0.5)), url(/assets/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: buttom top;
+  background-size: cover;
+}
+
+.my-header-heading {
+  font-weight: 500;
+  font-size: 4rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.my-header-btn {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.my-header .container {
+  max-width: 50rem;
+  background: rgba(54, 79, 107, 0.5);
+  padding: 4rem;
+  color: white;
+}
+
+.my-header p {
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

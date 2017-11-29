@@ -1,6 +1,13 @@
+const BROWSERS = ['last 2 versions'];
+
 module.exports = {
   plugins: {
-    'postcss-easy-import': { glob: true },
-    autoprefixer: { browsers: ['last 2 versions'] },
+    stylelint: true,
+    autoprefixer: { browsers: BROWSERS },
+    'postcss-sorting': true,
+    'postcss-reporter': {
+      clearMessages: true,
+      throwError: true,
+    },
   },
 };
