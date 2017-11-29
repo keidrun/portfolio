@@ -18,6 +18,24 @@ const PATH = {
 };
 const VENDOR_LIBS = ['react', 'react-dom'];
 
+// TODO Change more cool approach
+const SASS_LOADERS = [
+  {
+
+    loader: 'string-replace-loader',
+    query: {
+      multiple: [
+        { search: '/assets/hero', replace: '/portfolio/assets/hero' },
+        { search: '/assets/about', replace: '/portfolio/assets/about' },
+        { search: '/assets/career', replace: '/portfolio/assets/career' },
+      ],
+    },
+  },
+  'css-loader', 'sass-loader', 'postcss-loader'];
+if (process.env.NODE_ENV !== 'production') {
+  SASS_LOADERS.shift();
+}
+
 module.exports = {
   entry: {
     bundle: [PATH.INDEX.JS, PATH.INDEX.CSS, PATH.INDEX.HTML],
@@ -26,7 +44,6 @@ module.exports = {
   output: {
     path: PATH.DIST,
     filename: '[name].[hash].js',
-    publicPath: '/portfolio/',
   },
   module: {
     rules: [
@@ -51,7 +68,7 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader', 'postcss-loader'],
+          use: SASS_LOADERS,
         }),
       },
       {
@@ -73,6 +90,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      images: path.join(__dirname, 'public/assets'),
+    },
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
