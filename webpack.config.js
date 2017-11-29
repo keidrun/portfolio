@@ -26,6 +26,7 @@ module.exports = {
   output: {
     path: PATH.DIST,
     filename: '[name].[hash].js',
+    publicPath: '/portfolio/',
   },
   module: {
     rules: [
