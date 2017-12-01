@@ -4,6 +4,25 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const SASS_LOADERS = [
+  {
+    loader: 'string-replace-loader',
+    query: {
+      multiple: [
+        { search: '/assets/hero', replace: '/portfolio/assets/hero' },
+        { search: '/assets/about', replace: '/portfolio/assets/about' },
+        { search: '/assets/career', replace: '/portfolio/assets/career' },
+      ],
+    },
+  },
+  'css-loader',
+  // 'postcss-loader',
+  'sass-loader',
+];
+if (process.env.NODE_ENV !== 'production') {
+  SASS_LOADERS.shift();
+}
+
 const PATH = {
   INDEX: {
     JS: './src/components/index.jsx',
@@ -17,24 +36,6 @@ const PATH = {
   },
 };
 const VENDOR_LIBS = ['react', 'react-dom'];
-
-// TODO Change more cool approach
-const SASS_LOADERS = [
-  {
-
-    loader: 'string-replace-loader',
-    query: {
-      multiple: [
-        { search: '/assets/hero', replace: '/portfolio/assets/hero' },
-        { search: '/assets/about', replace: '/portfolio/assets/about' },
-        { search: '/assets/career', replace: '/portfolio/assets/career' },
-      ],
-    },
-  },
-  'css-loader', 'sass-loader', 'postcss-loader'];
-if (process.env.NODE_ENV !== 'production') {
-  SASS_LOADERS.shift();
-}
 
 module.exports = {
   entry: {
@@ -72,19 +73,19 @@ module.exports = {
         }),
       },
       {
-        test: /\.html$/,
-        use: 'html-loader',
-      },
-      {
         test: /\.(jpe?g|png|svg)$/,
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 40000,
+              limit: 8192,
             },
           },
         ],
+      },
+      {
+        test: /\.html$/,
+        use: 'html-loader',
       },
     ],
   },
@@ -110,7 +111,7 @@ module.exports = {
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
     }),
-    new ExtractTextPlugin('bundle.css'),
+    new ExtractTextPlugin('bundle.[hash].css'),
     new CopyWebpackPlugin([{ from: PATH.IMG.IN, to: PATH.IMG.OUT }]),
     new webpack.HotModuleReplacementPlugin(),
   ],

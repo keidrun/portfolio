@@ -1,5 +1,9 @@
 .my-career {
-  background-image: linear-gradient( rgba(67, 221, 230, 0.5), rgba(67, 221, 230, 0.5)), url(/assets/career.jpg);
+  background-image: linear-gradient(
+      rgba(67, 221, 230, 0.5),
+      rgba(67, 221, 230, 0.5)
+    ),
+    url('/assets/career.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
