@@ -7,7 +7,10 @@ const Footer = () => (
       <div className="container">
         <div className="row">
           <div className="col-sm-12 text-center my-font__text">
-            <small>&copy; 2017 Keisuke Sasaki. Stay hungry stay foolish.</small>
+            <small>
+              &copy; 2017 Keisuke Sasaki.{' '}
+              <span className="my-footer__saying">Stay hungry stay foolish!</span>
+            </small>
           </div>
         </div>
       </div>

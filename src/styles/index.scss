@@ -1,11 +1,13 @@
+@import './base/variables';
 @import './bootstrap/custom';
 @import '~bootstrap/scss/bootstrap';
-@import './base/variables';
 @import './base/global';
-@import './components/App';
 @import './components/Nav';
 @import './components/Header';
-@import './components/sections';
+@import './components/News';
 @import './components/About';
+@import './components//Work';
 @import './components/Career';
 @import './components/Footer';
+@import './components/SocialBtn';
+@import './components/Card';

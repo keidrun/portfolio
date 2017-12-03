@@ -1,10 +1,11 @@
 // @flow
 import React from 'react';
+import SocialBtnGroup from './SocialBtnGroup';
 
 const Nav = () => (
   <div>
     <nav className="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
-      <a className="navbar-brand my-navbar__icon" href="/">
+      <a className="my-navbar__icon" href="/">
         Keisuke Sasaki
       </a>
       <button
@@ -19,33 +20,7 @@ const Nav = () => (
         <span className="navbar-toggler-icon" />
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item">
-            <a href="/" className="btn btn-sm btn-outline-light my-navber-sns-btn">
-              E-mail
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/" className="btn btn-sm btn-outline-light my-navber-sns-btn">
-              Github
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/" className="btn btn-sm btn-outline-light my-navber-sns-btn">
-              Linkedin
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/" className="btn btn-sm btn-outline-light my-navber-sns-btn">
-              Facebook
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/" className="btn btn-sm btn-outline-light my-navber-sns-btn">
-              Twitter
-            </a>
-          </li>
-        </ul>
+        <SocialBtnGroup />
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
             <a className="nav-link" href="#header">

@@ -4,10 +4,10 @@ import React from 'react';
 const Career = () => (
   <div>
     <section id="career" className="my-career">
-      <div className="section-content">
+      <div className="my-career__section-content">
         <div className="container">
           <div className="col-md-6 ml-auto">
-            <div className="career-text">
+            <div className="my-career__text">
               <h3>Career</h3>
               <p className="lead">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima culpa nostrum

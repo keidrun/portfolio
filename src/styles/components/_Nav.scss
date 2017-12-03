@@ -2,14 +2,11 @@
   background-color: #364f6b;
   font-size: 1.5rem;
   font-weight: 500;
-}
-
-.my-navbar__icon {
-  font-size: 1.5rem;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.my-navber-sns-btn {
-  margin: 0.3rem;
+  &__icon {
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: italic;
+    color: $mainPink;
+    padding: 0.5rem;
+  }
 }

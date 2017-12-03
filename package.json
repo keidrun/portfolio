@@ -6,7 +6,7 @@
     "node": ">= 9.1.0"
   },
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "NODE_ENV=development webpack-dev-server",
     "clean": "rimraf public",
     "build": "yarn clean && NODE_ENV=production webpack -p && rimraf public/**/*.map",
     "lint": "eslint src",

@@ -1,13 +1,14 @@
 // @flow
 import React from 'react';
+import SocialBtnGroup from './SocialBtnGroup';
 
 const About = () => (
   <div>
     <section id="about" className="my-about">
-      <div className="section-content">
+      <div className="my-about__section-content">
         <div className="container">
           <div className="col-md-6">
-            <div className="about-text">
+            <div className="my-about__text">
               <h3>About me</h3>
               <p className="lead">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima culpa nostrum
@@ -20,21 +21,7 @@ const About = () => (
                 molestiae reprehenderit, eligendi. Illum quod esse voluptatibus.
               </p>
               <h5>Follow &amp; Contact me!</h5>
-              <a href="/" className="btn btn-sm btn-outline-light">
-                E-mail
-              </a>
-              <a href="/" className="btn btn-sm btn-outline-light">
-                Github
-              </a>
-              <a href="/" className="btn btn-sm btn-outline-light">
-                Linkedin
-              </a>
-              <a href="/" className="btn btn-sm btn-outline-light">
-                Facebook
-              </a>
-              <a href="/" className="btn btn-sm btn-outline-light">
-                Twitter
-              </a>
+              <SocialBtnGroup section="about" />
             </div>
           </div>
         </div>

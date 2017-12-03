@@ -1,19 +1,18 @@
 // @flow
 import React from 'react';
 
-// const Br = React.createElement('br');
-
 const Header = () => (
   <div>
     <header id="header" className="my-header text-center">
       <div className="container">
-        <h1 className="my-header-heading">Keisuke Sasaki</h1>
+        <h1 className="my-header__heading">Keisuke Sasaki</h1>
         <p className="lead">
-          Hi, I am Full-stack Web Application Developer. I promise to contribute your company
-          definitely.
+          Hi, I am Full-stack Web Application Developer.
+          {React.createElement('br')}
+          I promise to contribute your company definitely.
         </p>
         <div>
-          <a href="#about" className="btn btn-info my-header-btn">
+          <a href="#about" className="btn btn-info my-header__btn">
             Contact me!
           </a>
         </div>

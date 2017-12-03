@@ -3,8 +3,8 @@ import React from 'react';
 
 const News = () => (
   <div>
-    <section id="news">
-      <div className="section-content">
+    <section id="news" className="my-news">
+      <div className="my-news__section-content">
         <div className="container">
           <h3>My News</h3>
           <p className="lead">
