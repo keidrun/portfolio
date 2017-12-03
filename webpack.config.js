@@ -4,25 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const SASS_LOADERS = [
-  {
-    loader: 'string-replace-loader',
-    query: {
-      multiple: [
-        { search: '/assets/hero', replace: '/portfolio/assets/hero' },
-        { search: '/assets/about', replace: '/portfolio/assets/about' },
-        { search: '/assets/career', replace: '/portfolio/assets/career' },
-      ],
-    },
-  },
-  'css-loader',
-  // 'postcss-loader',
-  'sass-loader',
-];
-if (process.env.NODE_ENV !== 'production') {
-  SASS_LOADERS.shift();
-}
-
 const PATH = {
   INDEX: {
     JS: './src/components/index.jsx',
@@ -69,7 +50,19 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: SASS_LOADERS,
+          use: [
+            'css-loader',
+            {
+              loader: 'css-exact-url-loader',
+              query: {
+                from: '/assets/',
+                to: '/portfolio/assets/',
+                env: process.env.NODE_ENV,
+              },
+            },
+            'postcss-loader',
+            'sass-loader',
+          ],
         }),
       },
       {
