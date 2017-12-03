@@ -6,7 +6,11 @@
     font-size: 2rem;
     font-weight: 300;
     font-style: italic;
-    color: $mainPink;
     padding: 0.5rem;
+    color: rgba($mainPink, 0.75);
+    &:hover {
+      color: $mainPink;
+      text-decoration: none;
+    }
   }
 }
