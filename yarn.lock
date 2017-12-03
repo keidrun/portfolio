@@ -1602,12 +1602,6 @@ css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
 
-css-exact-url-loader@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/css-exact-url-loader/-/css-exact-url-loader-0.0.1.tgz#4a150339a1b1639303ebc93b1784757358835684"
-  dependencies:
-    loader-utils "^1.1.0"
-
 css-loader@^0.28.7:
   version "0.28.7"
   resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-0.28.7.tgz#5f2ee989dd32edd907717f953317656160999c1b"
@@ -1643,6 +1637,12 @@ css-selector-tokenizer@^0.7.0:
     cssesc "^0.1.0"
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
+
+css-url-loader@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/css-url-loader/-/css-url-loader-0.0.2.tgz#47a690d646f6bd013a582247228bcc271d622287"
+  dependencies:
+    loader-utils "^1.1.0"
 
 css-what@2.1:
   version "2.1.0"

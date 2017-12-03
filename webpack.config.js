@@ -53,7 +53,7 @@ module.exports = {
           use: [
             'css-loader',
             {
-              loader: 'css-exact-url-loader',
+              loader: 'css-url-loader',
               query: {
                 from: '/assets/',
                 to: '/portfolio/assets/',
