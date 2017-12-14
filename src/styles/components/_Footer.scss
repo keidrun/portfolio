@@ -1,5 +1,5 @@
 .my-footer {
-  background: #364f6b;
+  background: $mainBlue;
   color: white;
   font-size: 1.5rem;
   padding: 2.5rem 0;
@@ -10,6 +10,6 @@
   &__saying {
     font-weight: 300;
     font-style: italic;
-    color: $mainPink;
+    color: $white;
   }
 }

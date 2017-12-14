@@ -6,7 +6,7 @@ const Work = () => (
     <section id="work" className="my-work">
       <div className="my-work__section-content">
         <div className="container">
-          <h2>Work Experience &amp; Skills</h2>
+          <h2>Work Experience</h2>
           <p className="lead">
             I have 6 years experince in total to work as a web application developer and a project
             leader.

@@ -28,8 +28,8 @@ const Nav = () => (
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#news">
-              News
+            <a className="nav-link" href="#portfolio">
+              Porfolio
             </a>
           </li>
           <li className="nav-item">
@@ -38,13 +38,18 @@ const Nav = () => (
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#work">
-              Work
+            <a className="nav-link" href="#skills">
+              Skills
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#career">
               Career
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#work">
+              Work
             </a>
           </li>
         </ul>

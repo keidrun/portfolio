@@ -1,15 +1,15 @@
 .my-navbar {
-  background-color: #364f6b;
+  background-color: $mainBlue;
   font-size: 1.5rem;
   font-weight: 500;
   &__icon {
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     font-style: italic;
     padding: 0.5rem;
-    color: rgba($mainPink, 0.75);
+    color: $white;
     &:hover {
-      color: $mainPink;
+      color: $white;
       text-decoration: none;
     }
   }

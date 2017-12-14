@@ -2,10 +2,11 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
 import Header from './Header';
-import News from './News';
+import Portfolio from './Portfolio';
 import About from './About';
-import Work from './Work';
+import Skills from './Skills';
 import Career from './Career';
+import Work from './Work';
 import Footer from './Footer';
 
 const TITLE = "Keid's portfolio site";
@@ -20,10 +21,11 @@ class App extends Component<any, any> {
       <div>
         <Nav />
         <Header />
-        <News />
+        <Portfolio />
         <About />
-        <Work />
+        <Skills />
         <Career />
+        <Work />
         <Footer />
       </div>
     );
