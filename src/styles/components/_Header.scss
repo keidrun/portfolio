@@ -2,10 +2,10 @@
   padding-top: 15rem;
   padding-bottom: 13rem;
   margin-bottom: 0;
-  background-color: #364f6b;
+  background-color: $mainBlue;
   background-image: linear-gradient(
-      rgba(67, 221, 230, 0.5),
-      rgba(67, 221, 230, 0.5)
+      rgba($mainLightBlue, 0.5),
+      rgba($mainLightBlue, 0.5)
     ),
     url('/assets/hero.jpg');
   background-repeat: no-repeat;
@@ -15,18 +15,18 @@
     font-weight: 300;
     font-style: italic;
     color: white;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px rgba($black, 0.2);
   }
   & .container {
     max-width: 50rem;
-    background: rgba(54, 79, 107, 0.5);
+    background: rgba($black, 0.2);
     padding: 4rem;
     color: white;
   }
   &__heading {
     font-weight: 500;
     font-size: 4rem;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px rgba($black, 0.2);
   }
   &__btn {
     padding: 1rem;

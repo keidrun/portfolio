@@ -1,7 +1,7 @@
 .my-career {
   background-image: linear-gradient(
-      rgba(67, 221, 230, 0.5),
-      rgba(67, 221, 230, 0.5)
+      rgba($mainLightBlue, 0.5),
+      rgba($mainLightBlue, 0.5)
     ),
     url('/assets/career.jpg');
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     padding: 5rem 0;
   }
   &__text {
-    background: rgba(54, 79, 107, 0.5);
+    background: rgba($black, 0.2);
     color: white;
     padding: 1.875rem;
   }
