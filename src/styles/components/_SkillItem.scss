@@ -1,5 +1,3 @@
-.my-skills {
-}
 .skill-item {
   margin: 20px 0;
   text-align: center;
@@ -25,8 +23,6 @@
     }
   }
 }
-
-/***** star-rating *****/
 .star-rating {
   display: inline-block;
   position: relative;
@@ -40,10 +36,10 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  color: #fc3;
+  color: $starYellow;
 }
 .star-rating-back {
-  color: #ccc;
+  color: $starGrey;
 }
 .star-rating-front-star00 {
   width: 0%;

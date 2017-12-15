@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import SkillItem from './SkillItem';
 
 const Skills = () => (
   <div>
@@ -13,341 +14,106 @@ const Skills = () => (
 
           <div className="row multi-columns-row">
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <div className="skill-item">
-                <div className="skill-item__icon">
-                  <span className="icon-desktop" />
-                </div>
-                <h3 className="skill-item__title">Professional Language </h3>
-                <div className="skill-item__name">
-                  <h4>Java</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>NodeJS</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Native JS</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star40">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>ES6</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-              </div>
+              <SkillItem
+                iconClassName="icon-desktop"
+                skillTitle="Professional Language"
+                skills={[
+                  { name: 'Java', star: '50' },
+                  { name: 'NodeJS', star: '50' },
+                  { name: 'Native JS', star: '40' },
+                  { name: 'ES6', star: '50' },
+                ]}
+              />
             </div>
-
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <div className="skill-item">
-                <div className="skill-item__icon">
-                  <span className="icon-genius" />
-                </div>
-                <h3 className="skill-item__title">Secondary Language </h3>
-                <div className="skill-item__name">
-                  <h4>Kotlin</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Go</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star20">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Haskell</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star10">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Python</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star10">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Ruby</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star20">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Perl</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star20">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-              </div>
+              <SkillItem
+                iconClassName="icon-genius"
+                skillTitle="Secondary Language"
+                skills={[
+                  { name: 'Kotlin', star: '30' },
+                  { name: 'Go', star: '20' },
+                  { name: 'Haskell', star: '10' },
+                  { name: 'Python', star: '20' },
+                  { name: 'Ruby', star: '20' },
+                  { name: 'Perl', star: '20' },
+                ]}
+              />
             </div>
-
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <div className="skill-item">
-                <div className="skill-item__icon">
-                  <span className="icon-browser" />
-                </div>
-                <h3 className="skill-item__title">Front-end stack</h3>
-                <div className="skill-item__name">
-                  <h4>HTML5</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>CSS3</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>SASS</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>React/Redux</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>SpringMVC</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-              </div>
+              <SkillItem
+                iconClassName="icon-browser"
+                skillTitle="Front-end stack"
+                skills={[
+                  { name: 'HTML5', star: '30' },
+                  { name: 'CSS3', star: '30' },
+                  { name: 'SASS', star: '30' },
+                  { name: 'React/Redux', star: '50' },
+                  { name: 'SpringMVC', star: '50' },
+                ]}
+              />
             </div>
-
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <div className="skill-item">
-                <div className="skill-item__icon">
-                  <span className="icon-gears" />
-                </div>
-                <h3 className="skill-item__title">Back-end stack</h3>
-                <div className="skill-item__name">
-                  <h4>Linux</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star40">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>AWS</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>SQL</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star40">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>MongoDB</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star40">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Spring/SpringBoot</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-              </div>
+              <SkillItem
+                iconClassName="icon-gears"
+                skillTitle="Back-end stack"
+                skills={[
+                  { name: 'Linux', star: '40' },
+                  { name: 'AWS', star: '30' },
+                  { name: 'SQL', star: '40' },
+                  { name: 'MongoDB', star: '40' },
+                  { name: 'Spring/SpringBoot', star: '50' },
+                ]}
+              />
             </div>
-
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <div className="skill-item">
-                <div className="skill-item__icon">
-                  <span className="icon-tools-2" />
-                </div>
-                <h3 className="skill-item__title">Dev-Ops stack</h3>
-                <div className="skill-item__name">
-                  <h4>Git/GitHub</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Vagrant</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Docker</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star40">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Ansible</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Jenkins</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star40">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-              </div>
+              <SkillItem
+                iconClassName="icon-tools-2"
+                skillTitle="Dev-Ops stack"
+                skills={[
+                  { name: 'Git/GitHub', star: '50' },
+                  { name: 'Vagrant', star: '30' },
+                  { name: 'Docker', star: '40' },
+                  { name: 'Ansible', star: '30' },
+                  { name: 'Jenkins', star: '40' },
+                ]}
+              />
             </div>
-
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <div className="skill-item">
-                <div className="skill-item__icon">
-                  <span className="icon-global" />
-                </div>
-                <h3 className="skill-item__title">Team work</h3>
-                <div className="skill-item__name">
-                  <h4>Agile</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Scrum</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Trac</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Redmine</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Jira</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star40">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-              </div>
+              <SkillItem
+                iconClassName="icon-global"
+                skillTitle="Team work"
+                skills={[
+                  { name: 'Agile', star: '50' },
+                  { name: 'Scrum', star: '50' },
+                  { name: 'Trac', star: '30' },
+                  { name: 'Redmine', star: '30' },
+                  { name: 'Jira', star: '40' },
+                ]}
+              />
             </div>
-
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <div className="skill-item">
-                <div className="skill-item__icon">
-                  <span className="icon-bargraph" />
-                </div>
-                <h3 className="skill-item__title">Documentation</h3>
-                <div className="skill-item__name">
-                  <h4>Markdown</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>PowerPoint</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Word</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Excel</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star40">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-              </div>
+              <SkillItem
+                iconClassName="icon-bargraph"
+                skillTitle="Documentation"
+                skills={[
+                  { name: 'Markdown', star: '50' },
+                  { name: 'PowerPoint', star: '50' },
+                  { name: 'Word', star: '30' },
+                  { name: 'Excel', star: '40' },
+                ]}
+              />
             </div>
-
             <div className="col-md-3 col-sm-6 col-xs-12">
-              <div className="skill-item">
-                <div className="skill-item__icon">
-                  <span className="icon-puzzle" />
-                </div>
-                <h3 className="skill-item__title">Others</h3>
-                <div className="skill-item__name">
-                  <h4>English</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star30">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Japanese</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Smile</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-                <div className="skill-item__name">
-                  <h4>Passion</h4>
-                  <div className="star-rating">
-                    <div className="star-rating-front star-rating-front-star50">★★★★★</div>
-                    <div className="star-rating-back">★★★★★</div>
-                  </div>
-                </div>
-              </div>
+              <SkillItem
+                iconClassName="icon-puzzle"
+                skillTitle="Others"
+                skills={[
+                  { name: 'English', star: '30' },
+                  { name: 'Japanese', star: '50' },
+                  { name: 'Smile', star: '50' },
+                  { name: 'Passion', star: '50' },
+                ]}
+              />
             </div>
           </div>
         </div>
