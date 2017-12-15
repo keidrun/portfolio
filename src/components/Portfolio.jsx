@@ -4,7 +4,7 @@ import React from 'react';
 const Portfolio = () => (
   <div>
     <section id="portfolio" className="my-portfolio">
-      <div className="my-portfolio__section-content">
+      <div className="my-section-content">
         <div className="container">
           <h3>Portfolio</h3>
           <p className="lead">

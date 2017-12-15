@@ -5,7 +5,7 @@ import SocialBtnGroup from './SocialBtnGroup';
 const About = () => (
   <div>
     <section id="about" className="my-about">
-      <div className="my-about__section-content">
+      <div className="my-section-content">
         <div className="container">
           <div className="col-md-6">
             <div className="my-about__text">

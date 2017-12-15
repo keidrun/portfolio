@@ -4,7 +4,7 @@ import React from 'react';
 const Work = () => (
   <div>
     <section id="work" className="my-work">
-      <div className="my-work__section-content">
+      <div className="my-section-content">
         <div className="container">
           <h2>Work Experience</h2>
           <p className="lead">
@@ -27,7 +27,7 @@ const Work = () => (
                     </p>
                     <button
                       type="button"
-                      className="btn btn-outline-info my-card__btn"
+                      className="my-btn my-btn--main-color btn btn-outline-info my-card__btn"
                       data-toggle="modal"
                       data-target="#modalOne"
                     >
@@ -69,7 +69,11 @@ const Work = () => (
                         fuga eius repellat. Impedit, nostrum.
                       </div>
                       <div className="modal-footer">
-                        <button type="button" className="btn btn-info" data-dismiss="modal">
+                        <button
+                          type="button"
+                          className="my-btn my-btn--main-color btn btn-info"
+                          data-dismiss="modal"
+                        >
                           Close
                         </button>
                       </div>
@@ -91,7 +95,7 @@ const Work = () => (
                     </p>
                     <button
                       type="button"
-                      className="btn btn-outline-info my-card__btn"
+                      className="my-btn my-btn--main-color btn btn-outline-info my-card__btn"
                       data-toggle="modal"
                       data-target="#modelTwo"
                     >
@@ -133,7 +137,11 @@ const Work = () => (
                         fuga eius repellat. Impedit, nostrum.
                       </div>
                       <div className="modal-footer">
-                        <button type="button" className="btn btn-info" data-dismiss="modal">
+                        <button
+                          type="button"
+                          className="my-btn my-btn--main-color btn btn-info"
+                          data-dismiss="modal"
+                        >
                           Close
                         </button>
                       </div>
@@ -154,7 +162,7 @@ const Work = () => (
                     </p>
                     <button
                       type="button"
-                      className="btn btn-outline-info my-card__btn"
+                      className="my-btn my-btn--main-color btn btn-outline-info my-card__btn"
                       data-toggle="modal"
                       data-target="#modalThree"
                     >
@@ -196,7 +204,11 @@ const Work = () => (
                         fuga eius repellat. Impedit, nostrum.
                       </div>
                       <div className="modal-footer">
-                        <button type="button" className="btn btn-info" data-dismiss="modal">
+                        <button
+                          type="button"
+                          className="my-btn my-btn--main-color btn btn-info"
+                          data-dismiss="modal"
+                        >
                           Close
                         </button>
                       </div>

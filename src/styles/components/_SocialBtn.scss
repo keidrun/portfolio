@@ -1,3 +1,10 @@
 .my-socsial-btn {
   margin: 0.3rem;
+  border-color: $white;
+  color: $white;
+  &:hover {
+    background-color: $white;
+    border-color: $white;
+    color: $mainBlue;
+  }
 }

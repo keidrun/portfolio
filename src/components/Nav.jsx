@@ -4,7 +4,7 @@ import SocialBtnGroup from './SocialBtnGroup';
 
 const Nav = () => (
   <div>
-    <nav className="navbar navbar-expand-md navbar-dark fixed-top my-navbar">
+    <nav className="my-navbar navbar navbar-expand-md navbar-dark fixed-top">
       <a className="my-navbar__icon" href="/">
         Keisuke Sasaki
       </a>

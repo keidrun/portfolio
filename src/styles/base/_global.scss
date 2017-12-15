@@ -7,3 +7,21 @@ body {
 img {
   max-width: 100%;
 }
+.my-section-content {
+  padding: 5rem 0;
+}
+.my-btn {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  &--main-color {
+    background-color: $mainBlue;
+    border-color: $mainBlue;
+    color: $white;
+    &:hover {
+      background-color: $mainLightBlue;
+      border-color: $mainLightBlue;
+      color: $white;
+    }
+  }
+}

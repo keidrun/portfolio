@@ -4,7 +4,7 @@ import React from 'react';
 const Career = () => (
   <div>
     <section id="career" className="my-career">
-      <div className="my-career__section-content">
+      <div className="my-section-content">
         <div className="container">
           <div className="col-md-6 ml-auto">
             <div className="my-career__text">

@@ -4,7 +4,7 @@ import React from 'react';
 const Skills = () => (
   <div>
     <section id="skills" className="my-skills">
-      <div className="my-skills__section-content">
+      <div className="my-section-content">
         <div className="container">
           <h2>Skills</h2>
           <p className="lead">I love to learn the newest technology and design. Show my skills.</p>
