@@ -16,7 +16,7 @@ const PATH = {
     OUT: 'assets',
   },
 };
-const VENDOR_LIBS = ['react', 'react-dom'];
+const VENDOR_LIBS = ['react', 'react-dom', 'bootstrap', 'jquery', 'popper.js', 'tether'];
 
 module.exports = {
   entry: {

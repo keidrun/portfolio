@@ -28,7 +28,7 @@ const SkillItem = ({ iconClassName, skillTitle, skills }: SkillItemProps) => (
       <span className={iconClassName} />
     </div>
     <h3 className="skill-item__title">{skillTitle}</h3>
-    {skills.map(skill => <Skill skillName={skill.name} starRate={skill.star} />)}
+    {skills.map(skill => <Skill key={skill.name} skillName={skill.name} starRate={skill.star} />)}
   </div>
 );
 

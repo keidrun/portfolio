@@ -12,7 +12,7 @@ const Header = () => (
           I promise to contribute your company definitely.
         </p>
         <div>
-          <a href="#about" className="my-header__btn my-btn my-btn--main-color btn btn-info ">
+          <a href="#about" className="my-header__btn my-btn my-btn--main-color btn">
             Contact me!
           </a>
         </div>

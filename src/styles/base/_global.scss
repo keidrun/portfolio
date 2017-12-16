@@ -23,5 +23,10 @@ img {
       border-color: $mainLightBlue;
       color: $white;
     }
+    &:active {
+      background-color: $mainBlue;
+      border-color: $mainBlue;
+      color: $white;
+    }
   }
 }

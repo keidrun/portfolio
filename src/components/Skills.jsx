@@ -61,6 +61,7 @@ const Skills = () => (
                   { name: 'AWS', star: '30' },
                   { name: 'SQL', star: '40' },
                   { name: 'MongoDB', star: '40' },
+                  { name: 'Express', star: '50' },
                   { name: 'Spring/SpringBoot', star: '50' },
                 ]}
               />
