@@ -1,17 +1,16 @@
 .skill-item {
   margin: 20px 0;
   text-align: center;
+  color: #111;
   &__icon {
     line-height: 1.2;
     font-size: 3rem;
-    color: #111;
   }
   &__title {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: 300;
     font-size: 1.1rem;
-    color: #111;
     margin: 16px 0 15px;
   }
   &__name {
@@ -21,6 +20,10 @@
       margin: 0 auto 0 0;
       font-size: 1rem;
     }
+  }
+  &__description {
+    font-weight: 300;
+    font-size: 1rem;
   }
 }
 .star-rating {

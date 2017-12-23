@@ -10,6 +10,7 @@ type SkillItemProps = {
   iconClassName: string,
   skillTitle: string,
   skills: Array,
+  children: string,
 };
 
 const Skill = ({ skillName, starRate }: SkillProps) => (
@@ -22,13 +23,16 @@ const Skill = ({ skillName, starRate }: SkillProps) => (
   </div>
 );
 
-const SkillItem = ({ iconClassName, skillTitle, skills }: SkillItemProps) => (
+const SkillItem = ({
+  iconClassName, skillTitle, skills, children,
+}: SkillItemProps) => (
   <div className="skill-item">
     <div className="skill-item__icon">
       <span className={iconClassName} />
     </div>
     <h3 className="skill-item__title">{skillTitle}</h3>
     {skills.map(skill => <Skill key={skill.name} skillName={skill.name} starRate={skill.star} />)}
+    <p className="skill-item__description">{children}</p>
   </div>
 );
 

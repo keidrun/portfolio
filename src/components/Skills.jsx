@@ -23,7 +23,11 @@ const Skills = () => (
                   { name: 'Native JS', star: '40' },
                   { name: 'ES6', star: '50' },
                 ]}
-              />
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
+                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
+                accusantium
+              </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
               <SkillItem
@@ -37,7 +41,11 @@ const Skills = () => (
                   { name: 'Ruby', star: '20' },
                   { name: 'Perl', star: '20' },
                 ]}
-              />
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
+                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
+                accusantium
+              </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
               <SkillItem
@@ -50,7 +58,11 @@ const Skills = () => (
                   { name: 'React/Redux', star: '50' },
                   { name: 'SpringMVC', star: '50' },
                 ]}
-              />
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
+                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
+                accusantium
+              </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
               <SkillItem
@@ -64,7 +76,11 @@ const Skills = () => (
                   { name: 'Express', star: '50' },
                   { name: 'Spring/SpringBoot', star: '50' },
                 ]}
-              />
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
+                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
+                accusantium
+              </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
               <SkillItem
@@ -77,7 +93,11 @@ const Skills = () => (
                   { name: 'Ansible', star: '30' },
                   { name: 'Jenkins', star: '40' },
                 ]}
-              />
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
+                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
+                accusantium
+              </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
               <SkillItem
@@ -90,7 +110,11 @@ const Skills = () => (
                   { name: 'Redmine', star: '30' },
                   { name: 'Jira', star: '40' },
                 ]}
-              />
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
+                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
+                accusantium
+              </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
               <SkillItem
@@ -102,7 +126,11 @@ const Skills = () => (
                   { name: 'Word', star: '30' },
                   { name: 'Excel', star: '40' },
                 ]}
-              />
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
+                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
+                accusantium
+              </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
               <SkillItem
@@ -114,7 +142,11 @@ const Skills = () => (
                   { name: 'Smile', star: '50' },
                   { name: 'Passion', star: '50' },
                 ]}
-              />
+              >
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
+                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
+                accusantium
+              </SkillItem>
             </div>
           </div>
         </div>
