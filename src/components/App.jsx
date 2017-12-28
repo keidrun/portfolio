@@ -8,6 +8,7 @@ import Skills from './Skills';
 import Career from './Career';
 import Work from './Work';
 import Footer from './Footer';
+import Learning from './Learning';
 
 const App = () => (
   <div>
@@ -18,6 +19,7 @@ const App = () => (
     <Skills />
     <Career />
     <Work />
+    <Learning />
     <Footer />
   </div>
 );
