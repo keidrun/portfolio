@@ -1,12 +1,13 @@
 // @flow
 import React from 'react';
 import SocialBtnGroup from './SocialBtnGroup';
+import { AUTHOR_NAME } from '../config';
 
 const Nav = () => (
   <div>
     <nav className="my-navbar navbar navbar-expand-md navbar-dark fixed-top">
       <a className="my-navbar__icon" href="/">
-        Keisuke Sasaki
+        {AUTHOR_NAME}
       </a>
       <button
         className="navbar-toggler"

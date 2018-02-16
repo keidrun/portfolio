@@ -1,11 +1,12 @@
 // @flow
 import React from 'react';
+import { AUTHOR_NAME } from '../config';
 
 const Header = () => (
   <div>
     <header id="header" className="my-header text-center">
       <div className="container">
-        <h1 className="my-header__heading">Keisuke Sasaki</h1>
+        <h1 className="my-header__heading">{AUTHOR_NAME}</h1>
         <p className="lead">
           Hi, I am Full-stack Web Application Developer.
           {React.createElement('br')}
