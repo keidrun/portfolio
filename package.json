@@ -5,20 +5,10 @@
   "engines": {
     "node": ">= 9.1.0"
   },
-  "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server",
-    "clean": "rimraf public",
-    "build": "yarn clean && NODE_ENV=production webpack -p && rimraf public/**/*.map",
-    "lint": "eslint src",
-    "flow": "flow",
-    "flow-typed": "flow-typed update",
-    "deploy": "git subtree push --prefix public origin gh-pages",
-    "deploy:force": "git push origin `git subtree split --prefix public master`:gh-pages --force",
-    "deploy:auto": "yarn build && git add . && git commit -m 'Auto deploy...' && git push origin master && yarn deploy"
-  },
-  "keywords": [],
   "author": "keidrun",
-  "license": "MIT",
+  "license": "No license",
+  "private": true,
+  "keywords": [],
   "dependencies": {
     "bootstrap": "4.0.0-beta.2",
     "jquery": "^3.2.1",
@@ -39,7 +29,6 @@
     "babel-preset-react": "^6.24.1",
     "copy-webpack-plugin": "^4.2.3",
     "css-loader": "^0.28.7",
-    "css-url-loader": "^0.0.2",
     "eslint": "^4.7.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^1.9.0",
@@ -69,5 +58,16 @@
     "stylelint-config-standard": "^18.0.0",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
+  },
+  "scripts": {
+    "start": "NODE_ENV=development webpack-dev-server",
+    "clean": "rimraf public",
+    "build": "yarn clean && NODE_ENV=production webpack -p && rimraf public/**/*.map",
+    "lint": "eslint src",
+    "flow": "flow",
+    "flow-typed": "flow-typed update",
+    "deploy": "git subtree push --prefix public origin gh-pages",
+    "deploy:force": "git push origin `git subtree split --prefix public master`:gh-pages --force",
+    "deploy:auto": "yarn build && git add . && git commit -m 'Auto deploy...' && git push origin master && yarn deploy"
   }
 }

@@ -1676,12 +1676,6 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
-css-url-loader@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/css-url-loader/-/css-url-loader-0.0.2.tgz#47a690d646f6bd013a582247228bcc271d622287"
-  dependencies:
-    loader-utils "^1.1.0"
-
 css-what@2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"
