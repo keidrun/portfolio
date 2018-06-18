@@ -2,14 +2,13 @@
 import React from 'react';
 import SocialBtn from './SocialBtn';
 
-const EmailBtn = () => <SocialBtn title="E-mail" link="/" />;
-const GithubBtn = () => <SocialBtn title="Github" link="/" />;
-const LinkedinBtn = () => <SocialBtn title="Linkedin" link="/" />;
-const FacebookBtn = () => <SocialBtn title="Facebook" link="/" />;
-const TwitterBtn = () => <SocialBtn title="Twitter" link="/" />;
+const EmailBtn = () => <SocialBtn title="E-mail" link="mailto:contact@keisukesasaki.com" />;
+const GithubBtn = () => <SocialBtn title="Github" link="https://github.com/keidrun" target="_blank" />;
+const LinkedinBtn = () => <SocialBtn title="Linkedin" link="https://www.linkedin.com/in/keisuke-sasaki-03b124109/" target="_blank" />;
+const FacebookBtn = () => <SocialBtn title="Facebook" link="https://www.facebook.com/keisuke.sasaki.sky" target="_blank" />;
 
 type Props = {
-  section: string,
+  section: string
 };
 
 const SocialBtnGroup = ({ section = 'nav' }: Props) => (
@@ -21,9 +20,8 @@ const SocialBtnGroup = ({ section = 'nav' }: Props) => (
             <div>
               <EmailBtn />
               <GithubBtn />
-              <LinkedinBtn />
               <FacebookBtn />
-              <TwitterBtn />
+              <LinkedinBtn />
             </div>
           );
         case 'nav':
@@ -37,13 +35,10 @@ const SocialBtnGroup = ({ section = 'nav' }: Props) => (
                 <GithubBtn />
               </li>
               <li className="nav-item">
-                <LinkedinBtn />
-              </li>
-              <li className="nav-item">
                 <FacebookBtn />
               </li>
               <li className="nav-item">
-                <TwitterBtn />
+                <LinkedinBtn />
               </li>
             </ul>
           );

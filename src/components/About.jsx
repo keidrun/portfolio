@@ -20,7 +20,7 @@ const About = () => (
                 dolorem autem qui possimus ex voluptate, voluptatibus iste unde numquam illum,
                 molestiae reprehenderit, eligendi. Illum quod esse voluptatibus.
               </p>
-              <h5>Follow &amp; Contact me!</h5>
+              <h5>Contact me!</h5>
               <SocialBtnGroup section="about" />
             </div>
           </div>
