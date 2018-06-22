@@ -10,7 +10,8 @@ const Work = () => (
         <div className="container">
           <h2>Work Experience</h2>
           <p className="lead">
-            I have 6 years experince in total to work as a web application developer and a project
+            I have 6 years practical experince in total
+            as a full-stack web application developer and a project
             leader.
           </p>
 
@@ -19,7 +20,7 @@ const Work = () => (
               <div className="card-group">
                 <Card
                   title="Full-stack Development"
-                  subTitle="Spring & Ajax & DB"
+                  subTitle="Spring Framework & Ajax & MySQL"
                   imgSrc="assets/skill1.jpg"
                   modelId="modalOne"
                 >
@@ -36,7 +37,7 @@ const Work = () => (
 
                 <Card
                   title="Server-side Development"
-                  subTitle="Rest API on NodeJS"
+                  subTitle="NodeJS RESTful API & MongoDB"
                   imgSrc="assets/skill2.jpg"
                   modelId="modelTwo"
                 >
@@ -54,8 +55,8 @@ const Work = () => (
                 </Model>
 
                 <Card
-                  title="Scrum Master"
-                  subTitle="Lead some teams"
+                  title="PO / SM"
+                  subTitle="Product Owner and Scrum Mater"
                   imgSrc="assets/skill3.jpg"
                   modelId="modalThree"
                 >
@@ -63,7 +64,7 @@ const Work = () => (
                   molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
                   accusantium.
                 </Card>
-                <Model id="modalThree" name="modalThreeTitle" title="Scrum Master">
+                <Model id="modalThree" name="modalThreeTitle" title="Product Owner and Scrum Mater">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit,
                   voluptatem tempora vitae animi suscipit, ipsa, recusandae mollitia porro fugiat
                   quisquam minima repudiandae laboriosam non fuga eius repellat. Impedit, nostrum.

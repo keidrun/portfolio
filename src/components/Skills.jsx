@@ -8,7 +8,7 @@ const Skills = () => (
       <div className="my-section-content">
         <div className="container">
           <h2>Skills</h2>
-          <p className="lead">I love to learn the newest technology and design. Show my skills.</p>
+          <p className="lead">I always adore learning new technologies. I show you my skills. Ask me in an interview if you&#39;d like to know in details.</p>
 
           <hr />
 
@@ -18,15 +18,12 @@ const Skills = () => (
                 iconClassName="icon-desktop"
                 skillTitle="Professional Language"
                 skills={[
-                  { name: 'Java', star: '50' },
-                  { name: 'NodeJS', star: '50' },
-                  { name: 'Native JS', star: '40' },
                   { name: 'ES6', star: '50' },
+                  { name: 'NodeJS', star: '50' },
+                  { name: 'Java', star: '50' },
                 ]}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                accusantium
+                &nbsp;
               </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
@@ -34,17 +31,15 @@ const Skills = () => (
                 iconClassName="icon-genius"
                 skillTitle="Secondary Language"
                 skills={[
+                  { name: 'Python', star: '30' },
                   { name: 'Kotlin', star: '30' },
                   { name: 'Go', star: '20' },
-                  { name: 'Haskell', star: '10' },
-                  { name: 'Python', star: '20' },
                   { name: 'Ruby', star: '20' },
                   { name: 'Perl', star: '20' },
+                  { name: 'C', star: '20' },
                 ]}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                accusantium
+                &nbsp;
               </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
@@ -52,16 +47,16 @@ const Skills = () => (
                 iconClassName="icon-browser"
                 skillTitle="Front-end stack"
                 skills={[
-                  { name: 'HTML5', star: '30' },
-                  { name: 'CSS3', star: '30' },
+                  { name: 'HTML5', star: '40' },
+                  { name: 'CSS3', star: '40' },
                   { name: 'SASS', star: '30' },
                   { name: 'React/Redux', star: '50' },
-                  { name: 'SpringMVC', star: '50' },
+                  { name: 'ReactNative', star: '30' },
+                  { name: 'Anguler2', star: '30' },
+                  { name: 'SpringMVC', star: '40' },
                 ]}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                accusantium
+                &nbsp;
               </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
@@ -71,15 +66,14 @@ const Skills = () => (
                 skills={[
                   { name: 'Linux', star: '40' },
                   { name: 'AWS', star: '30' },
-                  { name: 'SQL', star: '40' },
+                  { name: 'MySQL', star: '40' },
                   { name: 'MongoDB', star: '40' },
+                  { name: 'DynamoDB', star: '30' },
                   { name: 'Express', star: '50' },
-                  { name: 'Spring/SpringBoot', star: '50' },
+                  { name: 'SpringBoot', star: '50' },
                 ]}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                accusantium
+                &nbsp;
               </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
@@ -87,16 +81,14 @@ const Skills = () => (
                 iconClassName="icon-tools-2"
                 skillTitle="Dev-Ops stack"
                 skills={[
-                  { name: 'Git/GitHub', star: '50' },
-                  { name: 'Vagrant', star: '30' },
+                  { name: 'Git/GitHub', star: '40' },
                   { name: 'Docker', star: '40' },
+                  { name: 'Vagrant', star: '30' },
                   { name: 'Ansible', star: '30' },
-                  { name: 'Jenkins', star: '40' },
+                  { name: 'Jenkins', star: '30' },
                 ]}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                accusantium
+                &nbsp;
               </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
@@ -106,14 +98,12 @@ const Skills = () => (
                 skills={[
                   { name: 'Agile', star: '50' },
                   { name: 'Scrum', star: '50' },
-                  { name: 'Trac', star: '30' },
-                  { name: 'Redmine', star: '30' },
                   { name: 'Jira', star: '40' },
+                  { name: 'Redmine', star: '30' },
+                  { name: 'Trac', star: '30' },
                 ]}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                accusantium
+                &nbsp;
               </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
@@ -123,13 +113,11 @@ const Skills = () => (
                 skills={[
                   { name: 'Markdown', star: '50' },
                   { name: 'PowerPoint', star: '50' },
-                  { name: 'Word', star: '30' },
                   { name: 'Excel', star: '40' },
+                  { name: 'Word', star: '30' },
                 ]}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                accusantium
+                &nbsp;
               </SkillItem>
             </div>
             <div className="col-md-3 col-sm-6 col-xs-12">
@@ -137,15 +125,12 @@ const Skills = () => (
                 iconClassName="icon-puzzle"
                 skillTitle="Others"
                 skills={[
-                  { name: 'English', star: '30' },
-                  { name: 'Japanese', star: '50' },
-                  { name: 'Smile', star: '50' },
                   { name: 'Passion', star: '50' },
+                  { name: 'Japanese', star: '50' },
+                  { name: 'English', star: '30' },
                 ]}
               >
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                accusantium
+                &nbsp;
               </SkillItem>
             </div>
           </div>
