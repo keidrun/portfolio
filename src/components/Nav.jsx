@@ -44,8 +44,8 @@ const Nav = () => (
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#career">
-              Career
+            <a className="nav-link" href="#learning">
+              Learning
             </a>
           </li>
           <li className="nav-item">
@@ -54,8 +54,8 @@ const Nav = () => (
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#learning">
-              Learning
+            <a className="nav-link" href="#career">
+              Career
             </a>
           </li>
         </ul>

@@ -4,6 +4,18 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
+a:link{
+  color: $white;
+}
+a:visited{
+  color: $white;
+}
+a:hover{
+  color:$white;
+}
+a:active{
+  color: $white;
+}
 img {
   max-width: 100%;
 }
