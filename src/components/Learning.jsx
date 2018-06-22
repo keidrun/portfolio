@@ -10,14 +10,19 @@ const Learning = () => (
             <div className="my-learning__text">
               <h3>Learning</h3>
               <p className="lead">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima culpa nostrum
-                voluptates praesentium quia, quae, dolor aperiam possimus architecto, tempore unde!
-                Quasi fugit voluptate, maiores adipisci commodi nemo rem cumque.
+                I love to learn interesting technologies and marketing techniques.
+                Recently, I&#39;m learning ReactNative, TypeScript, AWS Lambda,
+                Spring Cloud, Cryptocurrency, Blockchain, Machine-learning,
+                Marketing-funnel and Marketing-automation.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eum mollitia sit
-                dolorem autem qui possimus ex voluptate, voluptatibus iste unde numquam illum,
-                molestiae reprehenderit, eligendi. Illum quod esse voluptatibus.
+                I have keept blogging to share my knowledge for +5 years.
+                My blog&#39;s name is &quot;<a href="https://casualdevelopers.com/" target="_blank" rel="noopener noreferrer"><strong>Casual Developers Notes</strong></a>&quot;, whose concepts are learning technologies and English. If you&#39;d like to know what I learned, check it out. This blog is written in Japanese, however you can get the point if you have some knowlege of computer science and a web application development.
+                (See <a href="https://casualdevelopers.com/tags/" target="_blank" rel="noopener noreferrer"><strong>a tags page of my blog</strong></a>. The tags page is summarized as key words in English.)
+                The Page View is +10,000 a month,
+                then 80% readers are Japanese people,
+                10% readers are American people
+                and other readers are pepole in EU, China and other countries.
               </p>
             </div>
           </div>

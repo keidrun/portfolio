@@ -8,7 +8,7 @@ type Props = {
 };
 
 const SocialBtn = ({ title, link, target }: Props) => (
-  <a href={link} target={target || '_self'} className="my-socsial-btn btn btn-sm btn-outline-light">
+  <a href={link} target={target || '_self'} rel="noopener noreferrer" className="my-socsial-btn btn btn-sm btn-outline-light">
     {title}
   </a>
 );
