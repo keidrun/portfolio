@@ -9,9 +9,7 @@ type Props = {
   children: string,
 };
 
-const Card = ({
-  title, subTitle, imgSrc, modelId, children,
-}: Props) => (
+const Card = ({ title, subTitle, imgSrc, modelId, children }: Props) => (
   <div className="card">
     <div className="card-block my-card__block--decoration">
       <h4 className="card-title">{title}</h4>

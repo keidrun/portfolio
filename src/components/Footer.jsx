@@ -9,7 +9,8 @@ const Footer = () => (
         <div className="row">
           <div className="col-sm-12 text-center my-font__text">
             <small>
-              &copy; 2017-{CURRENT_YEAR} {AUTHOR_NAME}. <span className="my-footer__saying">{FOOTER_MESSAGE}</span>
+              &copy; 2017-{CURRENT_YEAR} {AUTHOR_NAME}.{' '}
+              <span className="my-footer__saying">{FOOTER_MESSAGE}</span>
             </small>
           </div>
         </div>

@@ -10,9 +10,8 @@ const Work = () => (
         <div className="container">
           <h2>Work Experience</h2>
           <p className="lead">
-            I have 6 years practical experince in total
-            as a full-stack web application developer and a project
-            leader.
+            I have 6 years practical experince in total as a full-stack web
+            application developer and a project leader.
           </p>
 
           <div className="row">
@@ -26,13 +25,20 @@ const Work = () => (
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </Card>
-                <Model id="modalOne" name="modalOneTitle" title="Full-stack Development">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit,
-                  voluptatem tempora vitae animi suscipit, ipsa, recusandae mollitia porro fugiat
-                  quisquam minima repudiandae laboriosam non fuga eius repellat. Impedit, nostrum.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit,
-                  voluptatem tempora vitae animi suscipit, ipsa, recusandae mollitia porro fugiat
-                  quisquam minima repudiandae laboriosam non fuga eius repellat. Impedit, nostrum.
+                <Model
+                  id="modalOne"
+                  name="modalOneTitle"
+                  title="Full-stack Development"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus impedit, voluptatem tempora vitae animi suscipit,
+                  ipsa, recusandae mollitia porro fugiat quisquam minima
+                  repudiandae laboriosam non fuga eius repellat. Impedit,
+                  nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Repellendus impedit, voluptatem tempora vitae animi
+                  suscipit, ipsa, recusandae mollitia porro fugiat quisquam
+                  minima repudiandae laboriosam non fuga eius repellat. Impedit,
+                  nostrum.
                 </Model>
 
                 <Card
@@ -41,17 +47,25 @@ const Work = () => (
                   imgSrc="assets/skill2.jpg"
                   modelId="modelTwo"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                  molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                  accusantium, numquam voluptates velit, dicta maiores dolor quo expedita.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sequi debitis fugit molestias dignissimos, id hic officiis
+                  quam possimus tenetur minima voluptatibus accusantium, numquam
+                  voluptates velit, dicta maiores dolor quo expedita.
                 </Card>
-                <Model id="modelTwo" name="modelTwoTitle" title="Server-side Development">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit,
-                  voluptatem tempora vitae animi suscipit, ipsa, recusandae mollitia porro fugiat
-                  quisquam minima repudiandae laboriosam non fuga eius repellat. Impedit, nostrum.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit,
-                  voluptatem tempora vitae animi suscipit, ipsa, recusandae mollitia porro fugiat
-                  quisquam minima repudiandae laboriosam non fuga eius repellat. Impedit, nostrum.
+                <Model
+                  id="modelTwo"
+                  name="modelTwoTitle"
+                  title="Server-side Development"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus impedit, voluptatem tempora vitae animi suscipit,
+                  ipsa, recusandae mollitia porro fugiat quisquam minima
+                  repudiandae laboriosam non fuga eius repellat. Impedit,
+                  nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Repellendus impedit, voluptatem tempora vitae animi
+                  suscipit, ipsa, recusandae mollitia porro fugiat quisquam
+                  minima repudiandae laboriosam non fuga eius repellat. Impedit,
+                  nostrum.
                 </Model>
 
                 <Card
@@ -60,17 +74,24 @@ const Work = () => (
                   imgSrc="assets/skill3.jpg"
                   modelId="modalThree"
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi debitis fugit
-                  molestias dignissimos, id hic officiis quam possimus tenetur minima voluptatibus
-                  accusantium.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sequi debitis fugit molestias dignissimos, id hic officiis
+                  quam possimus tenetur minima voluptatibus accusantium.
                 </Card>
-                <Model id="modalThree" name="modalThreeTitle" title="Product Owner and Scrum Mater">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit,
-                  voluptatem tempora vitae animi suscipit, ipsa, recusandae mollitia porro fugiat
-                  quisquam minima repudiandae laboriosam non fuga eius repellat. Impedit, nostrum.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus impedit,
-                  voluptatem tempora vitae animi suscipit, ipsa, recusandae mollitia porro fugiat
-                  quisquam minima repudiandae laboriosam non fuga eius repellat. Impedit, nostrum.
+                <Model
+                  id="modalThree"
+                  name="modalThreeTitle"
+                  title="Product Owner and Scrum Mater"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus impedit, voluptatem tempora vitae animi suscipit,
+                  ipsa, recusandae mollitia porro fugiat quisquam minima
+                  repudiandae laboriosam non fuga eius repellat. Impedit,
+                  nostrum. Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Repellendus impedit, voluptatem tempora vitae animi
+                  suscipit, ipsa, recusandae mollitia porro fugiat quisquam
+                  minima repudiandae laboriosam non fuga eius repellat. Impedit,
+                  nostrum.
                 </Model>
               </div>
             </div>

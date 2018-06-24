@@ -8,9 +8,7 @@ type Props = {
   children: string,
 };
 
-const Model = ({
-  id, name, title, children,
-}: Props) => (
+const Model = ({ id, name, title, children }: Props) => (
   <div
     className="modal fade"
     id={id}
@@ -25,13 +23,22 @@ const Model = ({
           <h5 className="modal-title" id={name}>
             {title}
           </h5>
-          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+          <button
+            type="button"
+            className="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div className="modal-body">{children}</div>
         <div className="modal-footer">
-          <button type="button" className="my-btn my-btn--main-color btn" data-dismiss="modal">
+          <button
+            type="button"
+            className="my-btn my-btn--main-color btn"
+            data-dismiss="modal"
+          >
             Close
           </button>
         </div>

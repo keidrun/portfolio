@@ -8,7 +8,12 @@ const Skills = () => (
       <div className="my-section-content">
         <div className="container">
           <h2>Skills</h2>
-          <p className="lead">I always adore learning new technologies. I show you my skills. Ask me in an interview if you&#39;d like to know in details.</p>
+          <p className="lead">
+            I always adore learning new technologies. I show you my skills. Ask
+            me in an interview if you&#39;d like to know in details. I always
+            adore learning new technologies. I show you my skills. Ask me in an
+            interview if you&#39;d like to know in details.
+          </p>
 
           <hr />
 

@@ -2,13 +2,29 @@
 import React from 'react';
 import SocialBtn from './SocialBtn';
 
-const EmailBtn = () => <SocialBtn title="E-mail" link="mailto:contact@keisukesasaki.com" />;
-const GithubBtn = () => <SocialBtn title="Github" link="https://github.com/keidrun" target="_blank" />;
-const LinkedinBtn = () => <SocialBtn title="Linkedin" link="https://www.linkedin.com/in/keisuke-sasaki-03b124109/" target="_blank" />;
-const FacebookBtn = () => <SocialBtn title="Facebook" link="https://www.facebook.com/keisuke.sasaki.sky" target="_blank" />;
+const EmailBtn = () => (
+  <SocialBtn title="E-mail" link="mailto:contact@keisukesasaki.com" />
+);
+const GithubBtn = () => (
+  <SocialBtn title="Github" link="https://github.com/keidrun" target="_blank" />
+);
+const LinkedinBtn = () => (
+  <SocialBtn
+    title="Linkedin"
+    link="https://www.linkedin.com/in/keisuke-sasaki-03b124109/"
+    target="_blank"
+  />
+);
+const FacebookBtn = () => (
+  <SocialBtn
+    title="Facebook"
+    link="https://www.facebook.com/keisuke.sasaki.sky"
+    target="_blank"
+  />
+);
 
 type Props = {
-  section: string
+  section: string,
 };
 
 const SocialBtnGroup = ({ section = 'nav' }: Props) => (
