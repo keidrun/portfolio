@@ -12,12 +12,13 @@ const PATH = {
     HTML: './src/index.html',
   },
   DIST: path.join(__dirname, 'public'),
-  IMG: { IN: 'src/assets', OUT: 'assets' },
+  IMG: { IN: './src/assets', OUT: 'assets' },
+  ROBOTSTXT: { IN: './src/robots.txt', OUT: '' },
 };
 
 module.exports = {
   entry: {
-    bundle: [PATH.INDEX.JS, PATH.INDEX.CSS, PATH.INDEX.HTML]
+    bundle: [PATH.INDEX.JS, PATH.INDEX.CSS, PATH.INDEX.HTML],
   },
   output: { path: PATH.DIST, filename: '[name].[hash].js' },
   optimization: {
@@ -26,10 +27,10 @@ module.exports = {
         vendor: {
           test: /react|react-dom|bootstrap|jquery|popper.js|tether/,
           name: 'vendor',
-          chunks: 'all'
+          chunks: 'all',
         },
-      }
-    }
+      },
+    },
   },
   module: {
     rules: [
@@ -55,7 +56,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.scss$/,
@@ -70,7 +71,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        use: 'html-loader'
+        use: 'html-loader',
       },
     ],
   },
@@ -81,7 +82,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: PATH.INDEX.HTML }),
     new ManifestPlugin({
-      fileName: 'manifest.json'
+      fileName: 'manifest.json',
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
@@ -94,6 +95,9 @@ module.exports = {
     }),
     new ExtractTextPlugin('bundle.[hash].css'),
     new CopyWebpackPlugin([{ from: PATH.IMG.IN, to: PATH.IMG.OUT }]),
+    new CopyWebpackPlugin([
+      { from: PATH.ROBOTSTXT.IN, to: PATH.ROBOTSTXT.OUT },
+    ]),
     new webpack.HotModuleReplacementPlugin(),
   ],
   devtool: 'source-map',
@@ -106,7 +110,7 @@ module.exports = {
     stats: {
       version: false,
       hash: false,
-      chunkModules: false
+      chunkModules: false,
     },
   },
 };

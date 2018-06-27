@@ -67,8 +67,8 @@
     "webpack-manifest-plugin": "^2.0.3"
   },
   "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix src",
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
       "git add"
     ]
   },
