@@ -10,9 +10,7 @@ const Skills = () => (
           <h2>Skills</h2>
           <p className="lead">
             I always adore learning new technologies. I show you my skills. Ask
-            me in an interview if you&#39;d like to know in details. I always
-            adore learning new technologies. I show you my skills. Ask me in an
-            interview if you&#39;d like to know in details.
+            me in an interview if you&#39;d like to know them in details.
           </p>
 
           <hr />
@@ -70,6 +68,7 @@ const Skills = () => (
                 skillTitle="Back-end stack"
                 skills={[
                   { name: 'Linux', star: '40' },
+                  { name: 'Heroku', star: '30' },
                   { name: 'AWS', star: '30' },
                   { name: 'MySQL', star: '40' },
                   { name: 'MongoDB', star: '40' },
@@ -104,8 +103,6 @@ const Skills = () => (
                   { name: 'Agile', star: '50' },
                   { name: 'Scrum', star: '50' },
                   { name: 'Jira', star: '40' },
-                  { name: 'Redmine', star: '30' },
-                  { name: 'Trac', star: '30' },
                 ]}
               >
                 &nbsp;
@@ -132,7 +129,6 @@ const Skills = () => (
                 skills={[
                   { name: 'Passion', star: '50' },
                   { name: 'Japanese', star: '50' },
-                  { name: 'English', star: '30' },
                 ]}
               >
                 &nbsp;

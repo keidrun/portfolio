@@ -80,8 +80,7 @@
     "lint": "eslint --fix src",
     "flow": "flow",
     "flow-typed": "flow-typed update",
-    "deploy": "git subtree push --prefix public origin gh-pages",
-    "deploy:force": "git push origin `git subtree split --prefix public master`:gh-pages --force",
-    "deploy:auto": "yarn build && git add . && git commit -m 'Auto deploy...' && git push origin master && yarn deploy"
+    "deploy": "aws s3 sync ./public s3://keidrun-portfolio-website",
+    "clear-cache": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html'"
   }
 }
