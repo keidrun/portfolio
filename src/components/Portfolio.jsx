@@ -123,7 +123,7 @@ const Portfolio = () => (
 
               <li className="project-item-2of3">
                 <a
-                  href="https://doc.coinietrade.com/"
+                  href="https://docs.coinietrade.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -29,6 +29,7 @@
     "babel-preset-react": "^6.24.1",
     "copy-webpack-plugin": "^4.2.3",
     "css-loader": "^0.28.7",
+    "css-url-loader": "^1.1.1",
     "eslint": "^5.0.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
@@ -73,9 +74,9 @@
     ]
   },
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server",
+    "start": "webpack-dev-server --mode development",
     "clean": "rimraf public",
-    "build": "yarn clean && NODE_ENV=production webpack -p && rimraf public/**/*.map",
+    "build": "yarn clean && webpack --mode production && rimraf public/**/*.map",
     "precommit": "lint-staged",
     "lint": "eslint --fix src",
     "flow": "flow",

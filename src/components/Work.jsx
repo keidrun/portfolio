@@ -2,6 +2,7 @@
 import React from 'react';
 import Model from './Model';
 import Card from './Card';
+import { IMG_SRC_PREFIX } from '../config';
 
 const Work = () => (
   <div>
@@ -20,7 +21,7 @@ const Work = () => (
                 <Card
                   title="Full-stack Development"
                   subTitle="Spring Framework & Ajax & MySQL"
-                  imgSrc="assets/skill1.jpg"
+                  imgSrc={`${IMG_SRC_PREFIX}assets/skill1.jpg`}
                   modelId="modalOne"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -44,7 +45,7 @@ const Work = () => (
                 <Card
                   title="Server-side Development"
                   subTitle="NodeJS RESTful API & MongoDB"
-                  imgSrc="assets/skill2.jpg"
+                  imgSrc={`${IMG_SRC_PREFIX}assets/skill2.jpg`}
                   modelId="modelTwo"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -71,7 +72,7 @@ const Work = () => (
                 <Card
                   title="PO / SM"
                   subTitle="Product Owner and Scrum Mater"
-                  imgSrc="assets/skill3.jpg"
+                  imgSrc={`${IMG_SRC_PREFIX}assets/skill3.jpg`}
                   modelId="modalThree"
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.

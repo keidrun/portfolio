@@ -2013,6 +2013,12 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
 
+css-url-loader@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/css-url-loader/-/css-url-loader-1.1.1.tgz#abcc72d5b30e599c514f52d27ecbf34d2b245baf"
+  dependencies:
+    loader-utils "^1.1.0"
+
 css-what@2.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.0.tgz#9467d032c38cfaefb9f2d79501253062f87fa1bd"

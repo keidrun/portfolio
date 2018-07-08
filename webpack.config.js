@@ -12,7 +12,6 @@ const PATH = {
     HTML: './src/index.html',
   },
   DIST: path.join(__dirname, 'public'),
-  IMG: { IN: './src/assets', OUT: 'assets' },
   ROBOTSTXT: { IN: './src/robots.txt', OUT: '' },
 };
 
@@ -62,7 +61,19 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: ['css-loader', 'postcss-loader', 'sass-loader'],
+          use: [
+            'css-loader',
+            {
+              loader: 'css-url-loader',
+              query: {
+                from: '/assets/',
+                to: 'https://keisukesasaki.com/assets/',
+                env: 'development',
+              },
+            },
+            'postcss-loader',
+            'sass-loader',
+          ],
         }),
       },
       {
@@ -77,15 +88,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-    alias: { images: path.join(__dirname, 'public/assets') },
   },
   plugins: [
     new HtmlWebpackPlugin({ template: PATH.INDEX.HTML }),
     new ManifestPlugin({
       fileName: 'manifest.json',
-    }),
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
@@ -94,7 +101,6 @@ module.exports = {
       Popper: ['popper.js', 'default'],
     }),
     new ExtractTextPlugin('bundle.[hash].css'),
-    new CopyWebpackPlugin([{ from: PATH.IMG.IN, to: PATH.IMG.OUT }]),
     new CopyWebpackPlugin([
       { from: PATH.ROBOTSTXT.IN, to: PATH.ROBOTSTXT.OUT },
     ]),
