@@ -2,4 +2,4 @@ yarn-debug.log*
 yarn-error.log*
 node_modules/
 flow-typed/
-public/
+build/

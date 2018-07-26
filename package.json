@@ -65,7 +65,8 @@
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
-    "webpack-manifest-plugin": "^2.0.3"
+    "webpack-manifest-plugin": "^2.0.3",
+    "webpack-plugin-hash-output": "^3.1.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
@@ -74,14 +75,14 @@
     ]
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "clean": "rimraf public",
-    "build": "yarn clean && webpack --mode production && rimraf public/**/*.map",
+    "dev": "webpack-dev-server --mode development",
+    "clean": "rimraf build",
+    "build": "yarn clean && webpack --mode production",
     "precommit": "lint-staged",
     "lint": "eslint --fix src",
     "flow": "flow",
     "flow-typed": "flow-typed update",
-    "deploy": "aws s3 sync ./public s3://keidrun-portfolio-website",
-    "clear-cache": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html'"
+    "aws:deploy": "aws s3 sync ./build s3://keidrun-portfolio-website",
+    "aws:clear-cache": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html'"
   }
 }

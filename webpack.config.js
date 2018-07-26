@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
+const HashOutput = require('webpack-plugin-hash-output');
 
 const PATH = {
   INDEX: {
@@ -11,11 +12,11 @@ const PATH = {
     CSS: './src/styles/index.scss',
     HTML: './src/index.html',
   },
-  DIST: path.join(__dirname, 'public'),
+  DIST: path.join(__dirname, 'build'),
   ROBOTSTXT: { IN: './src/robots.txt', OUT: '' },
 };
 
-module.exports = {
+const config = {
   entry: {
     bundle: [PATH.INDEX.JS, PATH.INDEX.CSS, PATH.INDEX.HTML],
   },
@@ -100,23 +101,41 @@ module.exports = {
       'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
     }),
-    new ExtractTextPlugin('bundle.[hash].css'),
     new CopyWebpackPlugin([
       { from: PATH.ROBOTSTXT.IN, to: PATH.ROBOTSTXT.OUT },
     ]),
-    new webpack.HotModuleReplacementPlugin(),
   ],
-  devtool: 'source-map',
-  devServer: {
-    hot: true,
-    contentBase: PATH.DIST,
-    port: 8080,
-    inline: true,
-    historyApiFallback: true,
-    stats: {
-      version: false,
-      hash: false,
-      chunkModules: false,
-    },
-  },
+};
+
+module.exports = (env, argv) => {
+  if (argv.mode === 'production') {
+    config.output.filename = '[name].[chunkhash].js';
+    config.plugins.push(new ExtractTextPlugin('bundle.[chunkhash].css'));
+    config.plugins.push(
+      new HashOutput({
+        validateOutput: true,
+        validateOutputRegex: /^build\/.*\.{js|css}$/,
+      }),
+    );
+  } else {
+    // 'development'
+    config.output.filename = '[name].[hash].js';
+    config.plugins.push(new ExtractTextPlugin('bundle.[hash].css'));
+    config.plugins.push(new webpack.HotModuleReplacementPlugin());
+    config.devtool = 'source-map';
+    config.devServer = {
+      hot: true,
+      contentBase: PATH.DIST,
+      port: 8080,
+      inline: true,
+      historyApiFallback: true,
+      stats: {
+        version: false,
+        hash: false,
+        chunkModules: false,
+      },
+    };
+  }
+
+  return config;
 };
