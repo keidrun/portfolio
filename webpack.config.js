@@ -5,6 +5,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 const HashOutput = require('webpack-plugin-hash-output');
+const FlowWebpackPlugin = require('flow-webpack-plugin');
 
 const PATH = {
   INDEX: {
@@ -122,6 +123,11 @@ module.exports = (env, argv) => {
     config.output.filename = '[name].[hash].js';
     config.plugins.push(new ExtractTextPlugin('bundle.[hash].css'));
     config.plugins.push(new webpack.HotModuleReplacementPlugin());
+    config.plugins.push(new FlowWebpackPlugin());
+    config.watchOptions = {
+      aggregateTimeout: 300,
+      poll: 1000,
+    };
     config.devtool = 'source-map';
     config.devServer = {
       hot: true,

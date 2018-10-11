@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 
 const Learning = () => (
@@ -26,10 +25,11 @@ const Learning = () => (
                   >
                     <strong>&quot;Casual Developers Notes&quot;</strong>
                   </a>
-                </span>, whose concepts are learning technologies and English.
-                If you&#39;d like to know what I learned, check it out. This
-                blog is written in Japanese, however you can get the point if
-                you have some knowlege of computer science and a web application
+                </span>
+                , whose concepts are learning technologies and English. If
+                you&#39;d like to know what I learned, check it out. This blog
+                is written in Japanese, however you can get the point if you
+                have some knowlege of computer science and a web application
                 development. (See{' '}
                 <span className="p-link">
                   <a
@@ -39,11 +39,12 @@ const Learning = () => (
                   >
                     <strong>a tags page of my blog</strong>
                   </a>
-                </span>. The tags page is summarized as key words in English.)
-                The Page View is +10,000 a month, then 80% readers are Japanese
-                people, 10% readers are American people and other readers are
-                pepole in EU, China and other countries. I&#39;m certain that my
-                blog site is very informative for developers.
+                </span>
+                . The tags page is summarized as key words in English.) The Page
+                View is +10,000 a month, then 80% readers are Japanese people,
+                10% readers are American people and other readers are pepole in
+                EU, China and other countries. I&#39;m certain that my blog site
+                is very informative for developers.
               </p>
             </div>
           </div>

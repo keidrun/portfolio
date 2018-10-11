@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 
 type Props = {
@@ -10,12 +9,16 @@ type Props = {
 const SocialBtn = ({ title, link, target }: Props) => (
   <a
     href={link}
-    target={target || '_self'}
+    target={target}
     rel="noopener noreferrer"
     className="my-socsial-btn btn btn-sm btn-outline-light"
   >
     {title}
   </a>
 );
+
+SocialBtn.defaultProps = {
+  target: '_self',
+};
 
 export default SocialBtn;

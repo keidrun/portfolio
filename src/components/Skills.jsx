@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import SkillItem from './SkillItem';
 

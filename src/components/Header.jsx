@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import { AUTHOR_NAME } from '../config';
 
@@ -9,8 +8,8 @@ const Header = () => (
         <h1 className="my-header__heading">{AUTHOR_NAME}</h1>
         <p className="lead">
           Hi, I&#39;m a Full-Stack Web Developer.
-          {React.createElement('br')}
-          I promise to contribute your company definitely.
+          {React.createElement('br')}I promise to contribute your company
+          definitely.
         </p>
         <div>
           <a

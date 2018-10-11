@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import Model from './Model';
 import Card from './Card';

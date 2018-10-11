@@ -1,26 +1,37 @@
 sudo: required
+
+language: python
+python:
+  - "3.6"
+
 services:
   - docker
 
 before_install:
-  - docker image build -t keidrun/portfolio -f Dockerfile.dev .
+  - pip install awscli --upgrade
+  - aws --version
+  - docker image build -t keidrun/portfolio:latest -f Dockerfile.dev .
 
 script:
-  - docker container run --rm keidrun/portfolio yarn lint
+  - docker container run --rm keidrun/portfolio:latest yarn lint
+  - docker container run --rm keidrun/portfolio:latest yarn flow
 
 before_deploy:
-  - docker container run -d --rm --name web keidrun/portfolio yarn dev
+  - docker container run -d --rm --name web keidrun/portfolio:latest yarn dev
   - docker container exec -i web yarn build
   - docker container cp web:/app/build .
 
 deploy:
   provider: s3
   region: us-east-1
-  access_key_id: "$AWS_ACCESS_KEY"
+  access_key_id: "$AWS_ACCESS_KEY_ID"
   secret_access_key:
-    secure: "$AWS_SECRET_KEY"
-  bucket: "keidrun-portfolio-website"
+    secure: "$AWS_SECRET_ACCESS_KEY"
+  bucket: "$AWS_HOSTING_BUCKET"
   skip_cleanup: true
   local_dir: build
   on:
     branch: master
+
+after_deploy:
+  - aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html' # need AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_DEFAULT_REGION

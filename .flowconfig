@@ -1,17 +1,19 @@
-[include]
-
 [ignore]
 .*/node_modules/.*
 .*/flow-typed/.*
-.*/public/.*
+.*/build/.*
+.*\.(test|spec)\.js
+.*/webpack.config\.js
+.*/src/components/index\.js
+
+[include]
 
 [libs]
 
 [lints]
 
 [options]
-suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
+all=true
 suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
 
-[version]
->=0.59.0
+[strict]

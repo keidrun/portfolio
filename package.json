@@ -20,13 +20,13 @@
   "devDependencies": {
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.1.5",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "copy-webpack-plugin": "^4.2.3",
     "css-loader": "^1.0.0",
     "css-url-loader": "^1.1.1",
@@ -41,9 +41,9 @@
     "eslint-plugin-react": "^7.4.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^2.0.0",
-    "flow-bin": "^0.81.0",
+    "flow-bin": "^0.83.0",
     "flow-remove-types": "^1.2.1",
-    "flow-typed": "^2.1.5",
+    "flow-webpack-plugin": "^1.2.0",
     "html-loader": "^0.5.1",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^1.0.1",
@@ -55,7 +55,7 @@
     "postcss-sorting": "^4.0.0",
     "prettier": "^1.13.5",
     "react-hot-loader": "^4.3.3",
-    "remove-flow-types-loader": "^1.0.0",
+    "remove-flow-types-loader": "^1.1.0",
     "rimraf": "^2.6.2",
     "sass-loader": "^7.0.3",
     "string-replace-loader": "^2.1.1",
@@ -71,6 +71,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "eslint --fix",
+      "flow",
       "git add"
     ]
   },
@@ -81,7 +82,6 @@
     "precommit": "lint-staged",
     "lint": "eslint --fix src",
     "flow": "flow",
-    "flow-typed": "flow-typed update",
     "aws:deploy": "aws s3 sync ./build s3://keidrun-portfolio-website",
     "aws:clear-cache": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html'"
   }

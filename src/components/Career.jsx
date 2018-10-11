@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 
 const Career = () => (
@@ -27,7 +26,8 @@ const Career = () => (
                     >
                       <strong>NTT DATA Corporation (Tokyo, Japan)</strong>
                     </a>
-                  </span>, Web Application Developer, April 2011 - March 2017
+                  </span>
+                  , Web Application Developer, April 2011 - March 2017
                 </li>
                 <li>
                   <span className="p-link">
@@ -38,7 +38,8 @@ const Career = () => (
                     >
                       <strong>University of Tsukuba (Ibaraki, Japan)</strong>
                     </a>
-                  </span>, Master of Computer Science, April 2009 - March 2011
+                  </span>
+                  , Master of Computer Science, April 2009 - March 2011
                 </li>
                 <li>
                   <span className="p-link">
@@ -49,7 +50,8 @@ const Career = () => (
                     >
                       <strong>Yamagata University (Yamagata, Japan)</strong>
                     </a>
-                  </span>, Bachelor of Computer Science, April 2005 - March 2009
+                  </span>
+                  , Bachelor of Computer Science, April 2005 - March 2009
                 </li>
               </ul>
             </div>

@@ -2,6 +2,9 @@ FROM node:10.11.0-alpine
 
 WORKDIR /app
 
+RUN apk update \
+  && apk add git
+
 # Fix flow-bin issue(https://github.com/facebook/flow/issues/3649)
 RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && \
     wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.25-r0/glibc-2.25-r0.apk && \
@@ -10,6 +13,10 @@ RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/s
 COPY package.json .
 COPY yarn.lock .
 RUN yarn install
+
+COPY .flowconfig .
+RUN yarn global add flow-typed \
+  && flow-typed install
 
 COPY . .
 

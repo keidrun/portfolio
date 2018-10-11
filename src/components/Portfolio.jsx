@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 
 const Portfolio = () => (
@@ -9,7 +8,8 @@ const Portfolio = () => (
           <h3>Portfolio</h3>
           <p className="lead">
             I&#39;m driving my own projects. I show you some interesting
-            projects I picked up.<br />
+            projects I picked up.
+            <br />
             <small>
               *I cannot show you all projects like my achivements of my previous
               company&#39;s projects because of the duty of confidentiality. Ask

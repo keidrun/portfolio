@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 import SocialBtn from './SocialBtn';
 
@@ -27,7 +26,7 @@ type Props = {
   section: string,
 };
 
-const SocialBtnGroup = ({ section = 'nav' }: Props) => (
+const SocialBtnGroup = ({ section }: Props) => (
   <div>
     {(() => {
       switch (section) {
@@ -62,5 +61,9 @@ const SocialBtnGroup = ({ section = 'nav' }: Props) => (
     })()}
   </div>
 );
+
+SocialBtnGroup.defaultProps = {
+  section: 'nav',
+};
 
 export default SocialBtnGroup;

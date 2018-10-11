@@ -1,4 +1,3 @@
-// @flow
 import React from 'react';
 
 type SkillProps = {
@@ -9,7 +8,10 @@ type SkillProps = {
 type SkillItemProps = {
   iconClassName: string,
   skillTitle: string,
-  skills: Array,
+  skills: Array<{
+    name: string,
+    star: string,
+  }>,
   children: string,
 };
 
