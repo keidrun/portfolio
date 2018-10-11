@@ -8,7 +8,7 @@ const Header = () => (
       <div className="container">
         <h1 className="my-header__heading">{AUTHOR_NAME}</h1>
         <p className="lead">
-          Hi, I&#39;m a Full-Stack Web Application Developer.
+          Hi, I&#39;m a Full-Stack Web Developer.
           {React.createElement('br')}
           I promise to contribute your company definitely.
         </p>

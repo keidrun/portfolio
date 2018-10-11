@@ -54,8 +54,9 @@ const Skills = () => (
                   { name: 'CSS3', star: '40' },
                   { name: 'SASS', star: '30' },
                   { name: 'React/Redux', star: '50' },
-                  { name: 'ReactNative', star: '30' },
-                  { name: 'Anguler2', star: '30' },
+                  { name: 'ReactNative', star: '20' },
+                  { name: 'Anguler', star: '20' },
+                  { name: 'Vue', star: '20' },
                   { name: 'SpringMVC', star: '40' },
                 ]}
               >
@@ -70,7 +71,8 @@ const Skills = () => (
                   { name: 'Linux', star: '40' },
                   { name: 'Heroku', star: '30' },
                   { name: 'AWS', star: '30' },
-                  { name: 'MySQL', star: '40' },
+                  { name: 'Lambda', star: '30' },
+                  { name: 'SQL', star: '40' },
                   { name: 'MongoDB', star: '40' },
                   { name: 'DynamoDB', star: '30' },
                   { name: 'Express', star: '50' },
@@ -102,7 +104,7 @@ const Skills = () => (
                 skills={[
                   { name: 'Agile', star: '50' },
                   { name: 'Scrum', star: '50' },
-                  { name: 'Jira', star: '40' },
+                  { name: 'Jira', star: '30' },
                 ]}
               >
                 &nbsp;
@@ -129,6 +131,8 @@ const Skills = () => (
                 skills={[
                   { name: 'Passion', star: '50' },
                   { name: 'Japanese', star: '50' },
+                  { name: 'Machine-learning', star: '10' },
+                  { name: 'Blockchain', star: '10' },
                 ]}
               >
                 &nbsp;

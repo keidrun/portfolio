@@ -126,6 +126,7 @@ module.exports = (env, argv) => {
     config.devServer = {
       hot: true,
       contentBase: PATH.DIST,
+      host: '0.0.0.0',
       port: 8080,
       inline: true,
       historyApiFallback: true,
