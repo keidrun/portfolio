@@ -7,14 +7,9 @@ const Portfolio = () => (
         <div className="container">
           <h3>Portfolio</h3>
           <p className="lead">
-            I&#39;m driving my own projects. I show you some interesting
-            projects I picked up.
+            I&#39;m driving my own projects. I show you some my featured
+            projects that you can enjoy.
             <br />
-            <small>
-              *I cannot show you all projects like my achivements of my previous
-              company&#39;s projects because of the duty of confidentiality. Ask
-              me in an interview.
-            </small>
           </p>
 
           <hr />
@@ -101,41 +96,81 @@ const Portfolio = () => (
                 </a>
               </li>
 
-              <li className="project-item-1of3">
-                <a
-                  href="https://github.com/keidrun/coinietrade-native"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <h3 className="project-item-1of3__name green">
-                    Coming Soon ...
-                  </h3>
-                  <div className="project-item-1of3__caption">
-                    <h3 className="project-item-1of3__title">
-                      Go to Github of Native App in CoinieTrade!
-                    </h3>
-                    <div className="project-item-1of3__description">
-                      A Part of CoinieTrade
-                    </div>
-                  </div>
-                </a>
-              </li>
-
-              <li className="project-item-2of3">
+              <li className="project-item-3of3">
                 <a
                   href="https://docs.coinietrade.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <h3 className="project-item-2of3__name pink">
+                  <h3 className="project-item-3of3__name green">
                     Documents of CoinieTrade
                   </h3>
-                  <div className="project-item-2of3__caption">
-                    <h3 className="project-item-2of3__title">
+                  <div className="project-item-3of3__caption">
+                    <h3 className="project-item-3of3__title">
                       Go to documents of CoinieTrade!
                     </h3>
-                    <div className="project-item-2of3__description">
-                      Documents of CoinieTrade website
+                    <div className="project-item-3of3__description">
+                      Hosting pages for documents of CoinieTrade website
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li className="project-item-1of3">
+                <a
+                  href="https://github.com/keidrun/dept"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 className="project-item-1of3__name blue">
+                    Original CLI Tool
+                  </h3>
+                  <div className="project-item-1of3__caption">
+                    <h3 className="project-item-1of3__title">
+                      Go to Github of `dept` command to start developing quickly!
+                    </h3>
+                    <div className="project-item-1of3__description">
+                      A NPM project
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li className="project-item-1of3">
+                <a
+                  href="https://github.com/keidrun/css-url-loader"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 className="project-item-1of3__name orange">
+                    Original Webpack Loader
+                  </h3>
+                  <div className="project-item-1of3__caption">
+                    <h3 className="project-item-1of3__title">
+                      Go to Github of a webpack loader to transform URLs in css!
+                    </h3>
+                    <div className="project-item-1of3__description">
+                      A NPM Project
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li className="project-item-1of3">
+                <a
+                  href="https://github.com/keidrun/voice-todo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h3 className="project-item-1of3__name pink">
+                    Small Desktop App
+                  </h3>
+                  <div className="project-item-1of3__caption">
+                    <h3 className="project-item-1of3__title">
+                      Go to Github of a ToDo desktop app that recognizes voice!
+                    </h3>
+                    <div className="project-item-1of3__description">
+                      An Electron App
                     </div>
                   </div>
                 </a>
