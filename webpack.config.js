@@ -105,13 +105,12 @@ const config = {
     new CopyWebpackPlugin([
       { from: PATH.ROBOTSTXT.IN, to: PATH.ROBOTSTXT.OUT },
     ]),
+    new ExtractTextPlugin('bundle.[hash].css'),
   ],
 };
 
 module.exports = (env, argv) => {
   if (argv.mode === 'production') {
-    config.output.filename = '[name].[chunkhash].js';
-    config.plugins.push(new ExtractTextPlugin('bundle.[chunkhash].css'));
     config.plugins.push(
       new HashOutput({
         validateOutput: true,
@@ -120,8 +119,6 @@ module.exports = (env, argv) => {
     );
   } else {
     // 'development'
-    config.output.filename = '[name].[hash].js';
-    config.plugins.push(new ExtractTextPlugin('bundle.[hash].css'));
     config.plugins.push(new webpack.HotModuleReplacementPlugin());
     config.plugins.push(new FlowWebpackPlugin());
     config.watchOptions = {
