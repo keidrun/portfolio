@@ -1,14 +1,16 @@
-FROM node:10.11.0-alpine
+FROM node:11.11-alpine
+
+ENV GLIBC_VERSION=2.29-r0
 
 WORKDIR /app
 
 RUN apk update \
-  && apk add git
+  && apk --no-cache add git ca-certificates wget
 
 # Fix flow-bin issue(https://github.com/facebook/flow/issues/3649)
-RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub && \
-    wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.25-r0/glibc-2.25-r0.apk && \
-    apk add glibc-2.25-r0.apk
+RUN wget -q -O /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub \
+  && wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/$GLIBC_VERSION/glibc-$GLIBC_VERSION.apk \
+  && apk --no-cache add glibc-$GLIBC_VERSION.apk
 
 COPY package.json .
 COPY yarn.lock .

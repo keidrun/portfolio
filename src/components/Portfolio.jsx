@@ -127,7 +127,8 @@ const Portfolio = () => (
                   </h3>
                   <div className="project-item-1of3__caption">
                     <h3 className="project-item-1of3__title">
-                      Go to Github of `dept` command to start developing quickly!
+                      Go to Github of `dept` command to start developing
+                      quickly!
                     </h3>
                     <div className="project-item-1of3__description">
                       A NPM project
