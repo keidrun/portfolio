@@ -49,7 +49,7 @@ const Nav = () => (
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#work">
-              Work
+              Experience
             </a>
           </li>
           <li className="nav-item">

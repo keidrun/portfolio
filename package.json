@@ -71,7 +71,6 @@
   "lint-staged": {
     "src/**/*.{js,jsx}": [
       "eslint --fix",
-      "flow",
       "git add"
     ]
   },
@@ -79,10 +78,11 @@
     "dev": "webpack-dev-server --mode development",
     "clean": "rimraf build",
     "build": "yarn clean && webpack --mode production",
-    "precommit": "lint-staged",
+    "precommit": "flow check && lint-staged",
     "lint": "eslint --fix src",
     "flow": "flow",
     "aws:deploy": "aws s3 sync ./build s3://keidrun-portfolio-website",
-    "aws:clear-cache": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html'"
+    "aws:clear-cache": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html'",
+    "aws:clear-cache-all": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/*'"
   }
 }

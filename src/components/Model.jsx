@@ -4,7 +4,7 @@ type Props = {
   id: string,
   name: string,
   title: string,
-  children: string,
+  children: any,
 };
 
 const Model = ({ id, name, title, children }: Props) => (

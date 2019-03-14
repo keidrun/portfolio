@@ -9,13 +9,12 @@ const Learning = () => (
             <div className="my-learning__text">
               <h3>Learning</h3>
               <p className="lead">
-                I absolutely love to learn interesting technologies and
-                marketing techniques. Recently, I&#39;m learning ReactNative,
-                AWS Lambda, Spring Cloud, Cryptocurrency, Blockchain,
-                Machine-learning, Sales-funnel and Marketing-automation.
+                I absolutely love to learn new technologies. Recently, I&#39;m
+                learning GraphQL, GatsbyJS, AWS Lambda, Machine-learning and
+                Blockchain.
               </p>
               <p>
-                I have keept blogging to share my knowledge for +5 years. My
+                I have kept blogging to share my knowledge since 2013. My
                 blog&#39;s name is{' '}
                 <span className="p-link">
                   <a
@@ -41,10 +40,11 @@ const Learning = () => (
                   </a>
                 </span>
                 . The tags page is summarized as key words in English.) The Page
-                View is +10,000 a month, then 80% readers are Japanese people,
-                10% readers are American people and other readers are pepole in
-                EU, China and other countries. I&#39;m certain that my blog site
-                is very informative for developers.
+                View is +10,000 a month, then 90% readers are Japanese people,
+                5% readers are people in North America like US or Canada and
+                other readers are pepole in other countries. I&#39;m certain
+                that my blog site is very informative for beginner or
+                intermidiate developers.
               </p>
             </div>
           </div>

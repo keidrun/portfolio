@@ -9,12 +9,14 @@ const Career = () => (
             <div className="my-career__text">
               <h3>Career</h3>
               <p className="lead">
-                I have a master of computer science of a Japanese university.
-                After I graduated from the university, I have worked in a
-                Japanese tech companey as a full-stack web application developer
-                and a project leader for 6 years. After I quit the companey, I
-                have been to Philippines to learn English for several months,
-                then I moved to Canada and I&#39;m looking for a job now.
+                I got a master&#39;s degree of computer science in a Japanese
+                university. After I graduated from the university, I&#39;ve
+                worked in a Japanese tech companey as a full-stack web
+                application developer and a project leader for 6 years. After I
+                quit the companey, I&#39;ve stayed in Philippines to learn
+                English for several months, then I moved to Canada to keep
+                learning English and I&#39;m seeking opportunities of a
+                JavaScript developer job now.
               </p>
               <ul>
                 <li>
@@ -27,7 +29,7 @@ const Career = () => (
                       <strong>NTT DATA Corporation (Tokyo, Japan)</strong>
                     </a>
                   </span>
-                  , Web Application Developer, April 2011 - March 2017
+                  , JavaScript and Java Developer, April 2011 - March 2017
                 </li>
                 <li>
                   <span className="p-link">

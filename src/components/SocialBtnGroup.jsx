@@ -10,7 +10,7 @@ const GithubBtn = () => (
 const LinkedinBtn = () => (
   <SocialBtn
     title="Linkedin"
-    link="https://www.linkedin.com/in/keisuke-sasaki-03b124109/"
+    link="https://www.linkedin.com/in/keisukesasaki"
     target="_blank"
   />
 );
@@ -18,6 +18,13 @@ const FacebookBtn = () => (
   <SocialBtn
     title="Facebook"
     link="https://www.facebook.com/keisuke.sasaki.sky"
+    target="_blank"
+  />
+);
+const TwitterBtn = () => (
+  <SocialBtn
+    title="Twitter"
+    link="https://twitter.com/keidrun"
     target="_blank"
   />
 );
@@ -35,8 +42,9 @@ const SocialBtnGroup = ({ section }: Props) => (
             <div>
               <EmailBtn />
               <GithubBtn />
-              <FacebookBtn />
               <LinkedinBtn />
+              <FacebookBtn />
+              <TwitterBtn />
             </div>
           );
         case 'nav':
@@ -50,10 +58,13 @@ const SocialBtnGroup = ({ section }: Props) => (
                 <GithubBtn />
               </li>
               <li className="nav-item">
+                <LinkedinBtn />
+              </li>
+              <li className="nav-item">
                 <FacebookBtn />
               </li>
               <li className="nav-item">
-                <LinkedinBtn />
+                <TwitterBtn />
               </li>
             </ul>
           );

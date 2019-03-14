@@ -8,8 +8,8 @@ const Skills = () => (
         <div className="container">
           <h2>Skills</h2>
           <p className="lead">
-            I always adore learning new technologies. I show you my skills. Ask
-            me in an interview if you&#39;d like to know them in details.
+            I always adore learning new technologies and growing my skills. My
+            current skills are below.
           </p>
 
           <hr />
@@ -20,7 +20,7 @@ const Skills = () => (
                 iconClassName="icon-desktop"
                 skillTitle="Professional Language"
                 skills={[
-                  { name: 'ES6', star: '50' },
+                  { name: 'ES6+', star: '50' },
                   { name: 'NodeJS', star: '50' },
                   { name: 'Java', star: '50' },
                 ]}
@@ -35,7 +35,7 @@ const Skills = () => (
                 skills={[
                   { name: 'Python', star: '30' },
                   { name: 'Kotlin', star: '30' },
-                  { name: 'Go', star: '20' },
+                  { name: 'Go', star: '30' },
                   { name: 'Ruby', star: '20' },
                   { name: 'Perl', star: '20' },
                   { name: 'C', star: '20' },
@@ -50,13 +50,14 @@ const Skills = () => (
                 skillTitle="Front-end stack"
                 skills={[
                   { name: 'HTML5', star: '40' },
-                  { name: 'CSS3', star: '40' },
-                  { name: 'SASS', star: '30' },
-                  { name: 'React/Redux', star: '50' },
-                  { name: 'ReactNative', star: '20' },
-                  { name: 'Anguler', star: '20' },
+                  { name: 'CSS3', star: '30' },
+                  { name: 'SASS', star: '20' },
+                  { name: 'Webpack', star: '40' },
+                  { name: 'React/Redux', star: '40' },
+                  { name: 'ReactNative', star: '10' },
+                  { name: 'Anguler', star: '10' },
                   { name: 'Vue', star: '20' },
-                  { name: 'SpringMVC', star: '40' },
+                  { name: 'Spring MVC', star: '40' },
                 ]}
               >
                 &nbsp;
@@ -70,12 +71,13 @@ const Skills = () => (
                   { name: 'Linux', star: '40' },
                   { name: 'Heroku', star: '30' },
                   { name: 'AWS', star: '30' },
-                  { name: 'Lambda', star: '30' },
+                  { name: 'AWS Lambda', star: '30' },
                   { name: 'SQL', star: '40' },
                   { name: 'MongoDB', star: '40' },
-                  { name: 'DynamoDB', star: '30' },
+                  { name: 'DynamoDB', star: '20' },
                   { name: 'Express', star: '50' },
-                  { name: 'SpringBoot', star: '50' },
+                  { name: 'Spring Framework', star: '50' },
+                  { name: 'Spring Boot', star: '30' },
                 ]}
               >
                 &nbsp;
@@ -89,8 +91,10 @@ const Skills = () => (
                   { name: 'Git/GitHub', star: '40' },
                   { name: 'Docker', star: '40' },
                   { name: 'Vagrant', star: '30' },
-                  { name: 'Ansible', star: '30' },
+                  { name: 'Ansible', star: '20' },
                   { name: 'Jenkins', star: '30' },
+                  { name: 'Travis CI', star: '30' },
+                  { name: 'Circle CI', star: '30' },
                 ]}
               >
                 &nbsp;
@@ -104,6 +108,10 @@ const Skills = () => (
                   { name: 'Agile', star: '50' },
                   { name: 'Scrum', star: '50' },
                   { name: 'Jira', star: '30' },
+                  { name: 'Redmine', star: '30' },
+                  { name: 'Trac', star: '30' },
+                  { name: 'Slack', star: '30' },
+                  { name: 'HipChat', star: '30' },
                 ]}
               >
                 &nbsp;
