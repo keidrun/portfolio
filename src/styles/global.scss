@@ -1,0 +1,54 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+a:link {
+  color: $white;
+}
+
+a:visited {
+  color: $white;
+}
+
+a:hover {
+  color: $white;
+}
+
+a:active {
+  color: $white;
+}
+
+a:focus {
+  outline-color: $white;
+}
+
+.p-link {
+  & a:link {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  & a:visited {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  & a:hover {
+    color: $mainLightBlue;
+  }
+
+  & a:active {
+    color: $mainLightBlue;
+  }
+
+  & a:focus {
+    outline-color: $white;
+  }
+}
+
+img {
+  max-width: 100%;
+}

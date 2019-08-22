@@ -1,0 +1,46 @@
+@import '../styles/variables';
+@import '../styles/modules';
+
+.my-header {
+  padding-top: 15rem;
+  padding-bottom: 13rem;
+  margin-bottom: 0;
+  background-color: $mainBlue;
+  background-image: linear-gradient(rgba($mainLightBlue, 0.5), rgba($mainLightBlue, 0.5)), url('/assets/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: buttom top;
+  background-size: cover;
+
+  & p {
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    text-shadow: 0 0 10px rgba($black, 0.2);
+  }
+
+  & .container {
+    max-width: 50rem;
+    background: rgba($black, 0.2);
+    padding: 4rem;
+    color: white;
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 4rem;
+    text-shadow: 0 0 10px rgba($black, 0.2);
+  }
+
+  &__btn {
+    padding: 1rem !important;
+    font-size: 1.5rem !important;
+    font-weight: 500 !important;
+    background-color: $mainBlue !important;
+
+    &:hover {
+      background-color: $mainLightBlue !important;
+      border-color: $mainLightBlue;
+      color: $white !important;
+    }
+  }
+}

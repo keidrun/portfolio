@@ -1,14 +1,4 @@
-@import './base/variables';
-@import './bootstrap/custom';
+@import './variables';
+@import './custom';
 @import '~bootstrap/scss/bootstrap';
-@import './base/global';
-@import './components/Nav';
-@import './components/Header';
-@import './components/Portfolio';
-@import './components/About';
-@import './components/Career';
-@import './components/Footer';
-@import './components/SocialBtn';
-@import './components/Card';
-@import './components/SkillItem';
-@import './components/_Learning';
+@import './global';

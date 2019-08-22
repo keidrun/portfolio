@@ -1,6 +1,7 @@
-FROM node:11.11-alpine
+FROM node:12.8-alpine
 
-ENV GLIBC_VERSION=2.29-r0
+ENV GATSBY_TELEMETRY_DISABLED 1
+ENV GLIBC_VERSION 2.29-r0
 
 WORKDIR /app
 
@@ -24,4 +25,4 @@ COPY . .
 
 EXPOSE 8080
 
-CMD yarn dev
+CMD yarn develop
