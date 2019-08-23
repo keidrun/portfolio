@@ -13,10 +13,11 @@ const Career = () => (
               <h3>Career</h3>
               <p className="lead">
                 I got a master&#39;s degree of computer science in a Japanese university. After I graduated from the
-                university, I&#39;ve worked in a Japanese tech companey as a full-stack web application developer and a
-                project leader for 6 years. After I quit the companey, I&#39;ve stayed in Philippines to learn English
-                for several months, then I moved to Canada to keep learning English and I&#39;m seeking opportunities of
-                a JavaScript developer job now.
+                university, I&#39;ve worked in a Japanese tech companey as a full-stack web developer and a project
+                leader for 6 years. After I quit the companey, I decided to invest my time to learn English. In the
+                beginning, I moved to Philippines and stayed to learn English for several months, then moved to Canada
+                and stayed to improve my English for about a year and a half. Now I went back to Japan and I&#39;m
+                seeking opportunities of a developer job.
               </p>
               <ul>
                 <li>

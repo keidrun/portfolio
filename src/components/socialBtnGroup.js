@@ -7,10 +7,8 @@ const GithubBtn = () => <SocialBtn title="Github" link="https://github.com/keidr
 const LinkedinBtn = () => (
   <SocialBtn title="Linkedin" link="https://www.linkedin.com/in/keisukesasaki" target="_blank" />
 )
-const FacebookBtn = () => (
-  <SocialBtn title="Facebook" link="https://www.facebook.com/keisuke.sasaki.sky" target="_blank" />
-)
-const TwitterBtn = () => <SocialBtn title="Twitter" link="https://twitter.com/keidrun" target="_blank" />
+const FacebookBtn = () => <SocialBtn title="Facebook" link="https://www.facebook.com/xxxxx" target="_blank" />
+const TwitterBtn = () => <SocialBtn title="Twitter" link="https://twitter.com/xxxxx" target="_blank" />
 
 type Props = {
   section: string,
@@ -26,8 +24,8 @@ const SocialBtnGroup = ({ section }: Props) => (
               <EmailBtn />
               <GithubBtn />
               <LinkedinBtn />
-              <FacebookBtn />
-              <TwitterBtn />
+              {/* <FacebookBtn />
+              <TwitterBtn /> */}
             </div>
           )
         case 'nav':
@@ -43,12 +41,12 @@ const SocialBtnGroup = ({ section }: Props) => (
               <li className="nav-item">
                 <LinkedinBtn />
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <FacebookBtn />
               </li>
               <li className="nav-item">
                 <TwitterBtn />
-              </li>
+              </li> */}
             </ul>
           )
       }

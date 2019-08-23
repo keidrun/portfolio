@@ -16,24 +16,12 @@ const Learning = () => (
                 Machine-learning and Blockchain.
               </p>
               <p>
-                I have kept blogging to share my knowledge since 2013. My blog&#39;s name is{' '}
-                <span className="p-link">
-                  <a href="https://casualdevelopers.com/" target="_blank" rel="noopener noreferrer">
-                    <strong>&quot;Casual Developers Notes&quot;</strong>
-                  </a>
-                </span>
-                , whose concepts are learning technologies and English. If you&#39;d like to know what I learned, check
-                it out. This blog is written in Japanese, however you can get the point if you have some knowlege of
-                computer science and a web application development. (See{' '}
-                <span className="p-link">
-                  <a href="https://casualdevelopers.com/tags/" target="_blank" rel="noopener noreferrer">
-                    <strong>a tags page of my blog</strong>
-                  </a>
-                </span>
-                . The tags page is summarized as key words in English.) The Page View is +10,000 a month, then 90%
-                readers are Japanese people, 5% readers are people in North America like US or Canada and other readers
-                are pepole in other countries. I&#39;m certain that my blog site is very informative for beginner or
-                intermidiate developers.
+                I have kept blogging to share my knowledge since 2013. The concepts are learning technologies and
+                English. The Page View is +10,000 a month, then 90% readers are Japanese people, 5% readers are people
+                in North America like US or Canada and other readers are pepole in other countries. I&#39;m certain that
+                my blog site is very informative for beginner or intermidiate developers. However, I won&#39;t make it
+                public so far because I post under a pseudonym. If you&#39;d like to know it more deeply, just please
+                ask me.
               </p>
             </div>
           </div>

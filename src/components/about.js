@@ -13,9 +13,10 @@ const About = () => (
             <div className={aboutStyles.myAbout__text}>
               <h3>About me</h3>
               <p className="lead">
-                I&#39;m seeking opportunities of a JavaScript developer job in Vancouver or Toronto now. If you&#39;re
-                looking for a JavaScript developer like Full-Stack Web Developer, Front-End React Developer or Back-End
-                NodeJS Developer, feel free to contact me!
+                I&#39;m seeking opportunities of a full-stack web developer job in Tokyo, San Francisco Bay Area or any
+                interesting city in the world. If you&#39;re looking for a developer like Full-Stack Web Developer,
+                Front-End React Developer or Back-End NodeJS / TypeScript / Python / Go / Java / Kotlin Developer, feel
+                free to contact me!
               </p>
               <p>
                 I have worked as a Full-Stack Web Developer specialized in JavaScript and Java since 2011. (See{' '}
@@ -32,9 +33,10 @@ const About = () => (
                 </span>{' '}
                 sections) My current goal is to further master the most modern full-stack technologies around
                 JavaScript. And my next goal is to found my outstanding company and change people&#39;s lives in the
-                world. I&#39;m thinking of starting my own business several years later but I&#39;ll focus on a
-                JavaScript development for now because recent intesting technologies come into being around JavaScript.
-                Then, I launched a website with JavaScript recently. (See a{' '}
+                world. I&#39;m thinking of starting my own business several years later but I&#39;ll focus on an
+                application development so far because intesting technologies like Blockchain or Machine-learning come
+                into being recently and I&#39;d like to extend my knowledge around them. And I also launched a website
+                for a bitcoin trade as a hobby. (See a{' '}
                 <span className="p-link">
                   <a href="/#portfolio">
                     <strong>Portfolio</strong>

@@ -31,6 +31,7 @@ const Skills = () => (
                 iconClassName="icon-genius"
                 skillTitle="Secondary Language"
                 skills={[
+                  { name: 'TypeScript', star: '30' },
                   { name: 'Python', star: '30' },
                   { name: 'Kotlin', star: '30' },
                   { name: 'Go', star: '30' },
@@ -52,10 +53,10 @@ const Skills = () => (
                   { name: 'SASS', star: '20' },
                   { name: 'Webpack', star: '40' },
                   { name: 'React/Redux', star: '40' },
+                  { name: 'Vue', star: '20' },
                   { name: 'ReactNative', star: '10' },
                   { name: 'Anguler', star: '10' },
-                  { name: 'Vue', star: '20' },
-                  { name: 'Spring MVC', star: '40' },
+                  { name: 'Spring MVC', star: '30' },
                 ]}
               >
                 &nbsp;
@@ -66,12 +67,12 @@ const Skills = () => (
                 iconClassName="icon-gears"
                 skillTitle="Back-end stack"
                 skills={[
-                  { name: 'Linux', star: '40' },
+                  { name: 'Linux', star: '30' },
                   { name: 'Heroku', star: '30' },
                   { name: 'AWS', star: '30' },
                   { name: 'AWS Lambda', star: '30' },
                   { name: 'SQL', star: '40' },
-                  { name: 'MongoDB', star: '40' },
+                  { name: 'MongoDB', star: '30' },
                   { name: 'DynamoDB', star: '20' },
                   { name: 'Express', star: '50' },
                   { name: 'Spring Framework', star: '50' },
