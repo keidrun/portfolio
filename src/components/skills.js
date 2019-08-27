@@ -53,8 +53,8 @@ const Skills = () => (
                   { name: 'SASS', star: '20' },
                   { name: 'Webpack', star: '40' },
                   { name: 'React/Redux', star: '40' },
-                  { name: 'Vue', star: '20' },
                   { name: 'ReactNative', star: '10' },
+                  { name: 'Vue', star: '20' },
                   { name: 'Anguler', star: '10' },
                   { name: 'Spring MVC', star: '30' },
                 ]}
@@ -67,14 +67,13 @@ const Skills = () => (
                 iconClassName="icon-gears"
                 skillTitle="Back-end stack"
                 skills={[
-                  { name: 'Linux', star: '30' },
-                  { name: 'Heroku', star: '30' },
                   { name: 'AWS', star: '30' },
                   { name: 'AWS Lambda', star: '30' },
+                  { name: 'Heroku', star: '30' },
                   { name: 'SQL', star: '40' },
                   { name: 'MongoDB', star: '30' },
                   { name: 'DynamoDB', star: '20' },
-                  { name: 'Express', star: '50' },
+                  { name: 'Express Framework', star: '50' },
                   { name: 'Spring Framework', star: '50' },
                   { name: 'Spring Boot', star: '30' },
                 ]}
