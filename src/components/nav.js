@@ -1,68 +1,76 @@
 // @flow
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap'
 import { AUTHOR_NAME } from '../config'
 
-import SocialBtnGroup from './socialBtnGroup'
+import SocialBtnGroup from './common/socialBtnGroup'
 import navStyles from './nav.module.scss'
 
-const Nav = () => (
-  <nav className={`${navStyles.myNavbar} navbar navbar-expand-md navbar-dark fixed-top`}>
-    <Link className={navStyles.myNavbar__icon} to="/">
-      {AUTHOR_NAME}
-    </Link>
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarCollapse"
-      aria-controls="navbarCollapse"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon" />
-    </button>
-    <div className="collapse navbar-collapse" id="navbarCollapse">
-      <SocialBtnGroup />
-      <ul className="navbar-nav ml-auto">
-        <li className="nav-item">
-          <a className="nav-link" href="#header">
-            Home
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#portfolio">
-            Porfolio
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#about">
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#skills">
-            Skills
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#learning">
-            Learning
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#work">
-            Experience
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#career">
-            Career
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-)
+type Props = {
+  activeName: string,
+  onClickIcon: Function,
+  onClickNav: Function,
+}
 
-export default Nav
+function NavComponent({ activeName, onClickIcon, onClickNav }: Props) {
+  const [collapsed, setCollapsed] = useState(true)
+
+  const toggleNavbar = () => setCollapsed(!collapsed)
+
+  return (
+    <Navbar expand="md" fixed="top" className={`${navStyles.navbar} navbar-dark`}>
+      <Link className={navStyles.navbar__icon} to="/" onClick={() => onClickIcon('header')}>
+        {AUTHOR_NAME}
+      </Link>
+
+      <NavbarToggler onClick={toggleNavbar}>
+        <span className="navbar-toggler-icon" />
+      </NavbarToggler>
+
+      <Collapse isOpen={!collapsed} navbar>
+        <SocialBtnGroup />
+
+        <Nav navbar className="ml-auto">
+          <NavItem>
+            <NavLink href="#header" active={activeName === 'header'} onClick={() => onClickNav('header')}>
+              Home
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#portfolio" active={activeName === 'portfolio'} onClick={() => onClickNav('portfolio')}>
+              Porfolio
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#about" active={activeName === 'about'} onClick={() => onClickNav('about')}>
+              About
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#skills" active={activeName === 'skills'} onClick={() => onClickNav('skills')}>
+              Skills
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#learning" active={activeName === 'learning'} onClick={() => onClickNav('learning')}>
+              Learning
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#work" active={activeName === 'work'} onClick={() => onClickNav('work')}>
+              Experience
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#career" active={activeName === 'career'} onClick={() => onClickNav('career')}>
+              Career
+            </NavLink>
+          </NavItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
+  )
+}
+
+export default NavComponent

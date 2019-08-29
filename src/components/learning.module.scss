@@ -1,7 +1,11 @@
 @import '../styles/variables';
 @import '../styles/modules';
 
-.my-learning {
+.learning {
+  margin-top: -5rem;
+  padding-top: 10rem + 5;
+  padding-bottom: 3rem;
+  height: 100vh;
   background-image: linear-gradient(rgba($mainLightBlue, 0.5), rgba($mainLightBlue, 0.5)), url('/assets/learning.jpg');
   background-repeat: no-repeat;
   background-position: center;

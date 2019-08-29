@@ -1,13 +1,9 @@
-.my-section-content {
-  padding: 5rem 0;
-}
-
-.my-btn {
+.btn {
   padding: 0.6rem 1rem;
   font-size: 1rem;
   font-weight: 500;
 
-  &-main-color {
+  &__main-color {
     background-color: $mainBlue;
     border-color: $mainBlue;
     color: $white;

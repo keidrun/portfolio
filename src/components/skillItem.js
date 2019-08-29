@@ -30,17 +30,19 @@ const Skill = ({ skillName, starRate }: SkillProps) => (
   </div>
 )
 
-const SkillItem = ({ iconClassName, skillTitle, skills, children }: SkillItemProps) => (
-  <div className={skillItemStyles.skillItem}>
-    <div className={skillItemStyles.skillItem__icon}>
-      <span className={iconClassName} />
+function SkillItem({ iconClassName, skillTitle, skills, children }: SkillItemProps) {
+  return (
+    <div className={skillItemStyles.skillItem}>
+      <div className={skillItemStyles.skillItem__icon}>
+        <span className={iconClassName} />
+      </div>
+      <h3 className={skillItemStyles.skillItem__title}>{skillTitle}</h3>
+      {skills.map(skill => (
+        <Skill key={skill.name} skillName={skill.name} starRate={skill.star} />
+      ))}
+      <p className={skillItemStyles.skillItem__description}>{children}</p>
     </div>
-    <h3 className={skillItemStyles.skillItem__title}>{skillTitle}</h3>
-    {skills.map(skill => (
-      <Skill key={skill.name} skillName={skill.name} starRate={skill.star} />
-    ))}
-    <p className={skillItemStyles.skillItem__description}>{children}</p>
-  </div>
-)
+  )
+}
 
 export default SkillItem

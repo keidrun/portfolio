@@ -1,6 +1,12 @@
 @import '../styles/variables';
 @import '../styles/modules';
 
+.portfolio {
+  margin-top: -5rem;
+  padding-top: 3rem + 5;
+  padding-bottom: 3rem + 5;
+}
+
 .projects-grid {
   list-style: none;
   padding: 0;

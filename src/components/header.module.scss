@@ -1,10 +1,9 @@
 @import '../styles/variables';
 @import '../styles/modules';
 
-.my-header {
-  padding-top: 15rem;
-  padding-bottom: 13rem;
-  margin-bottom: 0;
+.header {
+  height: 100vh;
+  padding-top: 33vh;
   background-color: $mainBlue;
   background-image: linear-gradient(rgba($mainLightBlue, 0.5), rgba($mainLightBlue, 0.5)), url('/assets/hero.jpg');
   background-repeat: no-repeat;
@@ -21,7 +20,7 @@
   & .container {
     max-width: 50rem;
     background: rgba($black, 0.2);
-    padding: 4rem;
+    padding: 5rem;
     color: white;
   }
 
