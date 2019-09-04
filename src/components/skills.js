@@ -1,6 +1,5 @@
 // @flow
 import React from 'react'
-import withInView from './hoc/withInView'
 import SkillItem from './skillItem'
 
 import skillsStyles from './skills.module.scss'
@@ -149,4 +148,4 @@ function Skills() {
   )
 }
 
-export default withInView(Skills)
+export default Skills

@@ -1,6 +1,5 @@
 // @flow
 import React from 'react'
-import withInView from './hoc/withInView'
 import SocialBtnGroup from './common/socialBtnGroup'
 
 import aboutStyles from './about.module.scss'
@@ -54,4 +53,4 @@ function About() {
   )
 }
 
-export default withInView(About)
+export default About

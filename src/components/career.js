@@ -1,6 +1,5 @@
 // @flow
 import React from 'react'
-import withInView from './hoc/withInView'
 
 import careerStyles from './career.module.scss'
 
@@ -52,4 +51,4 @@ function Career() {
   )
 }
 
-export default withInView(Career)
+export default Career

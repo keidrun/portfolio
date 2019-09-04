@@ -1,21 +1,19 @@
 // @flow
 import React from 'react'
-import withInView from './hoc/withInView'
 import { AUTHOR_NAME } from '../config'
 
 import Nav from './nav'
 import headerStyles from './header.module.scss'
 
 type Props = {
-  activeName: string,
-  onClickIcon: Function,
-  onClickNav: Function,
+  dynamicActive: string,
+  dynamicOnClick: Function,
 }
 
-function Header({ activeName, onClickIcon, onClickNav }: Props) {
+function Header({ dynamicActive, dynamicOnClick }: Props) {
   return (
     <>
-      <Nav activeName={activeName} onClickIcon={onClickIcon} onClickNav={onClickNav} />
+      <Nav dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick} />
       <header id="header" className={`${headerStyles.header} text-center`}>
         <div className={`${headerStyles.container} mx-auto`}>
           <h1 className={headerStyles.header__heading}>{AUTHOR_NAME}</h1>
@@ -37,4 +35,4 @@ function Header({ activeName, onClickIcon, onClickNav }: Props) {
   )
 }
 
-export default withInView(Header)
+export default Header

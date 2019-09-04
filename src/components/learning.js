@@ -29,4 +29,5 @@ function Learning() {
   )
 }
 
-export default withInView(Learning)
+// export default withInView(Learning)
+export default Learning

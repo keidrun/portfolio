@@ -1,6 +1,5 @@
 // @flow
 import React from 'react'
-import withInView from './hoc/withInView'
 
 import portfolioStyles from './portfolio.module.scss'
 
@@ -130,4 +129,4 @@ function Portfolio() {
   )
 }
 
-export default withInView(Portfolio)
+export default Portfolio

@@ -1,6 +1,5 @@
 // @flow
 import React from 'react'
-import withInView from './hoc/withInView'
 import Modal from './modal'
 import Card from './card'
 import { IMG_SRC_PREFIX } from '../config'
@@ -197,4 +196,4 @@ function Work() {
   )
 }
 
-export default withInView(Work)
+export default Work

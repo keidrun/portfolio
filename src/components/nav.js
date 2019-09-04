@@ -1,28 +1,27 @@
 // @flow
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap'
 import { AUTHOR_NAME } from '../config'
 
+import DynamicNavLink from './common/DynamicNavLink'
 import SocialBtnGroup from './common/socialBtnGroup'
 import navStyles from './nav.module.scss'
 
 type Props = {
-  activeName: string,
-  onClickIcon: Function,
-  onClickNav: Function,
+  dynamicActive: string,
+  dynamicOnClick: Function,
 }
 
-function NavComponent({ activeName, onClickIcon, onClickNav }: Props) {
+function NavComponent({ dynamicActive, dynamicOnClick }: Props) {
   const [collapsed, setCollapsed] = useState(true)
 
   const toggleNavbar = () => setCollapsed(!collapsed)
 
   return (
     <Navbar expand="md" fixed="top" className={`${navStyles.navbar} navbar-dark`}>
-      <Link className={navStyles.navbar__icon} to="/" onClick={() => onClickIcon('header')}>
+      <a className={navStyles.navbar__icon} href="/">
         {AUTHOR_NAME}
-      </Link>
+      </a>
 
       <NavbarToggler onClick={toggleNavbar}>
         <span className="navbar-toggler-icon" />
@@ -33,39 +32,40 @@ function NavComponent({ activeName, onClickIcon, onClickNav }: Props) {
 
         <Nav navbar className="ml-auto">
           <NavItem>
-            <NavLink href="#header" active={activeName === 'header'} onClick={() => onClickNav('header')}>
-              Home
-            </NavLink>
+            <DynamicNavLink idName="header" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+              <NavLink href="#header">Home</NavLink>
+            </DynamicNavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#portfolio" active={activeName === 'portfolio'} onClick={() => onClickNav('portfolio')}>
-              Porfolio
-            </NavLink>
+            <DynamicNavLink idName="portfolio" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+              <NavLink href="#portfolio">Porfolio</NavLink>
+            </DynamicNavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#about" active={activeName === 'about'} onClick={() => onClickNav('about')}>
-              About
-            </NavLink>
+            <DynamicNavLink idName="about" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+              <NavLink href="#about">About</NavLink>
+            </DynamicNavLink>
+          </NavItem>
+
+          <NavItem>
+            <DynamicNavLink idName="skills" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+              <NavLink href="#skills">Skills</NavLink>
+            </DynamicNavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#skills" active={activeName === 'skills'} onClick={() => onClickNav('skills')}>
-              Skills
-            </NavLink>
+            <DynamicNavLink idName="learning" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+              <NavLink href="#learning">Learning</NavLink>
+            </DynamicNavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#learning" active={activeName === 'learning'} onClick={() => onClickNav('learning')}>
-              Learning
-            </NavLink>
+            <DynamicNavLink idName="work" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+              <NavLink href="#work">Experience</NavLink>
+            </DynamicNavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#work" active={activeName === 'work'} onClick={() => onClickNav('work')}>
-              Experience
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#career" active={activeName === 'career'} onClick={() => onClickNav('career')}>
-              Career
-            </NavLink>
+            <DynamicNavLink idName="career" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+              <NavLink href="#career">Career</NavLink>
+            </DynamicNavLink>
           </NavItem>
         </Nav>
       </Collapse>

@@ -11,7 +11,7 @@ type Props = {
 
 function withInView(WrappedComponent: Node) {
   return ({ onEnter, topOffset, bottomOffset, ...props }: Props) => (
-    <Waypoint onEnter={onEnter} topOffset={topOffset} bottomOffset={bottomOffset}>
+    <Waypoint onEnter={onEnter} topOffset={topOffset || '50%'} bottomOffset={bottomOffset || '40%'}>
       <div>
         <WrappedComponent {...props} />
       </div>

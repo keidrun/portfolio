@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import favicon from '../../static/favicon.ico'
 
 import Layout from '../components/hoc/layout'
+import InViews from '../components/hoc/inViews'
 import Header from '../components/header'
 import Portfolio from '../components/portfolio'
 import About from '../components/about'
@@ -13,12 +14,6 @@ import Work from '../components/work'
 import Career from '../components/career'
 
 function IndexPage() {
-  const [activeName, setActiveName] = useState('header')
-
-  const changeActiveName = name => setActiveName(name)
-
-  const changeActiveNameLazily = name => setTimeout(() => setActiveName(name), 100)
-
   return (
     <>
       <Helmet>
@@ -29,20 +24,15 @@ function IndexPage() {
         <link href="https://keisukesasaki.com/assets/fonts/et-line-font/et-line-font.css" rel="stylesheet" />
       </Helmet>
       <Layout>
-        <Header
-          activeName={activeName}
-          onEnter={() => changeActiveName('header')}
-          topOffset="50%"
-          bottomOffset="40%"
-          onClickIcon={changeActiveNameLazily}
-          onClickNav={changeActiveNameLazily}
-        />
-        <Portfolio onEnter={() => changeActiveName('portfolio')} topOffset="50%" bottomOffset="40%" />
-        <About onEnter={() => changeActiveName('about')} topOffset="50%" bottomOffset="40%" />
-        <Skills onEnter={() => changeActiveName('skills')} topOffset="50%" bottomOffset="40%" />
-        <Learning onEnter={() => changeActiveName('learning')} topOffset="50%" bottomOffset="40%" />
-        <Work onEnter={() => changeActiveName('work')} topOffset="50%" bottomOffset="40%" />
-        <Career onEnter={() => changeActiveName('career')} topOffset="50%" bottomOffset="0%" />
+        <InViews ids={['header', 'portfolio', 'about', 'skills', 'learning', 'work', 'career']}>
+          <Header />
+          <Portfolio />
+          <About />
+          <Skills />
+          <Learning />
+          <Work />
+          <Career />
+        </InViews>
       </Layout>
     </>
   )
