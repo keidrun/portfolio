@@ -14,7 +14,7 @@ before_install:
 
 script:
   - docker container run --rm keidrun/portfolio:latest yarn stylelint
-  - docker container run --rm keidrun/portfolio:latest yarn flow:check
+  - docker container run --rm keidrun/portfolio:latest yarn flow-check
   - docker container run --rm keidrun/portfolio:latest yarn eslint
 
 before_deploy:
