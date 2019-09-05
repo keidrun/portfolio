@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
-import Modal from './modal'
-import Card from './card'
+import Modal from './common/modal'
+import Card from './common/card'
 import { IMG_SRC_PREFIX } from '../config'
 
 import workStyles from './work.module.scss'

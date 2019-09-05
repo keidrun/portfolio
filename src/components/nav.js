@@ -1,18 +1,18 @@
 // @flow
 import React, { useState } from 'react'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap'
+import { ScrollspyNavLink } from 'reactstrap-scrollspy'
 import { AUTHOR_NAME } from '../config'
 
-import DynamicNavLink from './common/DynamicNavLink'
 import SocialBtnGroup from './common/socialBtnGroup'
 import navStyles from './nav.module.scss'
 
 type Props = {
-  dynamicActive: string,
-  dynamicOnClick: Function,
+  updateNavLinkName?: string,
+  updateNavbar?: Function,
 }
 
-function NavComponent({ dynamicActive, dynamicOnClick }: Props) {
+function NavComponent({ updateNavLinkName, updateNavbar }: Props) {
   const [collapsed, setCollapsed] = useState(true)
 
   const toggleNavbar = () => setCollapsed(!collapsed)
@@ -32,45 +32,50 @@ function NavComponent({ dynamicActive, dynamicOnClick }: Props) {
 
         <Nav navbar className="ml-auto">
           <NavItem>
-            <DynamicNavLink idName="header" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+            <ScrollspyNavLink navLinkName="header" updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar}>
               <NavLink href="#header">Home</NavLink>
-            </DynamicNavLink>
+            </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <DynamicNavLink idName="portfolio" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+            <ScrollspyNavLink navLinkName="portfolio" updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar}>
               <NavLink href="#portfolio">Porfolio</NavLink>
-            </DynamicNavLink>
+            </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <DynamicNavLink idName="about" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+            <ScrollspyNavLink navLinkName="about" updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar}>
               <NavLink href="#about">About</NavLink>
-            </DynamicNavLink>
+            </ScrollspyNavLink>
           </NavItem>
 
           <NavItem>
-            <DynamicNavLink idName="skills" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+            <ScrollspyNavLink navLinkName="skills" updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar}>
               <NavLink href="#skills">Skills</NavLink>
-            </DynamicNavLink>
+            </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <DynamicNavLink idName="learning" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+            <ScrollspyNavLink navLinkName="learning" updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar}>
               <NavLink href="#learning">Learning</NavLink>
-            </DynamicNavLink>
+            </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <DynamicNavLink idName="work" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+            <ScrollspyNavLink navLinkName="work" updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar}>
               <NavLink href="#work">Experience</NavLink>
-            </DynamicNavLink>
+            </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <DynamicNavLink idName="career" dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick}>
+            <ScrollspyNavLink navLinkName="career" updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar}>
               <NavLink href="#career">Career</NavLink>
-            </DynamicNavLink>
+            </ScrollspyNavLink>
           </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
   )
+}
+
+NavComponent.defaultProps = {
+  updateNavLinkName: undefined,
+  updateNavbar: undefined,
 }
 
 export default NavComponent

@@ -1,6 +1,5 @@
 // @flow
 import React from 'react'
-import withInView from './hoc/withInView'
 
 import learningStyles from './learning.module.scss'
 
@@ -29,5 +28,4 @@ function Learning() {
   )
 }
 
-// export default withInView(Learning)
 export default Learning

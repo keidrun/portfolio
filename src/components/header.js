@@ -6,14 +6,14 @@ import Nav from './nav'
 import headerStyles from './header.module.scss'
 
 type Props = {
-  dynamicActive: string,
-  dynamicOnClick: Function,
+  updateNavLinkName?: string,
+  updateNavbar?: Function,
 }
 
-function Header({ dynamicActive, dynamicOnClick }: Props) {
+function Header({ updateNavLinkName, updateNavbar }: Props) {
   return (
     <>
-      <Nav dynamicActive={dynamicActive} dynamicOnClick={dynamicOnClick} />
+      <Nav updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar} />
       <header id="header" className={`${headerStyles.header} text-center`}>
         <div className={`${headerStyles.container} mx-auto`}>
           <h1 className={headerStyles.header__heading}>{AUTHOR_NAME}</h1>
@@ -33,6 +33,11 @@ function Header({ dynamicActive, dynamicOnClick }: Props) {
       </header>
     </>
   )
+}
+
+Header.defaultProps = {
+  updateNavLinkName: undefined,
+  updateNavbar: undefined,
 }
 
 export default Header

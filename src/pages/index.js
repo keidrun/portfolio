@@ -1,10 +1,10 @@
 // @flow
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Scrollspy } from 'reactstrap-scrollspy'
 import favicon from '../../static/favicon.ico'
 
 import Layout from '../components/hoc/layout'
-import InViews from '../components/hoc/inViews'
 import Header from '../components/header'
 import Portfolio from '../components/portfolio'
 import About from '../components/about'
@@ -24,7 +24,7 @@ function IndexPage() {
         <link href="https://keisukesasaki.com/assets/fonts/et-line-font/et-line-font.css" rel="stylesheet" />
       </Helmet>
       <Layout>
-        <InViews ids={['header', 'portfolio', 'about', 'skills', 'learning', 'work', 'career']}>
+        <Scrollspy navLinkNames={['header', 'portfolio', 'about', 'skills', 'learning', 'work', 'career']}>
           <Header />
           <Portfolio />
           <About />
@@ -32,7 +32,7 @@ function IndexPage() {
           <Learning />
           <Work />
           <Career />
-        </InViews>
+        </Scrollspy>
       </Layout>
     </>
   )
