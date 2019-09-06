@@ -88,7 +88,7 @@ function Portfolio() {
                 </h3>
                 <div className={portfolioStyles.projectItem1of3__caption}>
                   <h3 className={portfolioStyles.projectItem1of3__title}>
-                    Go to Github of `dept` command to start developing quickly!
+                    Go to Github of CLI to begin developing quickly!
                   </h3>
                   <div className={portfolioStyles.projectItem1of3__description}>A NPM project</div>
                 </div>
@@ -110,15 +110,15 @@ function Portfolio() {
             </li>
 
             <li className={portfolioStyles.projectItem1of3}>
-              <a href="https://github.com/keidrun/voice-todo" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/keidrun/reactstrap-scrollspy" target="_blank" rel="noopener noreferrer">
                 <h3 className={`${portfolioStyles.projectItem1of3__name} ${portfolioStyles.pink}`}>
-                  Small Desktop App
+                  Original React Library
                 </h3>
                 <div className={portfolioStyles.projectItem1of3__caption}>
                   <h3 className={portfolioStyles.projectItem1of3__title}>
-                    Go to Github of a ToDo desktop app that recognizes voice!
+                    Go to Github of a React library to create an automatically update navigation!
                   </h3>
-                  <div className={portfolioStyles.projectItem1of3__description}>An Electron App</div>
+                  <div className={portfolioStyles.projectItem1of3__description}>A NPM Project</div>
                 </div>
               </a>
             </li>

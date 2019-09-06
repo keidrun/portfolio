@@ -24,7 +24,7 @@ function IndexPage() {
         <link href="https://keisukesasaki.com/assets/fonts/et-line-font/et-line-font.css" rel="stylesheet" />
       </Helmet>
       <Layout>
-        <Scrollspy navLinkNames={['header', 'portfolio', 'about', 'skills', 'learning', 'work', 'career']}>
+        <Scrollspy names={['header', 'portfolio', 'about', 'skills', 'learning', 'work', 'career']}>
           <Header />
           <Portfolio />
           <About />

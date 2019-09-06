@@ -6,14 +6,14 @@ import Nav from './nav'
 import headerStyles from './header.module.scss'
 
 type Props = {
-  updateNavLinkName?: string,
+  updatedName?: string,
   updateNavbar?: Function,
 }
 
-function Header({ updateNavLinkName, updateNavbar }: Props) {
+function Header({ updatedName, updateNavbar }: Props) {
   return (
     <>
-      <Nav updateNavLinkName={updateNavLinkName} updateNavbar={updateNavbar} />
+      <Nav updatedName={updatedName} updateNavbar={updateNavbar} />
       <header id="header" className={`${headerStyles.header} text-center`}>
         <div className={`${headerStyles.container} mx-auto`}>
           <h1 className={headerStyles.header__heading}>{AUTHOR_NAME}</h1>
@@ -36,7 +36,7 @@ function Header({ updateNavLinkName, updateNavbar }: Props) {
 }
 
 Header.defaultProps = {
-  updateNavLinkName: undefined,
+  updatedName: undefined,
   updateNavbar: undefined,
 }
 

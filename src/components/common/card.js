@@ -8,11 +8,11 @@ type Props = {
   title: string,
   subTitle: string,
   imgSrc: string,
-  Modal: any,
+  renderModal: Function,
   children: string,
 }
 
-const CardComponent = ({ title, subTitle, imgSrc, Modal, children }: Props) => (
+const CardComponent = ({ title, subTitle, imgSrc, renderModal, children }: Props) => (
   <Card>
     <div className={`card-block ${cardStyles.card__blockDecoration}`}>
       <CardTitle>
@@ -25,7 +25,7 @@ const CardComponent = ({ title, subTitle, imgSrc, Modal, children }: Props) => (
     <CardImg src={imgSrc} alt={title} />
     <div className={`card-block ${cardStyles.card__blockDecoration}`}>
       <CardText>{children}</CardText>
-      <Modal />
+      {renderModal()}
     </div>
   </Card>
 )

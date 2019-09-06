@@ -17,6 +17,7 @@ if (process.env.NODE_ENV === 'production') {
       background_color: '#3bc6ce',
       theme_color: '#3bc6ce',
       display: 'standalone',
+      icons: [],
     },
   })
   plugins.unshift({

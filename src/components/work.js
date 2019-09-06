@@ -135,7 +135,7 @@ function Work() {
                 title="Back-End Development"
                 subTitle="NodeJS RESTful API & MongoDB"
                 imgSrc={`${IMG_SRC_PREFIX}assets/skill2.jpg`}
-                Modal={ModalOne}
+                renderModal={() => <ModalOne />}
               >
                 Designed and developed an API gateway application to collect several kinds of data from many back-end
                 applications with NodeJS and MongoDB for customers in a convenience stores company.
@@ -144,7 +144,7 @@ function Work() {
                 title="Full-Stack Development"
                 subTitle="Spring MVC & Ajax & SQL"
                 imgSrc={`${IMG_SRC_PREFIX}assets/skill1.jpg`}
-                Modal={ModalTwo}
+                renderModal={() => <ModalTwo />}
               >
                 Designed and developed web applications with Spring MVC, Ajax and SQL for customers in a cellular
                 company and a financial company.
@@ -153,7 +153,7 @@ function Work() {
                 title="Framework Development"
                 subTitle="Spring Framework & Netty"
                 imgSrc={`${IMG_SRC_PREFIX}assets/skill3.jpg`}
-                Modal={ModalThree}
+                renderModal={() => <ModalThree />}
               >
                 Designed and developed an application framework with Spring Framework and Netty to process big data from
                 many devices, then implemented it for another team of customers in a convenience stores company.
@@ -165,7 +165,7 @@ function Work() {
                 title="Scrum Coaching"
                 subTitle="Scrum Master"
                 imgSrc={`${IMG_SRC_PREFIX}assets/skill4.jpg`}
-                Modal={ModalFour}
+                renderModal={() => <ModalFour />}
               >
                 Built new development teams and coached them in Scrum as Scrum Master for customers in a cellular
                 company.
@@ -174,7 +174,7 @@ function Work() {
                 title="Product Management"
                 subTitle="Product Owner for PoC with offshore teams"
                 imgSrc={`${IMG_SRC_PREFIX}assets/skill5.jpg`}
-                Modal={ModalFive}
+                renderModal={() => <ModalFive />}
               >
                 Planed as Product Owner for PoC (Proof of Concept) to demonstrate the effectiveness of Scrum
                 Development, organized and managed offshore teams of developers in China in an in-house project.
@@ -183,7 +183,7 @@ function Work() {
                 title="Project Management"
                 subTitle="Project Lead to manage global teams"
                 imgSrc={`${IMG_SRC_PREFIX}assets/skill6.jpg`}
-                Modal={ModalSix}
+                renderModal={() => <ModalSix />}
               >
                 Planed and managed global teams of developers in Japan and China to develop web applications and native
                 apps for customers in financial companies and a Japanese government office.

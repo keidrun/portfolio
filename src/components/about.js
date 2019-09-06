@@ -30,12 +30,12 @@ function About() {
                   <strong>Experience</strong>
                 </a>
               </span>{' '}
-              sections) My current goal is to further master the most modern full-stack technologies around JavaScript.
-              And my next goal is to found my outstanding company and change people&#39;s lives in the world. I&#39;m
-              thinking of starting my own business several years later but I&#39;ll focus on an application development
-              so far because intesting technologies like Blockchain or Machine-learning come into being recently and
-              I&#39;d like to extend my knowledge around them. And I also launched a website for a bitcoin trade as a
-              hobby. (See a{' '}
+              sections) My current goal is to further master the most modern full-stack technologies around JavaScript
+              and to extend my knowledge of AI and Blockchain technologies. And my next goal is to found my outstanding
+              company and change people&#39;s lives in the world. I&#39;m thinking of starting my own business several
+              years later but I&#39;ll focus on an application development so far because intesting technologies such as
+              AI and Blockchain come into being recently and I&#39;d like to be involved in a project that use them. And
+              I also launched a website for a bitcoin trade as a hobby. (See a{' '}
               <span className="p-link">
                 <a href="/#portfolio">
                   <strong>Portfolio</strong>
