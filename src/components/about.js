@@ -1,12 +1,15 @@
 // @flow
 import React from 'react'
-import SocialBtnGroup from './common/socialBtnGroup'
 
+import SocialBtnGroup from './common/socialBtnGroup'
+import useResize from './hooks/useResize'
 import aboutStyles from './about.module.scss'
 
 function About() {
+  const { height } = useResize()
+
   return (
-    <section id="about" className={aboutStyles.about}>
+    <section id="about" className={`${aboutStyles.about} ${height}`}>
       <div className="container">
         <div className="col-md-6">
           <div className={aboutStyles.about__text}>
@@ -14,8 +17,7 @@ function About() {
             <p className="lead">
               I&#39;m seeking opportunities of a full-stack web developer job in Tokyo, San Francisco Bay Area or any
               interesting city in the world. If you&#39;re looking for a developer like Full-Stack Web Developer,
-              Front-End React Developer or Back-End NodeJS / TypeScript / Python / Go / Java / Kotlin Developer, feel
-              free to contact me!
+              Front-End React Developer or Back-End Developer, feel free to contact me!
             </p>
             <p>
               I have worked as a Full-Stack Web Developer specialized in JavaScript and Java since 2011. (See{' '}

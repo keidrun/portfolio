@@ -2,7 +2,6 @@
 @import '../styles/modules';
 
 .header {
-  height: 100vh;
   padding-top: 33vh;
   background-color: $mainBlue;
   background-image: linear-gradient(rgba($mainLightBlue, 0.5), rgba($mainLightBlue, 0.5)), url('/assets/hero.jpg');

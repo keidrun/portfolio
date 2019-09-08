@@ -7,12 +7,7 @@ import { AUTHOR_NAME } from '../config'
 import SocialBtnGroup from './common/socialBtnGroup'
 import navStyles from './nav.module.scss'
 
-type Props = {
-  updatedName?: string,
-  updateNavbar?: Function,
-}
-
-function NavComponent({ updatedName, updateNavbar }: Props) {
+function NavComponent() {
   const [collapsed, setCollapsed] = useState(true)
 
   const toggleNavbar = () => setCollapsed(!collapsed)
@@ -32,37 +27,37 @@ function NavComponent({ updatedName, updateNavbar }: Props) {
 
         <Nav navbar className="ml-auto">
           <NavItem>
-            <ScrollspyNavLink name="header" updatedName={updatedName} updateNavbar={updateNavbar}>
+            <ScrollspyNavLink name="header">
               <NavLink href="#header">Home</NavLink>
             </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <ScrollspyNavLink name="portfolio" updatedName={updatedName} updateNavbar={updateNavbar}>
+            <ScrollspyNavLink name="portfolio">
               <NavLink href="#portfolio">Porfolio</NavLink>
             </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <ScrollspyNavLink name="about" updatedName={updatedName} updateNavbar={updateNavbar}>
+            <ScrollspyNavLink name="about">
               <NavLink href="#about">About</NavLink>
             </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <ScrollspyNavLink name="skills" updatedName={updatedName} updateNavbar={updateNavbar}>
+            <ScrollspyNavLink name="skills">
               <NavLink href="#skills">Skills</NavLink>
             </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <ScrollspyNavLink name="learning" updatedName={updatedName} updateNavbar={updateNavbar}>
+            <ScrollspyNavLink name="learning">
               <NavLink href="#learning">Learning</NavLink>
             </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <ScrollspyNavLink name="work" updatedName={updatedName} updateNavbar={updateNavbar}>
+            <ScrollspyNavLink name="work">
               <NavLink href="#work">Experience</NavLink>
             </ScrollspyNavLink>
           </NavItem>
           <NavItem>
-            <ScrollspyNavLink name="career" updatedName={updatedName} updateNavbar={updateNavbar}>
+            <ScrollspyNavLink name="career">
               <NavLink href="#career">Career</NavLink>
             </ScrollspyNavLink>
           </NavItem>
@@ -70,11 +65,6 @@ function NavComponent({ updatedName, updateNavbar }: Props) {
       </Collapse>
     </Navbar>
   )
-}
-
-NavComponent.defaultProps = {
-  updatedName: undefined,
-  updateNavbar: undefined,
 }
 
 export default NavComponent

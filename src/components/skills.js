@@ -30,13 +30,13 @@ function Skills() {
               iconClassName="icon-genius"
               skillTitle="Secondary Language"
               skills={[
-                { name: 'TypeScript', star: '30' },
                 { name: 'Python', star: '30' },
-                { name: 'Kotlin', star: '30' },
-                { name: 'Go', star: '30' },
+                { name: 'TypeScript', star: '30' },
+                { name: 'Go', star: '20' },
+                { name: 'Kotlin', star: '20' },
                 { name: 'Ruby', star: '20' },
                 { name: 'Perl', star: '20' },
-                { name: 'C', star: '20' },
+                { name: 'C', star: '10' },
               ]}
             >
               &nbsp;
@@ -47,14 +47,13 @@ function Skills() {
               iconClassName="icon-browser"
               skillTitle="Front-end stack"
               skills={[
-                { name: 'HTML5', star: '40' },
+                { name: 'HTML5', star: '30' },
                 { name: 'CSS3', star: '30' },
                 { name: 'SASS', star: '20' },
                 { name: 'Webpack', star: '40' },
                 { name: 'React/Redux', star: '40' },
                 { name: 'ReactNative', star: '10' },
-                { name: 'Vue', star: '20' },
-                { name: 'Anguler', star: '10' },
+                { name: 'Vue', star: '10' },
                 { name: 'Spring MVC', star: '30' },
               ]}
             >
@@ -67,9 +66,9 @@ function Skills() {
               skillTitle="Back-end stack"
               skills={[
                 { name: 'AWS', star: '30' },
-                { name: 'AWS Lambda', star: '30' },
+                { name: 'AWS Lambda', star: '20' },
                 { name: 'Heroku', star: '30' },
-                { name: 'SQL', star: '40' },
+                { name: 'SQL', star: '30' },
                 { name: 'MongoDB', star: '30' },
                 { name: 'DynamoDB', star: '20' },
                 { name: 'Express Framework', star: '50' },
@@ -87,8 +86,9 @@ function Skills() {
               skills={[
                 { name: 'Git/GitHub', star: '40' },
                 { name: 'Docker', star: '40' },
-                { name: 'Vagrant', star: '30' },
-                { name: 'Ansible', star: '20' },
+                { name: 'Kubernetes', star: '10' },
+                { name: 'Vagrant', star: '20' },
+                { name: 'Ansible', star: '10' },
                 { name: 'Jenkins', star: '30' },
                 { name: 'Travis CI', star: '30' },
                 { name: 'Circle CI', star: '30' },

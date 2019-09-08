@@ -1,11 +1,14 @@
 // @flow
 import React from 'react'
 
+import useResize from './hooks/useResize'
 import careerStyles from './career.module.scss'
 
 function Career() {
+  const { height } = useResize()
+
   return (
-    <section id="career" className={careerStyles.career}>
+    <section id="career" className={`${careerStyles.career} ${height}`}>
       <div className="container">
         <div className="col-md-6 ml-auto">
           <div className={careerStyles.career__text}>

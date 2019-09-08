@@ -3,18 +3,16 @@ import React from 'react'
 import { AUTHOR_NAME } from '../config'
 
 import Nav from './nav'
+import useResize from './hooks/useResize'
 import headerStyles from './header.module.scss'
 
-type Props = {
-  updatedName?: string,
-  updateNavbar?: Function,
-}
+function Header() {
+  const { height } = useResize()
 
-function Header({ updatedName, updateNavbar }: Props) {
   return (
     <>
-      <Nav updatedName={updatedName} updateNavbar={updateNavbar} />
-      <header id="header" className={`${headerStyles.header} text-center`}>
+      <Nav />
+      <header id="header" className={`${headerStyles.header} text-center ${height}`}>
         <div className={`${headerStyles.container} mx-auto`}>
           <h1 className={headerStyles.header__heading}>{AUTHOR_NAME}</h1>
           <p className="lead">
@@ -33,11 +31,6 @@ function Header({ updatedName, updateNavbar }: Props) {
       </header>
     </>
   )
-}
-
-Header.defaultProps = {
-  updatedName: undefined,
-  updateNavbar: undefined,
 }
 
 export default Header

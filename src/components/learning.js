@@ -1,17 +1,20 @@
 // @flow
 import React from 'react'
 
+import useResize from './hooks/useResize'
 import learningStyles from './learning.module.scss'
 
 function Learning() {
+  const { height } = useResize()
+
   return (
-    <section id="learning" className={learningStyles.learning}>
+    <section id="learning" className={`${learningStyles.learning} ${height}`}>
       <div className="container">
         <div className="col-md-6 mr-auto">
           <div className={learningStyles.learning__text}>
             <h3>Learning</h3>
             <p className="lead">
-              I absolutely love to learn new technologies. Recently, I&#39;m learning GraphQL, GatsbyJS, AWS Lambda,
+              I absolutely love to learn new technologies. Recently, I&#39;m learning NextJS, GraphQL, gRPC, Kubernetes,
               Machine-learning and Blockchain.
             </p>
             <p>
