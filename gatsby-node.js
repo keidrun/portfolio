@@ -11,14 +11,6 @@ exports.onCreateWebpackConfig = ({ stage, rules, loaders, plugins, actions }) =>
               loaders.css({
                 importLoaders: 3,
               }),
-              {
-                loader: 'css-url-loader',
-                options: {
-                  from: '/assets/',
-                  to: 'https://keisukesasaki.com/assets/',
-                  env: 'development',
-                },
-              },
               loaders.postcss(),
               'sass-loader',
             ],
@@ -32,14 +24,6 @@ exports.onCreateWebpackConfig = ({ stage, rules, loaders, plugins, actions }) =>
                 modules: true,
                 importLoaders: 3,
               }),
-              {
-                loader: 'css-url-loader',
-                options: {
-                  from: '/assets/',
-                  to: 'https://keisukesasaki.com/assets/',
-                  env: 'development',
-                },
-              },
               loaders.postcss(),
               'sass-loader',
             ],

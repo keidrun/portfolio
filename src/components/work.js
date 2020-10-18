@@ -2,7 +2,6 @@
 import React from 'react'
 import Modal from './common/modal'
 import Card from './common/card'
-import { IMG_SRC_PREFIX } from '../config'
 
 import workStyles from './work.module.scss'
 
@@ -134,7 +133,7 @@ function Work() {
               <Card
                 title="Back-End Development"
                 subTitle="NodeJS RESTful API & MongoDB"
-                imgSrc={`${IMG_SRC_PREFIX}assets/skill2.jpg`}
+                imgSrc="assets/skill2.jpg"
                 renderModal={() => <ModalOne />}
               >
                 Designed and developed an API gateway application to collect several kinds of data from many back-end
@@ -143,7 +142,7 @@ function Work() {
               <Card
                 title="Full-Stack Development"
                 subTitle="Spring MVC & Ajax & SQL"
-                imgSrc={`${IMG_SRC_PREFIX}assets/skill1.jpg`}
+                imgSrc="assets/skill1.jpg"
                 renderModal={() => <ModalTwo />}
               >
                 Designed and developed web applications with Spring MVC, Ajax and SQL for customers in a cellular
@@ -152,7 +151,7 @@ function Work() {
               <Card
                 title="Framework Development"
                 subTitle="Spring Framework & Netty"
-                imgSrc={`${IMG_SRC_PREFIX}assets/skill3.jpg`}
+                imgSrc="assets/skill3.jpg"
                 renderModal={() => <ModalThree />}
               >
                 Designed and developed an application framework with Spring Framework and Netty to process big data from
@@ -164,7 +163,7 @@ function Work() {
               <Card
                 title="Scrum Coaching"
                 subTitle="Scrum Master"
-                imgSrc={`${IMG_SRC_PREFIX}assets/skill4.jpg`}
+                imgSrc="assets/skill4.jpg"
                 renderModal={() => <ModalFour />}
               >
                 Built new development teams and coached them in Scrum as Scrum Master for customers in a cellular
@@ -173,7 +172,7 @@ function Work() {
               <Card
                 title="Product Management"
                 subTitle="Product Owner for PoC with offshore teams"
-                imgSrc={`${IMG_SRC_PREFIX}assets/skill5.jpg`}
+                imgSrc="assets/skill5.jpg"
                 renderModal={() => <ModalFive />}
               >
                 Planed as Product Owner for PoC (Proof of Concept) to demonstrate the effectiveness of Scrum
@@ -182,7 +181,7 @@ function Work() {
               <Card
                 title="Project Management"
                 subTitle="Project Lead to manage global teams"
-                imgSrc={`${IMG_SRC_PREFIX}assets/skill6.jpg`}
+                imgSrc="assets/skill6.jpg"
                 renderModal={() => <ModalSix />}
               >
                 Planed and managed global teams of developers in Japan and China to develop web applications and native

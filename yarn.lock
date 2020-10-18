@@ -4434,14 +4434,6 @@ css-tree@1.0.0-alpha.39:
     mdn-data "2.0.6"
     source-map "^0.6.1"
 
-css-url-loader@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/css-url-loader/-/css-url-loader-2.1.0.tgz#17195c52e10b217a60c0ab6bb0706630e833c3c0"
-  integrity sha512-TxGBHi1hIS2zGtgxhgr2LBW80BdHZgA3HpiK7UuLvTq21iLGq5+SHribgBGArC9PlZ7z/mHWdAnwHfMrCAO6OA==
-  dependencies:
-    loader-utils "^2.0.0"
-    schema-utils "^3.0.0"
-
 css-what@2.1:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-2.1.3.tgz#a6d7604573365fe74686c3f311c56513d88285f2"
