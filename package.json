@@ -51,13 +51,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn stylelint && yarn flow-check && lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "yarn eslint",
-      "git add"
+    "src/**/*.{s?css}": [
+      "yarn stylelint"
+    ],
+    "src/**/*.{jsx?}": [
+      "yarn flow-check",
+      "yarn eslint"
     ]
   },
   "scripts": {
