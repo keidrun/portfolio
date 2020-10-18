@@ -1,38 +1,19 @@
-sudo: required
-
-language: python
-python:
-  - "3.6"
-
-services:
-  - docker
-
-before_install:
-  - pip install awscli --upgrade
-  - aws --version
-  - docker image build -t keidrun/portfolio:latest -f Dockerfile.dev .
-
-script:
-  - docker container run --rm keidrun/portfolio:latest yarn stylelint
-  - docker container run --rm keidrun/portfolio:latest yarn flow-check
-  - docker container run --rm keidrun/portfolio:latest yarn eslint
-
-before_deploy:
-  - docker container run -d --rm --name web keidrun/portfolio:latest yarn develop
-  - docker container exec -i web yarn build
-  - docker container cp web:/app/public .
-
-deploy:
-  provider: s3
-  region: us-east-1
-  access_key_id: "$AWS_ACCESS_KEY_ID"
-  secret_access_key:
-    secure: "$AWS_SECRET_ACCESS_KEY"
-  bucket: "$AWS_HOSTING_BUCKET"
-  skip_cleanup: true
-  local_dir: public
-  on:
-    branch: master
-
-after_deploy:
-  - aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html' # Needs AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and AWS_DEFAULT_REGION
+jobs:
+  include:
+    - stage: build image
+      script:
+      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+      - docker image build -t web:latest -f Dockerfile.dev .
+      - docker images
+      - docker tag web $DOCKER_USERNAME/portfolio:latest
+      - docker push $DOCKER_USERNAME/portfolio:latest
+    - stage: lint
+      script:
+      - docker container run --rm $DOCKER_USERNAME/portfolio:latest yarn stylelint
+      - docker container run --rm $DOCKER_USERNAME/portfolio:latest yarn flow-check
+      - docker container run --rm $DOCKER_USERNAME/portfolio:latest yarn eslint
+    - stage: test build
+      script:
+      - docker container run -d --rm --name web $DOCKER_USERNAME/portfolio:latest yarn develop
+      - docker container exec -i web yarn build
+      - docker container cp web:/app/public .

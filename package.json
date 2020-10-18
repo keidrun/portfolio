@@ -70,10 +70,7 @@
     "eslint": "eslint --fix src/**/*.js",
     "stylelint": "stylelint --fix src/**/*.scss",
     "flow-check": "flow check",
-    "flow-typed-install": "flow-typed install",
-    "aws:deploy": "aws s3 sync ./public s3://keidrun-portfolio-website",
-    "aws:clear-cache": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/index.html'",
-    "aws:clear-cache-all": "aws cloudfront create-invalidation --distribution-id E38TFPFDJEAZGV --paths '/*'"
+    "flow-typed-install": "flow-typed install"
   },
   "browserslist": [
     ">0.25%",
