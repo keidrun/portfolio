@@ -65,7 +65,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "eslint": "eslint --fix src/**/*.js",
     "stylelint": "stylelint --fix src/**/*.scss",

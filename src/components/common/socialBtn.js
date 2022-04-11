@@ -15,7 +15,7 @@ function SocialBtn({ title, link, target }: Props) {
       href={link}
       target={target}
       rel="noopener noreferrer"
-      className={`${socialBtnStyles.socsialBtn} btn btn-sm btn-outline-light`}
+      className={`${socialBtnStyles.socialBtn} btn btn-sm btn-outline-light`}
     >
       {title}
     </a>
