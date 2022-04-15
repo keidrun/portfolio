@@ -4,8 +4,10 @@ ENV GATSBY_TELEMETRY_DISABLED 1
 
 WORKDIR /app
 
+# flow needs gcompat accoding to https://github.com/facebook/flow/issues/3649#issuecomment-886831975 and https://github.com/facebook/flow/issues/8846#issuecomment-1046616800
 RUN apk update \
-  && apk --no-cache add git ca-certificates wget curl
+  && apk add --no-cache git ca-certificates \
+  && apk add --no-cache gcompat libatomic
 
 COPY package.json .
 COPY yarn.lock .
