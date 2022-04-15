@@ -1,9 +1,11 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-standard-scss",
   "plugins": ["stylelint-scss", "stylelint-order"],
-  "syntax":"scss",
+  "syntax": "scss",
   "rules": {
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": true
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-pattern": null,
+    "selector-class-pattern": null
   }
 }

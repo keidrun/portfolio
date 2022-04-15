@@ -2,7 +2,7 @@
 import React from 'react'
 
 import useResize from './hooks/useResize'
-import careerStyles from './career.module.scss'
+import * as careerStyles from './career.module.scss'
 
 function Career() {
   const { height } = useResize()

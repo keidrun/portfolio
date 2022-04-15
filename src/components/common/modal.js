@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 
-import modalStyles from './modal.module.scss'
+import * as modalStyles from './modal.module.scss'
 
 type Props = {
   title: string,

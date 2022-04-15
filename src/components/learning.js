@@ -2,7 +2,7 @@
 import React from 'react'
 
 import useResize from './hooks/useResize'
-import learningStyles from './learning.module.scss'
+import * as learningStyles from './learning.module.scss'
 
 function Learning() {
   const { height } = useResize()

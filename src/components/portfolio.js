@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 
-import portfolioStyles from './portfolio.module.scss'
+import * as portfolioStyles from './portfolio.module.scss'
 
 function Portfolio() {
   return (

@@ -3,7 +3,7 @@ import React from 'react'
 
 import SocialBtnGroup from './common/socialBtnGroup'
 import useResize from './hooks/useResize'
-import aboutStyles from './about.module.scss'
+import * as aboutStyles from './about.module.scss'
 
 function About() {
   const { height } = useResize()

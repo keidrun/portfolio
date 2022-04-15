@@ -4,7 +4,7 @@ import { AUTHOR_NAME } from '../config'
 
 import Nav from './nav'
 import useResize from './hooks/useResize'
-import headerStyles from './header.module.scss'
+import * as headerStyles from './header.module.scss'
 
 function Header() {
   const { height } = useResize()

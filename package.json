@@ -3,50 +3,55 @@
   "version": "1.0.0",
   "description": "Keid's portfolio site.",
   "engines": {
-    "node": ">= 12.0.0"
+    "node": ">= 16.0.0"
   },
   "author": "keidrun",
   "license": "GPL-3.0-only",
   "private": true,
   "keywords": [],
   "dependencies": {
-    "bootstrap": "^4.5.3",
-    "gatsby": "^2.24.80",
-    "gatsby-plugin-flow": "^1.3.13",
-    "gatsby-plugin-google-analytics": "^2.3.19",
-    "gatsby-plugin-manifest": "^2.4.35",
-    "gatsby-plugin-react-helmet": "^3.3.14",
-    "gatsby-plugin-robots-txt": "^1.5.3",
-    "gatsby-plugin-sass": "^2.3.17",
-    "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "bootstrap": "^5.1.3",
+    "gatsby": "^4.12.1",
+    "gatsby-plugin-flow": "^3.12.1",
+    "gatsby-plugin-google-analytics": "^4.12.1",
+    "gatsby-plugin-manifest": "^4.12.1",
+    "gatsby-plugin-react-helmet": "^5.12.1",
+    "gatsby-plugin-robots-txt": "^1.7.1",
+    "gatsby-plugin-sass": "^5.12.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
-    "reactstrap": "^8.6.0",
+    "reactstrap": "^9.0.2",
     "reactstrap-scrollspy": "^0.1.1"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "cz-conventional-changelog": "3.3.0",
-    "eslint": "^7.11.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.13.0",
+    "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-flow": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-flowtype": "^5.2.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.4",
-    "flow-bin": "^0.136.0",
-    "flow-typed": "^3.2.1",
-    "husky": "^4.3.0",
-    "lint-staged": "^10.4.2",
-    "prettier": "^2.1.2",
-    "sass-loader": "^10.0.3",
-    "stylelint": "^13.7.2",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-order": "^4.1.0",
-    "stylelint-scss": "^3.18.0"
+    "eslint-plugin-ft-flow": "^2.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "flow-bin": "^0.176.1",
+    "flow-typed": "^3.7.0",
+    "gatsby-plugin-eslint": "^4.0.2",
+    "hermes-eslint": "^0.6.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.2",
+    "sass": "^1.50.0",
+    "stylelint": "^14.6.1",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0"
   },
   "husky": {
     "hooks": {
@@ -59,18 +64,21 @@
     ],
     "src/**/*.{jsx?}": [
       "yarn flow-check",
-      "yarn eslint"
+      "yarn eslint",
+      "yarn format"
     ]
   },
   "scripts": {
+    "clean": "gatsby clean",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "yarn develop",
     "serve": "gatsby serve",
+    "format": "prettier --write '**/*.js'",
     "eslint": "eslint --fix src/**/*.js",
     "stylelint": "stylelint --fix src/**/*.scss",
     "flow-check": "flow check",
-    "flow-typed-install": "flow-typed install"
+    "flow-typed-install": "flow-typed install --overwrite"
   },
   "browserslist": [
     ">0.25%",
@@ -78,7 +86,7 @@
   ],
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
+      "path": "cz-conventional-changelog"
     }
   }
 }

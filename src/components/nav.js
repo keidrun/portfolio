@@ -5,7 +5,7 @@ import { ScrollspyNavLink } from 'reactstrap-scrollspy'
 import { AUTHOR_NAME } from '../config'
 
 import SocialBtnGroup from './common/socialBtnGroup'
-import navStyles from './nav.module.scss'
+import * as navStyles from './nav.module.scss'
 
 function NavComponent() {
   const [collapsed, setCollapsed] = useState(true)

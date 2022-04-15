@@ -3,120 +3,132 @@ import React from 'react'
 import Modal from './common/modal'
 import Card from './common/card'
 
-import workStyles from './work.module.scss'
+import * as workStyles from './work.module.scss'
 
-const ModalOne = () => (
-  <Modal title="Back-End Development">
-    <h6>API Gateway Development for customers in a convenience stores company</h6>
-    <ul>
-      <li>
-        Designed an application architecture for the API gateway application to collect several kinds of data from
-        existing back-end APIs
-      </li>
-      <li>Developed the API gateway application with NodeJS and MongoDB, and Released it on AWS</li>
-    </ul>
-  </Modal>
-)
+function ModalOne() {
+  return (
+    <Modal title="Back-End Development">
+      <h6>API Gateway Development for customers in a convenience stores company</h6>
+      <ul>
+        <li>
+          Designed an application architecture for the API gateway application to collect several kinds of data from
+          existing back-end APIs
+        </li>
+        <li>Developed the API gateway application with NodeJS and MongoDB, and Released it on AWS</li>
+      </ul>
+    </Modal>
+  )
+}
 
-const ModalTwo = () => (
-  <Modal title="Full-stack Development">
-    <h6>
-      Web front-end replacement project with Spring MVC and MySQL for customers in customers in a cellular company
-    </h6>
-    <ul>
-      <li>
-        The purpose of this project was to develop new web front-end and replace existing front-end, and improve
-        back-end applications to collect new data
-      </li>
-      <li>Developed the front-end as one of developers with Spring MVC and Ajax</li>
-      <li>Improved some back-end applications as one of developers with Spring Framework and MySQL</li>
-      <li>
-        Arranged specifications of other existing back-end APIs and develop mock applications with NodeJS for testing
-      </li>
-    </ul>
-    <h6>Web Front-end Development with Spring MVC and PostgreSQL for customers in credit card company</h6>
-    <ul>
-      <li>
-        The purpose of this project was to develop new featuers for existing web front-end along with adding new
-        business process to sell debit cards
-      </li>
-      <li>Developed new features with Spring MVC and PostgreSQL to let the web front-end adapt the new process</li>
-    </ul>
-  </Modal>
-)
+function ModalTwo() {
+  return (
+    <Modal title="Full-stack Development">
+      <h6>
+        Web front-end replacement project with Spring MVC and MySQL for customers in customers in a cellular company
+      </h6>
+      <ul>
+        <li>
+          The purpose of this project was to develop new web front-end and replace existing front-end, and improve
+          back-end applications to collect new data
+        </li>
+        <li>Developed the front-end as one of developers with Spring MVC and Ajax</li>
+        <li>Improved some back-end applications as one of developers with Spring Framework and MySQL</li>
+        <li>
+          Arranged specifications of other existing back-end APIs and develop mock applications with NodeJS for testing
+        </li>
+      </ul>
+      <h6>Web Front-end Development with Spring MVC and PostgreSQL for customers in credit card company</h6>
+      <ul>
+        <li>
+          The purpose of this project was to develop new featuers for existing web front-end along with adding new
+          business process to sell debit cards
+        </li>
+        <li>Developed new features with Spring MVC and PostgreSQL to let the web front-end adapt the new process</li>
+      </ul>
+    </Modal>
+  )
+}
 
-const ModalThree = () => (
-  <Modal id="modelThree" name="modelThreeTitle" title="Framework Development">
-    <h6>Back-end Application Framework Development for M2M (Machine to machine) with Spring Framework and Netty</h6>
-    <ul>
-      <li>
-        Designed the application architecture to process big data that are collected via SOAP/XML/JSON communication
-        from any devices concurrently
-      </li>
-      <li>Developed a JSON communication feature with Spring Framework and tested with JUnit</li>
-      <li>
-        Developed a GUI application to simulate any communication from any sensor with Swing for testing an application
-        implemented the framework
-      </li>
-      <li>
-        Applied the framework to communicate with GCON that is an experimental sensor developed by another team of
-        customers in a convenience stores company
-      </li>
-    </ul>
-  </Modal>
-)
+function ModalThree() {
+  return (
+    <Modal id="modelThree" name="modelThreeTitle" title="Framework Development">
+      <h6>Back-end Application Framework Development for M2M (Machine to machine) with Spring Framework and Netty</h6>
+      <ul>
+        <li>
+          Designed the application architecture to process big data that are collected via SOAP/XML/JSON communication
+          from any devices concurrently
+        </li>
+        <li>Developed a JSON communication feature with Spring Framework and tested with JUnit</li>
+        <li>
+          Developed a GUI application to simulate any communication from any sensor with Swing for testing an
+          application implemented the framework
+        </li>
+        <li>
+          Applied the framework to communicate with GCON that is an experimental sensor developed by another team of
+          customers in a convenience stores company
+        </li>
+      </ul>
+    </Modal>
+  )
+}
 
-const ModalFour = () => (
-  <Modal id="modelFour" name="modelFourTitle" title="Scrum Coaching">
-    <h6>Web Front-end Replacement Project for customers in a convenience stores company</h6>
-    <ul>
-      <li>Created documents to explain Scrum for customers</li>
-      <li>Built new development teams to develop new web front-end and coached them in Scrum as Scrum Master</li>
-    </ul>
-  </Modal>
-)
+function ModalFour() {
+  return (
+    <Modal id="modelFour" name="modelFourTitle" title="Scrum Coaching">
+      <h6>Web Front-end Replacement Project for customers in a convenience stores company</h6>
+      <ul>
+        <li>Created documents to explain Scrum for customers</li>
+        <li>Built new development teams to develop new web front-end and coached them in Scrum as Scrum Master</li>
+      </ul>
+    </Modal>
+  )
+}
 
-const ModalFive = () => (
-  <Modal id="modelFive" name="modelFiveTitle" title="Product Management">
-    <h6>PoC (Proof of Concept) to demonstrate the effectiveness of Scrum Development with offshore teams</h6>
-    <ul>
-      <li>
-        The purpose of this project was to judge to establish a new department for Scrum by demonstrating the
-        effectiveness of Scrum Development with offshore teams
-      </li>
-      <li>
-        Organized a new team to set up a new department to push ahead with Scrum development to the company and its
-        client enterprises
-      </li>
-      <li>
-        Created product backlogs and managed offshore Scrum teams in China to develop sample iOS/Android apps and
-        assessed the effectiveness
-      </li>
-      <li>Succeeded to establish a new department for Scrum</li>
-    </ul>
-  </Modal>
-)
+function ModalFive() {
+  return (
+    <Modal id="modelFive" name="modelFiveTitle" title="Product Management">
+      <h6>PoC (Proof of Concept) to demonstrate the effectiveness of Scrum Development with offshore teams</h6>
+      <ul>
+        <li>
+          The purpose of this project was to judge to establish a new department for Scrum by demonstrating the
+          effectiveness of Scrum Development with offshore teams
+        </li>
+        <li>
+          Organized a new team to set up a new department to push ahead with Scrum development to the company and its
+          client enterprises
+        </li>
+        <li>
+          Created product backlogs and managed offshore Scrum teams in China to develop sample iOS/Android apps and
+          assessed the effectiveness
+        </li>
+        <li>Succeeded to establish a new department for Scrum</li>
+      </ul>
+    </Modal>
+  )
+}
 
-const ModalSix = () => (
-  <Modal id="modelSix" name="modelSixTitle" title="Project Management">
-    <h6>Web Front-end Development for customers in a Japanese government office</h6>
-    <ul>
-      <li>Conducted an interview with the client and planed the project</li>
-      <li>
-        Managed an in-house team in Japan and an offshore team in China and developed a new web front-end to distribute
-        debit cards and control purchase of welfare-payment recipients in the city
-      </li>
-    </ul>
-    <h6>Web Front-end Development for customers in financial companies</h6>
-    <ul>
-      <li>Conducted an interview with the client and planed the project</li>
-      <li>
-        Founded new teams that include a team in Japan and an offshore team in China, managed them and developed new
-        features to let the web front-end adapt new business process
-      </li>
-    </ul>
-  </Modal>
-)
+function ModalSix() {
+  return (
+    <Modal id="modelSix" name="modelSixTitle" title="Project Management">
+      <h6>Web Front-end Development for customers in a Japanese government office</h6>
+      <ul>
+        <li>Conducted an interview with the client and planed the project</li>
+        <li>
+          Managed an in-house team in Japan and an offshore team in China and developed a new web front-end to
+          distribute debit cards and control purchase of welfare-payment recipients in the city
+        </li>
+      </ul>
+      <h6>Web Front-end Development for customers in financial companies</h6>
+      <ul>
+        <li>Conducted an interview with the client and planed the project</li>
+        <li>
+          Founded new teams that include a team in Japan and an offshore team in China, managed them and developed new
+          features to let the web front-end adapt new business process
+        </li>
+      </ul>
+    </Modal>
+  )
+}
 
 function Work() {
   return (

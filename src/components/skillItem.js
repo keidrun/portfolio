@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 
-import skillItemStyles from './skillItem.module.scss'
+import * as skillItemStyles from './skillItem.module.scss'
 
 type SkillProps = {
   skillName: string,
@@ -18,17 +18,19 @@ type SkillItemProps = {
   children: string,
 }
 
-const Skill = ({ skillName, starRate }: SkillProps) => (
-  <div className={skillItemStyles.skillItem__name}>
-    <h4>{skillName}</h4>
-    <div className={skillItemStyles.starRating}>
-      <div className={`${skillItemStyles.starRatingFront} ${skillItemStyles[`starRatingFrontStar${starRate}`]}`}>
-        ★★★★★
+function Skill({ skillName, starRate }: SkillProps) {
+  return (
+    <div className={skillItemStyles.skillItem__name}>
+      <h4>{skillName}</h4>
+      <div className={skillItemStyles.starRating}>
+        <div className={`${skillItemStyles.starRatingFront} ${skillItemStyles[`starRatingFrontStar${starRate}`]}`}>
+          ★★★★★
+        </div>
+        <div className={skillItemStyles.starRatingBack}>★★★★★</div>
       </div>
-      <div className={skillItemStyles.starRatingBack}>★★★★★</div>
     </div>
-  </div>
-)
+  )
+}
 
 function SkillItem({ iconClassName, skillTitle, skills, children }: SkillItemProps) {
   return (
@@ -37,7 +39,7 @@ function SkillItem({ iconClassName, skillTitle, skills, children }: SkillItemPro
         <span className={iconClassName} />
       </div>
       <h3 className={skillItemStyles.skillItem__title}>{skillTitle}</h3>
-      {skills.map(skill => (
+      {skills.map((skill) => (
         <Skill key={skill.name} skillName={skill.name} starRate={skill.star} />
       ))}
       <p className={skillItemStyles.skillItem__description}>{children}</p>

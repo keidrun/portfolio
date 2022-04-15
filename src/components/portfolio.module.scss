@@ -1,5 +1,5 @@
-@import '../styles/variables';
-@import '../styles/modules';
+@import "../styles/variables";
+@import "../styles/modules";
 
 .portfolio {
   margin-top: -5rem;
@@ -44,7 +44,7 @@
         &::after {
           position: absolute;
           display: block;
-          content: '';
+          content: "";
           height: 100%;
           width: 100%;
           top: 0;
@@ -105,7 +105,7 @@
         &::after {
           position: absolute;
           display: block;
-          content: '';
+          content: "";
           height: 100%;
           width: 100%;
           top: 0;
@@ -166,7 +166,7 @@
         &::after {
           position: absolute;
           display: block;
-          content: '';
+          content: "";
           height: 100%;
           width: 100%;
           top: 0;
@@ -209,6 +209,10 @@
 }
 
 .projects-grid .project-item-1of3__name {
+  &.blue {
+    background: rgba($mainLightBlue, 0.7);
+  }
+
   &.red {
     background: rgba($thinRed, 0.7);
   }
@@ -243,6 +247,10 @@
 }
 
 .projects-grid.projects-hover .project-item-1of3:hover .project-item-1of3__name {
+  &.blue::after {
+    background: rgba($mainLightBlue, 1);
+  }
+
   &.red::after {
     background: rgba($thinRed, 1);
   }
@@ -277,6 +285,10 @@
 }
 
 .projects-grid .project-item-2of3__name {
+  &.blue {
+    background: rgba($mainLightBlue, 0.7);
+  }
+
   &.red {
     background: rgba($thinRed, 0.7);
   }
@@ -311,6 +323,10 @@
 }
 
 .projects-grid.projects-hover .project-item-2of3:hover .project-item-2of3__name {
+  &.blue::after {
+    background: rgba($mainLightBlue, 1);
+  }
+
   &.red::after {
     background: rgba($thinRed, 1);
   }
@@ -345,6 +361,10 @@
 }
 
 .projects-grid .project-item-3of3__name {
+  &.blue {
+    background: rgba($mainLightBlue, 0.7);
+  }
+
   &.red {
     background: rgba($thinRed, 0.7);
   }
@@ -379,6 +399,10 @@
 }
 
 .projects-grid.projects-hover .project-item-3of3:hover .project-item-3of3__name {
+  &.blue::after {
+    background: rgba($mainLightBlue, 1);
+  }
+
   &.red::after {
     background: rgba($thinRed, 1);
   }

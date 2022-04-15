@@ -2,7 +2,7 @@
 import React from 'react'
 import SkillItem from './skillItem'
 
-import skillsStyles from './skills.module.scss'
+import * as skillsStyles from './skills.module.scss'
 
 function Skills() {
   return (
@@ -20,7 +20,11 @@ function Skills() {
             <SkillItem
               iconClassName="icon-desktop"
               skillTitle="Professional Language"
-              skills={[{ name: 'ES6+', star: '50' }, { name: 'NodeJS', star: '50' }, { name: 'Java', star: '50' }]}
+              skills={[
+                { name: 'ES6+', star: '50' },
+                { name: 'NodeJS', star: '50' },
+                { name: 'Java', star: '50' },
+              ]}
             >
               &nbsp;
             </SkillItem>

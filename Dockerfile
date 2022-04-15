@@ -1,4 +1,4 @@
-FROM node:12.8-alpine as builder
+FROM node:16-alpine as builder
 WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
@@ -7,7 +7,7 @@ COPY . .
 ENV GATSBY_TELEMETRY_DISABLED 1
 RUN yarn build
 
-FROM nginx:1.17-alpine
+FROM nginx:1.21-alpine
 LABEL maintainer="Keid"
 COPY --from=builder /app/public /usr/share/nginx/html
 EXPOSE 80

@@ -1,11 +1,11 @@
-@import '../styles/variables';
-@import '../styles/modules';
+@import "../styles/variables";
+@import "../styles/modules";
 
 .learning {
   margin-top: -5rem;
   padding-top: 10rem + 5;
   padding-bottom: 3rem;
-  background-image: linear-gradient(rgba($mainLightBlue, 0.5), rgba($mainLightBlue, 0.5)), url('/assets/learning.jpg');
+  background-image: linear-gradient(rgba($mainLightBlue, 0.5), rgba($mainLightBlue, 0.5)), url("/assets/learning.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

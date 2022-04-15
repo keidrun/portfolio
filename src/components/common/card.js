@@ -2,7 +2,7 @@
 import React from 'react'
 import { Card, CardImg, CardText, CardTitle, CardSubtitle } from 'reactstrap'
 
-import cardStyles from './card.module.scss'
+import * as cardStyles from './card.module.scss'
 
 type Props = {
   title: string,

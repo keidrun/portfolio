@@ -1,7 +1,7 @@
 // @flow
 import React from 'react'
 
-import socialBtnStyles from './socialBtn.module.scss'
+import * as socialBtnStyles from './socialBtn.module.scss'
 
 type Props = {
   title: string,

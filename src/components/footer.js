@@ -2,7 +2,7 @@
 import React from 'react'
 import { CURRENT_YEAR, AUTHOR_NAME, FOOTER_MESSAGE } from '../config'
 
-import footerStyles from './footer.module.scss'
+import * as footerStyles from './footer.module.scss'
 
 function Footer() {
   return (

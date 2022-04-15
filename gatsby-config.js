@@ -1,6 +1,19 @@
-const plugins = ['gatsby-plugin-flow', 'gatsby-plugin-react-helmet']
+const plugins = [
+  'gatsby-plugin-flow',
+  'gatsby-plugin-react-helmet',
+  'gatsby-plugin-sass',
+  {
+    resolve: 'gatsby-plugin-eslint',
+    options: {
+      // rulePaths: [gatsbyRequiredRules],
+      stages: ['develop'],
+      extensions: ['js', 'jsx'],
+      exclude: ['node_modules', '.cache', 'public', '.husky', '.vscode', 'flow-typed'],
+    },
+  },
+]
+
 if (process.env.NODE_ENV === 'production') {
-  plugins.unshift('gatsby-plugin-sass')
   plugins.unshift({
     resolve: `gatsby-plugin-google-analytics`,
     options: {
