@@ -21,9 +21,10 @@ function Skills() {
               iconClassName="icon-desktop"
               skillTitle="Professional Language"
               skills={[
-                { name: 'ES6+', star: '50' },
-                { name: 'NodeJS', star: '50' },
                 { name: 'Java', star: '50' },
+                { name: 'C#', star: '40' },
+                { name: 'NodeJS', star: '40' },
+                { name: 'JavaScript', star: '40' },
               ]}
             >
               &nbsp;
@@ -34,13 +35,11 @@ function Skills() {
               iconClassName="icon-genius"
               skillTitle="Secondary Language"
               skills={[
-                { name: 'Python', star: '30' },
                 { name: 'TypeScript', star: '30' },
+                { name: 'Kotlin', star: '30' },
+                { name: 'Python', star: '20' },
                 { name: 'Go', star: '20' },
-                { name: 'Kotlin', star: '20' },
-                { name: 'Ruby', star: '20' },
-                { name: 'Perl', star: '20' },
-                { name: 'C', star: '10' },
+                { name: 'Rust', star: '10' },
               ]}
             >
               &nbsp;
@@ -51,14 +50,13 @@ function Skills() {
               iconClassName="icon-browser"
               skillTitle="Front-end stack"
               skills={[
-                { name: 'HTML5', star: '30' },
-                { name: 'CSS3', star: '30' },
-                { name: 'SASS', star: '20' },
-                { name: 'Webpack', star: '40' },
-                { name: 'React/Redux', star: '40' },
-                { name: 'ReactNative', star: '10' },
+                { name: 'HTML', star: '30' },
+                { name: 'CSS', star: '30' },
+                { name: 'SASS', star: '30' },
+                { name: 'React', star: '40' },
                 { name: 'Vue', star: '10' },
                 { name: 'Spring MVC', star: '30' },
+                { name: 'ASP.NET MVC', star: '30' },
               ]}
             >
               &nbsp;
@@ -70,14 +68,15 @@ function Skills() {
               skillTitle="Back-end stack"
               skills={[
                 { name: 'AWS', star: '30' },
-                { name: 'AWS Lambda', star: '20' },
                 { name: 'Heroku', star: '30' },
                 { name: 'SQL', star: '30' },
                 { name: 'MongoDB', star: '30' },
                 { name: 'DynamoDB', star: '20' },
-                { name: 'Express Framework', star: '50' },
-                { name: 'Spring Framework', star: '50' },
+                { name: 'Redis', star: '20' },
+                { name: 'Spring', star: '40' },
                 { name: 'Spring Boot', star: '30' },
+                { name: '.NET', star: '30' },
+                { name: 'Express', star: '40' },
               ]}
             >
               &nbsp;
@@ -90,12 +89,11 @@ function Skills() {
               skills={[
                 { name: 'Git/GitHub', star: '40' },
                 { name: 'Docker', star: '40' },
-                { name: 'Kubernetes', star: '10' },
-                { name: 'Vagrant', star: '20' },
-                { name: 'Ansible', star: '10' },
+                { name: 'Kubernetes', star: '20' },
                 { name: 'Jenkins', star: '30' },
                 { name: 'Travis CI', star: '30' },
                 { name: 'Circle CI', star: '30' },
+                { name: 'Github Actions', star: '30' },
               ]}
             >
               &nbsp;
@@ -108,11 +106,6 @@ function Skills() {
               skills={[
                 { name: 'Agile', star: '50' },
                 { name: 'Scrum', star: '50' },
-                { name: 'Jira', star: '30' },
-                { name: 'Redmine', star: '30' },
-                { name: 'Trac', star: '30' },
-                { name: 'Slack', star: '30' },
-                { name: 'HipChat', star: '30' },
               ]}
             >
               &nbsp;
@@ -124,9 +117,8 @@ function Skills() {
               skillTitle="Documentation"
               skills={[
                 { name: 'Markdown', star: '50' },
-                { name: 'PowerPoint', star: '50' },
-                { name: 'Excel', star: '40' },
-                { name: 'Word', star: '30' },
+                { name: 'Microsoft Office', star: '30' },
+                { name: 'Google Workspace', star: '30' },
               ]}
             >
               &nbsp;
@@ -139,8 +131,9 @@ function Skills() {
               skills={[
                 { name: 'Passion', star: '50' },
                 { name: 'Japanese', star: '50' },
-                { name: 'Machine-learning', star: '10' },
                 { name: 'Blockchain', star: '10' },
+                { name: 'Dapp', star: '10' },
+                { name: 'Machine-learning', star: '10' },
               ]}
             >
               &nbsp;
