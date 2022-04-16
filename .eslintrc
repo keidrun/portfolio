@@ -1,7 +1,7 @@
 {
   "root": true,
   "parser": "hermes-eslint",
-  "plugins": ["react", "ft-flow"],
+  "plugins": ["ft-flow"],
   "extends": ["airbnb", "airbnb/hooks", "plugin:ft-flow/recommended", "prettier"],
   "parserOptions": {
     "requireConfigFile": false,
@@ -18,6 +18,8 @@
     "es2022": true
   },
   "rules": {
+    "no-anonymous-exports-page-templates": "warn",
+    "limited-exports-page-templates": "warn",
     "react/function-component-definition": 0,
     "react-hooks/exhaustive-deps": 0,
     "ft-flow/object-type-delimiter": [2, "comma"],

@@ -1,3 +1,5 @@
+const path = require("path");
+
 const plugins = [
   'gatsby-plugin-flow',
   'gatsby-plugin-react-helmet',
@@ -5,7 +7,14 @@ const plugins = [
   {
     resolve: 'gatsby-plugin-eslint',
     options: {
-      // rulePaths: [gatsbyRequiredRules],
+      rulePaths: [path.join(
+        process.cwd(),
+        'node_modules',
+        'gatsby',
+        'dist',
+        'utils',
+        'eslint-rules'
+      )],
       stages: ['develop'],
       extensions: ['js', 'jsx'],
       exclude: ['node_modules', '.cache', 'public', '.husky', '.vscode', 'flow-typed'],
