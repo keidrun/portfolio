@@ -18,8 +18,8 @@
     "es2022": true
   },
   "rules": {
-    "no-anonymous-exports-page-templates": "warn",
-    "limited-exports-page-templates": "warn",
+    "no-anonymous-exports-page-templates": "off",
+    "limited-exports-page-templates": "off",
     "react/function-component-definition": 0,
     "react-hooks/exhaustive-deps": 0,
     "ft-flow/object-type-delimiter": [2, "comma"],
