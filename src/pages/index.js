@@ -21,7 +21,7 @@ function IndexPage() {
         <meta name="robots" content="noindex,nofollow" />
         <link rel="shortcut icon" href={favicon} />
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,300,300i,500,500i" rel="stylesheet" />
-        <link href="https://keisukesasaki.com/assets/fonts/et-line-font/et-line-font.css" rel="stylesheet" />
+        <link href="/assets/fonts/et-line-font/et-line-font.css" rel="stylesheet" />
       </Helmet>
       <Layout>
         <Scrollspy names={['header', 'portfolio', 'about', 'skills', 'learning', 'work', 'career']}>
