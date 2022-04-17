@@ -23,7 +23,7 @@ function Skills() {
               skills={[
                 { name: 'Java', star: '50' },
                 { name: 'C#', star: '40' },
-                { name: 'NodeJS', star: '40' },
+                { name: 'Node.js', star: '40' },
                 { name: 'JavaScript', star: '40' },
               ]}
             >
@@ -40,6 +40,7 @@ function Skills() {
                 { name: 'Python', star: '20' },
                 { name: 'Go', star: '20' },
                 { name: 'Rust', star: '10' },
+                { name: 'Swift', star: '10' },
               ]}
             >
               &nbsp;
@@ -68,7 +69,6 @@ function Skills() {
               skillTitle="Back-end stack"
               skills={[
                 { name: 'AWS', star: '30' },
-                { name: 'Heroku', star: '30' },
                 { name: 'SQL', star: '30' },
                 { name: 'MongoDB', star: '30' },
                 { name: 'DynamoDB', star: '20' },
@@ -131,9 +131,9 @@ function Skills() {
               skills={[
                 { name: 'Passion', star: '50' },
                 { name: 'Japanese', star: '50' },
-                { name: 'Blockchain', star: '10' },
-                { name: 'Dapp', star: '10' },
                 { name: 'Machine-learning', star: '10' },
+                { name: 'Blockchain', star: '10' },
+                { name: 'DApps', star: '10' },
               ]}
             >
               &nbsp;

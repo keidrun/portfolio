@@ -36,15 +36,8 @@ function About() {
               and to extend my knowledge of AI and Blockchain technologies. And my next goal is to found my outstanding
               company and change people&#39;s lives in the world. I&#39;m thinking of starting my own business several
               years later but I&#39;ll focus on an application development so far because intesting technologies such as
-              AI and Blockchain come into being recently and I&#39;d like to be involved in a project that use them. And
-              I also launched a website for a bitcoin trade as a hobby. (See a{' '}
-              <span className="p-link">
-                <a href="/#portfolio">
-                  <strong>Portfolio</strong>
-                </a>
-              </span>{' '}
-              section) Finally, I would provide value to any company from my committed work to achieve any project&#39;s
-              aim.
+              AI and Blockchain come into being recently and I&#39;d like to be involved in a project that use them.
+              Finally, I would provide value to any company from my committed work to achieve any project&#39;s aim.
             </p>
             <h5>Feel free to contact me!</h5>
             <SocialBtnGroup section="about" />

@@ -5,26 +5,11 @@ import Card from './common/card'
 
 import * as workStyles from './work.module.scss'
 
-function ModalOne() {
-  return (
-    <Modal title="Back-End Development">
-      <h6>API Gateway Development for customers in a convenience stores company</h6>
-      <ul>
-        <li>
-          Designed an application architecture for the API gateway application to collect several kinds of data from
-          existing back-end APIs
-        </li>
-        <li>Developed the API gateway application with NodeJS and MongoDB, and Released it on AWS</li>
-      </ul>
-    </Modal>
-  )
-}
-
-function ModalTwo() {
+function ModalOfFullStackJava() {
   return (
     <Modal title="Full-stack Development">
       <h6>
-        Web front-end replacement project with Spring MVC and MySQL for customers in customers in a cellular company
+        Web Front-End Replacement project with Spring MVC and MySQL for customers in customers in a cellular company
       </h6>
       <ul>
         <li>
@@ -37,21 +22,14 @@ function ModalTwo() {
           Arranged specifications of other existing back-end APIs and develop mock applications with NodeJS for testing
         </li>
       </ul>
-      <h6>Web Front-end Development with Spring MVC and PostgreSQL for customers in credit card company</h6>
+      <h6>Web Application Development with Spring MVC and PostgreSQL for customers in credit card company</h6>
       <ul>
         <li>
-          The purpose of this project was to develop new featuers for existing web front-end along with adding new
+          The purpose of this project was to develop new featuers for existing web application along with adding new
           business process to sell debit cards
         </li>
-        <li>Developed new features with Spring MVC and PostgreSQL to let the web front-end adapt the new process</li>
+        <li>Developed new features with Spring MVC and PostgreSQL to let the web application adapt the new process</li>
       </ul>
-    </Modal>
-  )
-}
-
-function ModalThree() {
-  return (
-    <Modal id="modelThree" name="modelThreeTitle" title="Framework Development">
       <h6>Back-end Application Framework Development for M2M (Machine to machine) with Spring Framework and Netty</h6>
       <ul>
         <li>
@@ -72,7 +50,39 @@ function ModalThree() {
   )
 }
 
-function ModalFour() {
+function ModalOfFullStackCSharp() {
+  return (
+    <Modal id="modelThree" name="modelThreeTitle" title="Framework Development">
+      <h6>Web Application Development with ASP.NET MVC and PostgreSQL for in-house product in a SaaS company</h6>
+      <ul>
+        <li>
+          The purpose of this project was to develop new featuers for existing SaaS application in order to respond
+          quckly to rapid market change by COVID-19
+        </li>
+        <li>
+          Developed new features with ASP.NET MVC and PostgreSQL to let the web application adapt the new business model
+        </li>
+      </ul>
+    </Modal>
+  )
+}
+
+function ModalOfBackendNodeJS() {
+  return (
+    <Modal title="Back-End Development">
+      <h6>API Gateway Development for customers in a convenience stores company</h6>
+      <ul>
+        <li>
+          Designed an application architecture for the API gateway application to collect several kinds of data from
+          existing back-end APIs
+        </li>
+        <li>Developed the API gateway application with Node.js and MongoDB, and Released it on AWS</li>
+      </ul>
+    </Modal>
+  )
+}
+
+function ModalOfScrumCoaching() {
   return (
     <Modal id="modelFour" name="modelFourTitle" title="Scrum Coaching">
       <h6>Web Front-end Replacement Project for customers in a convenience stores company</h6>
@@ -84,7 +94,7 @@ function ModalFour() {
   )
 }
 
-function ModalFive() {
+function ModalOfProductManagement() {
   return (
     <Modal id="modelFive" name="modelFiveTitle" title="Product Management">
       <h6>PoC (Proof of Concept) to demonstrate the effectiveness of Scrum Development with offshore teams</h6>
@@ -107,9 +117,9 @@ function ModalFive() {
   )
 }
 
-function ModalSix() {
+function ModalOfGlobalTeamManagement() {
   return (
-    <Modal id="modelSix" name="modelSixTitle" title="Project Management">
+    <Modal id="modelSix" name="modelSixTitle" title="Global Team Management">
       <h6>Web Front-end Development for customers in a Japanese government office</h6>
       <ul>
         <li>Conducted an interview with the client and planed the project</li>
@@ -143,31 +153,31 @@ function Work() {
           <div className="col-sm-12">
             <div className="card-group">
               <Card
-                title="Back-End Development"
-                subTitle="NodeJS RESTful API & MongoDB"
-                imgSrc="assets/skill2.jpg"
-                renderModal={() => <ModalOne />}
-              >
-                Designed and developed an API gateway application to collect several kinds of data from many back-end
-                applications with NodeJS and MongoDB for customers in a convenience stores company.
-              </Card>
-              <Card
                 title="Full-Stack Development"
                 subTitle="Spring MVC & Ajax & SQL"
-                imgSrc="assets/skill1.jpg"
-                renderModal={() => <ModalTwo />}
+                imgSrc="assets/skill2.jpg"
+                renderModal={() => <ModalOfFullStackJava />}
               >
                 Designed and developed web applications with Spring MVC, Ajax and SQL for customers in a cellular
                 company and a financial company.
               </Card>
               <Card
-                title="Framework Development"
-                subTitle="Spring Framework & Netty"
-                imgSrc="assets/skill3.jpg"
-                renderModal={() => <ModalThree />}
+                title="Full-Stack Development"
+                subTitle="ASP.NET MVC & Ajax & SQL"
+                imgSrc="assets/skill1.jpg"
+                renderModal={() => <ModalOfFullStackCSharp />}
               >
-                Designed and developed an application framework with Spring Framework and Netty to process big data from
-                many devices, then implemented it for another team of customers in a convenience stores company.
+                Designed and developed web applications with ASP.NET MVC, Ajax and SQL for in-house product in a SaaS
+                company.
+              </Card>
+              <Card
+                title="Back-End Development"
+                subTitle="Node.js RESTful API & MongoDB"
+                imgSrc="assets/skill3.jpg"
+                renderModal={() => <ModalOfBackendNodeJS />}
+              >
+                Designed and developed an API gateway application to collect several kinds of data from many back-end
+                applications with NodeJS and MongoDB for customers in a convenience stores company.
               </Card>
             </div>
 
@@ -176,7 +186,7 @@ function Work() {
                 title="Scrum Coaching"
                 subTitle="Scrum Master"
                 imgSrc="assets/skill4.jpg"
-                renderModal={() => <ModalFour />}
+                renderModal={() => <ModalOfScrumCoaching />}
               >
                 Built new development teams and coached them in Scrum as Scrum Master for customers in a cellular
                 company.
@@ -185,16 +195,16 @@ function Work() {
                 title="Product Management"
                 subTitle="Product Owner for PoC with offshore teams"
                 imgSrc="assets/skill5.jpg"
-                renderModal={() => <ModalFive />}
+                renderModal={() => <ModalOfProductManagement />}
               >
                 Planed as Product Owner for PoC (Proof of Concept) to demonstrate the effectiveness of Scrum
                 Development, organized and managed offshore teams of developers in China in an in-house project.
               </Card>
               <Card
-                title="Project Management"
-                subTitle="Project Lead to manage global teams"
+                title="Global Team Management"
+                subTitle="Team Lead to manage global teams"
                 imgSrc="assets/skill6.jpg"
-                renderModal={() => <ModalSix />}
+                renderModal={() => <ModalOfGlobalTeamManagement />}
               >
                 Planed and managed global teams of developers in Japan and China to develop web applications and native
                 apps for customers in financial companies and a Japanese government office.
