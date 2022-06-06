@@ -11,7 +11,7 @@ function Footer() {
         <div className="row">
           <div className={`col-sm-12 text-center ${footerStyles.footer__text}`}>
             <small>
-              &copy; 2017-
+              &copy;
               {CURRENT_YEAR} {AUTHOR_NAME}. <span className={footerStyles.footer__saying}>{FOOTER_MESSAGE}</span>
             </small>
           </div>

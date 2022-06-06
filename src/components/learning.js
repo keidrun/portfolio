@@ -14,8 +14,8 @@ function Learning() {
           <div className={learningStyles.learning__text}>
             <h3>Learning</h3>
             <p className="lead">
-              I absolutely love to learn new technologies. Recently, I&#39;m learning Next.js, GraphQL, gRPC,
-              Kubernetes, DApps.
+              I absolutely love to learn new technologies. Recently, I&#39;m learning Next.js, GraphQL, gRPC, Kubernetes
+              and DApps.
             </p>
             <p>
               I have kept blogging to share my knowledge since 2013. The concepts are learning technologies and English.

@@ -3,6 +3,20 @@ import React from 'react'
 
 import * as portfolioStyles from './portfolio.module.scss'
 
+function ProjectItem({ sizeStyle, colorStyle, url, title, captionTitle, captionDescription }) {
+  return (
+    <li className={`${portfolioStyles.projectItem} ${sizeStyle}`}>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <h3 className={`${portfolioStyles.projectItem__name} ${colorStyle}`}>{title}</h3>
+        <div className={portfolioStyles.projectItem__caption}>
+          <h3 className={portfolioStyles.projectItem__title}>{captionTitle}</h3>
+          <div className={portfolioStyles.projectItem__description}>{captionDescription}</div>
+        </div>
+      </a>
+    </li>
+  )
+}
+
 function Portfolio() {
   return (
     <section id="portfolio" className={portfolioStyles.portfolio}>
@@ -19,109 +33,80 @@ function Portfolio() {
           <ul
             className={`${portfolioStyles.projectsGrid} ${portfolioStyles.projectsGridGut} ${portfolioStyles.projectsHover}`}
           >
-            <li className={portfolioStyles.projectItem3of3}>
-              <a href="https://www.coinietrade.com/" target="_blank" rel="noopener noreferrer">
-                <h3 className={`${portfolioStyles.projectItem3of3__name} ${portfolioStyles.orange}`}>
-                  CoinieTrade website
-                </h3>
-                <div className={portfolioStyles.projectItem3of3__caption}>
-                  <h3 className={portfolioStyles.projectItem3of3__title}>Go to CoinieTrade website!</h3>
-                  <div className={portfolioStyles.projectItem3of3__description}>
-                    Website for monitoring and trading bitcoin
-                  </div>
-                </div>
-              </a>
-            </li>
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemTwo}
+              colorStyle={portfolioStyles.blue}
+              url="https://github.com/keidrun/csv-streamy/tree/main/packages/csv-streamy-lib"
+              title="Node.js CSV Stream Library"
+              captionTitle="Go to Github of a Stream library to handle CSV files fast and easily!"
+              captionDescription="A NPM project"
+            />
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemTwo}
+              colorStyle={portfolioStyles.orange}
+              url="https://github.com/keidrun/csv-streamy/tree/main/packages/csv-streamy-cli"
+              title="Handy CLI Tool for CSV"
+              captionTitle="Go to Github of a CLI Tool to handle CSV files for daily tasks!"
+              captionDescription="A NPM project"
+            />
 
-            <li className={portfolioStyles.projectItem1of3}>
-              <a href="https://github.com/keidrun/coinietrade-proxy" target="_blank" rel="noopener noreferrer">
-                <h3 className={`${portfolioStyles.projectItem1of3__name} ${portfolioStyles.red}`}>
-                  Source Code of Proxy
-                </h3>
-                <div className={portfolioStyles.projectItem1of3__caption}>
-                  <h3 className={portfolioStyles.projectItem1of3__title}>Go to Github of Proxy in CoinieTrade!</h3>
-                  <div className={portfolioStyles.projectItem1of3__description}>A Part of CoinieTrade</div>
-                </div>
-              </a>
-            </li>
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemFour}
+              colorStyle={portfolioStyles.orange}
+              url="https://www.coinietrade.com/"
+              title="CoinieTrade Website"
+              captionTitle="Go to CoinieTrade website!"
+              captionDescription="Website for monitoring and trading bitcoin"
+            />
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemFour}
+              colorStyle={portfolioStyles.green}
+              url="https://docs.coinietrade.com/"
+              title="Documents"
+              captionTitle="Go to documents of CoinieTrade!"
+              captionDescription="Hosting pages for documents of CoinieTrade Website"
+            />
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemFour}
+              colorStyle={portfolioStyles.yellow}
+              url="https://github.com/keidrun/coinietrade-front"
+              title="Front-End"
+              captionTitle="Go to Github of Front-End in CoinieTrade!"
+              captionDescription="React App as Front-End of CoinieTrade"
+            />
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemFour}
+              colorStyle={portfolioStyles.blue}
+              url="https://github.com/keidrun/coinietrade-back"
+              title="Back-End"
+              captionTitle="Go to Github of Back-End in CoinieTrade!"
+              captionDescription="Serverless App as Back-End of CoinieTrade"
+            />
 
-            <li className={portfolioStyles.projectItem1of3}>
-              <a href="https://github.com/keidrun/coinietrade-front" target="_blank" rel="noopener noreferrer">
-                <h3 className={`${portfolioStyles.projectItem1of3__name} ${portfolioStyles.yellow}`}>
-                  Source Code of Front-end
-                </h3>
-                <div className={portfolioStyles.projectItem1of3__caption}>
-                  <h3 className={portfolioStyles.projectItem1of3__title}>Go to Github of Front-end in CoinieTrade!</h3>
-                  <div className={portfolioStyles.projectItem1of3__description}>A Part of CoinieTrade</div>
-                </div>
-              </a>
-            </li>
-
-            <li className={portfolioStyles.projectItem1of3}>
-              <a href="https://github.com/keidrun/coinietrade-back" target="_blank" rel="noopener noreferrer">
-                <h3 className={portfolioStyles.projectItem1of3__name}>Source Code of Back-end</h3>
-                <div className={portfolioStyles.projectItem1of3__caption}>
-                  <h3 className={portfolioStyles.projectItem1of3__title}>Go to Github of Back-end in CoinieTrade!</h3>
-                  <div className={portfolioStyles.projectItem1of3__description}>A Part of CoinieTrade</div>
-                </div>
-              </a>
-            </li>
-
-            <li className={portfolioStyles.projectItem3of3}>
-              <a href="https://docs.coinietrade.com/" target="_blank" rel="noopener noreferrer">
-                <h3 className={`${portfolioStyles.projectItem3of3__name} ${portfolioStyles.green}`}>
-                  Documents of CoinieTrade
-                </h3>
-                <div className={portfolioStyles.projectItem3of3__caption}>
-                  <h3 className={portfolioStyles.projectItem3of3__title}>Go to documents of CoinieTrade!</h3>
-                  <div className={portfolioStyles.projectItem3of3__description}>
-                    Hosting pages for documents of CoinieTrade website
-                  </div>
-                </div>
-              </a>
-            </li>
-
-            <li className={portfolioStyles.projectItem1of3}>
-              <a href="https://github.com/keidrun/dept" target="_blank" rel="noopener noreferrer">
-                <h3 className={`${portfolioStyles.projectItem1of3__name} ${portfolioStyles.blue}`}>
-                  Original CLI Tool
-                </h3>
-                <div className={portfolioStyles.projectItem1of3__caption}>
-                  <h3 className={portfolioStyles.projectItem1of3__title}>
-                    Go to Github of CLI to begin developing quickly!
-                  </h3>
-                  <div className={portfolioStyles.projectItem1of3__description}>A NPM project</div>
-                </div>
-              </a>
-            </li>
-
-            <li className={portfolioStyles.projectItem1of3}>
-              <a href="https://github.com/keidrun/css-url-loader" target="_blank" rel="noopener noreferrer">
-                <h3 className={`${portfolioStyles.projectItem1of3__name} ${portfolioStyles.orange}`}>
-                  Original Webpack Loader
-                </h3>
-                <div className={portfolioStyles.projectItem1of3__caption}>
-                  <h3 className={portfolioStyles.projectItem1of3__title}>
-                    Go to Github of a webpack loader to transform URLs in css!
-                  </h3>
-                  <div className={portfolioStyles.projectItem1of3__description}>A NPM Project</div>
-                </div>
-              </a>
-            </li>
-
-            <li className={portfolioStyles.projectItem1of3}>
-              <a href="https://github.com/keidrun/reactstrap-scrollspy" target="_blank" rel="noopener noreferrer">
-                <h3 className={`${portfolioStyles.projectItem1of3__name} ${portfolioStyles.pink}`}>
-                  Original React Library
-                </h3>
-                <div className={portfolioStyles.projectItem1of3__caption}>
-                  <h3 className={portfolioStyles.projectItem1of3__title}>
-                    Go to Github of a React library to create an automatically update navigation!
-                  </h3>
-                  <div className={portfolioStyles.projectItem1of3__description}>A NPM Project</div>
-                </div>
-              </a>
-            </li>
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemThree}
+              colorStyle={portfolioStyles.blue}
+              url="https://github.com/keidrun/dept"
+              title="CLI Tool for develpment"
+              captionTitle="Go to Github of CLI to begin developing quickly!"
+              captionDescription="A NPM project"
+            />
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemThree}
+              colorStyle={portfolioStyles.orange}
+              url="https://github.com/keidrun/css-url-loader"
+              title="Webpack Loader"
+              captionTitle="Go to Github of a webpack loader to transform URLs in css!"
+              captionDescription="A NPM project"
+            />
+            <ProjectItem
+              sizeStyle={portfolioStyles.projectItemThree}
+              colorStyle={portfolioStyles.pink}
+              url="https://github.com/keidrun/reactstrap-scrollspy"
+              title="React Library"
+              captionTitle="Go to Github of a React library to create an automatically update navigation!"
+              captionDescription="A NPM project"
+            />
           </ul>
         </div>
       </div>

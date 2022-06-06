@@ -20,7 +20,9 @@ function ModalComponent({ title, children }: Props) {
         More
       </Button>
       <Modal isOpen={modal} toggle={toggleModal}>
-        <ModalHeader toggle={toggleModal}>{title}</ModalHeader>
+        <ModalHeader className={modalStyles.modal__header} toggle={toggleModal}>
+          {title}
+        </ModalHeader>
         <ModalBody>{children}</ModalBody>
         <ModalFooter>
           <Button className={`${modalStyles.btn} ${modalStyles.btn__mainColor}`} onClick={toggleModal}>

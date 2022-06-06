@@ -10,7 +10,7 @@ function Career() {
   return (
     <section id="career" className={`${careerStyles.career} ${height}`}>
       <div className="container">
-        <div className="col-md-6 ml-auto">
+        <div className="col-md-6 ms-auto">
           <div className={careerStyles.career__text}>
             <h3>Career</h3>
             <p className="lead">
@@ -19,7 +19,7 @@ function Career() {
               for 6 years. After I quit the companey, I decided to invest my time to learn English. In the beginning, I
               moved to Philippines and stayed to learn English for several months, then moved to Canada and stayed to
               improve my English for about a year and a half. Then, I returned to work in Tokyo. Now, I&#39;m seeking
-              opportunities of a developer job.
+              opportunities of a developer job around the world.
             </p>
             <ul>
               <li>
