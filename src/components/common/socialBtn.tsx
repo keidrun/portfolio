@@ -1,15 +1,13 @@
-// @flow
-import React from 'react'
-
+// @ts-expect-error
 import * as socialBtnStyles from './socialBtn.module.scss'
 
 type Props = {
-  title: string,
-  link: string,
-  target: string,
+  title: string
+  link: string
+  target?: string
 }
 
-function SocialBtn({ title, link, target }: Props) {
+function SocialBtn({ title, link, target = '_self' }: Props) {
   return (
     <a
       href={link}
@@ -20,10 +18,6 @@ function SocialBtn({ title, link, target }: Props) {
       {title}
     </a>
   )
-}
-
-SocialBtn.defaultProps = {
-  target: '_self',
 }
 
 export default SocialBtn

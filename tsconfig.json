@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "allowJs": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    // gatsby doesn't support 'baseUrl' and 'paths'
+    // https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/#current-limitations
+  },
+  "include": ["./src/**/*"]
+}

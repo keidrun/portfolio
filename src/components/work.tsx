@@ -1,11 +1,16 @@
-// @flow
-import React from 'react'
+import { ReactNode } from 'react'
 import Modal from './common/modal'
 import Card from './common/card'
 
+// @ts-expect-error
 import * as workStyles from './work.module.scss'
 
-function WorkDetailModal({ title, children }) {
+type Props = {
+  title: string
+  children: ReactNode
+}
+
+function WorkDetailModal({ title, children }: Props) {
   return <Modal title={title}>{children}</Modal>
 }
 

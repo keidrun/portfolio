@@ -1,12 +1,11 @@
-// @flow
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 
 type Props = {
-  initialHeight: string,
-  initialWidth: string,
-  pivotPx: number,
-  resizedHeight: string,
-  resizedWidth: string,
+  initialHeight: string
+  initialWidth: string
+  pivotPx: number
+  resizedHeight: string
+  resizedWidth: string
 }
 
 const useResize = (
@@ -21,7 +20,7 @@ const useResize = (
   const [height, setHeight] = useState<string>(initialHeight)
   const [width, setWidth] = useState<string>(initialWidth)
 
-  const resize = () => {
+  const resize = useCallback(() => {
     if (document.documentElement) {
       const { clientWidth } = document.documentElement
       if (clientWidth <= pivotPx) {
@@ -32,13 +31,13 @@ const useResize = (
         setWidth(initialWidth)
       }
     }
-  }
+  }, [initialHeight, initialWidth, pivotPx, resizedHeight, resizedWidth])
 
   useEffect(() => {
     window.addEventListener('resize', resize)
     resize()
     return () => window.removeEventListener('resize', resize)
-  }, [])
+  }, [resize])
 
   return {
     height,

@@ -1,7 +1,5 @@
-// @flow
-import React from 'react'
-
 import useResize from './hooks/useResize'
+// @ts-expect-error
 import * as learningStyles from './learning.module.scss'
 
 function Learning() {

@@ -1,19 +1,17 @@
-// @flow
-import React from 'react'
-import type { Node } from 'react'
+import { ReactNode } from 'react'
 
 import Footer from '../footer'
 import '../../styles/index.scss'
 
 type Props = {
-  children: Node,
+  children: ReactNode,
 }
 
-const Layout = ({ children }: Props) => (
-  <div>
+function Layout({ children }: Props) {
+  return <div>
     {children}
     <Footer />
   </div>
-)
+}
 
 export default Layout

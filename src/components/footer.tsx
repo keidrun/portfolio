@@ -1,7 +1,6 @@
-// @flow
-import React from 'react'
 import { CURRENT_YEAR, AUTHOR_NAME, FOOTER_MESSAGE } from '../config'
 
+// @ts-expect-error
 import * as footerStyles from './footer.module.scss'
 
 function Footer() {

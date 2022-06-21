@@ -1,7 +1,6 @@
-// @flow
-import React from 'react'
 import { Helmet } from 'react-helmet'
 import { Scrollspy } from 'reactstrap-scrollspy'
+// @ts-expect-error
 import favicon from '../../static/favicon.ico'
 
 import Layout from '../components/hoc/layout'

@@ -1,9 +1,16 @@
-// @flow
-import React from 'react'
-
+// @ts-expect-error
 import * as portfolioStyles from './portfolio.module.scss'
 
-function ProjectItem({ sizeStyle, colorStyle, url, title, captionTitle, captionDescription }) {
+type Props = {
+  sizeStyle: string
+  colorStyle: string
+  url: string
+  title: string
+  captionTitle: string
+  captionDescription: string
+}
+
+function ProjectItem({ sizeStyle, colorStyle, url, title, captionTitle, captionDescription }: Props) {
   return (
     <li className={`${portfolioStyles.projectItem} ${sizeStyle}`}>
       <a href={url} target="_blank" rel="noopener noreferrer">

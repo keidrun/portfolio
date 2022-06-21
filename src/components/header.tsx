@@ -1,9 +1,10 @@
-// @flow
 import React from 'react'
+
 import { AUTHOR_NAME } from '../config'
 
 import Nav from './nav'
 import useResize from './hooks/useResize'
+// @ts-expect-error
 import * as headerStyles from './header.module.scss'
 
 function Header() {

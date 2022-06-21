@@ -1,6 +1,5 @@
 .cache
 .husky
 .vscode
-flow-typed
 node_modules
 public

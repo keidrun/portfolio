@@ -1,5 +1,3 @@
-// @flow
-import React from 'react'
 import SocialBtn from './socialBtn'
 
 const EmailBtn = () => <SocialBtn title="E-mail" link="mailto:contact@keisukesasaki.com" />
@@ -11,10 +9,10 @@ const LinkedinBtn = () => (
 // const TwitterBtn = () => <SocialBtn title="Twitter" link="https://twitter.com/xxxxx" target="_blank" />
 
 type Props = {
-  section: string,
+  section?: string,
 }
 
-function SocialBtnGroup({ section }: Props) {
+function SocialBtnGroup({ section = 'nav' }: Props) {
   return (
     <>
       {(() => {
@@ -54,10 +52,6 @@ function SocialBtnGroup({ section }: Props) {
       })()}
     </>
   )
-}
-
-SocialBtnGroup.defaultProps = {
-  section: 'nav',
 }
 
 export default SocialBtnGroup

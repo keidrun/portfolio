@@ -1,7 +1,6 @@
-// @flow
-import React from 'react'
 import SkillItem from './skillItem'
 
+// @ts-expect-error
 import * as skillsStyles from './skills.module.scss'
 
 function Skills() {

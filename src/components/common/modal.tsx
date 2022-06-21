@@ -1,12 +1,12 @@
-// @flow
-import React, { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 
+// @ts-expect-error
 import * as modalStyles from './modal.module.scss'
 
 type Props = {
-  title: string,
-  children: any,
+  title: string
+  children: ReactNode
 }
 
 function ModalComponent({ title, children }: Props) {

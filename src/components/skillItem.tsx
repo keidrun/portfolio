@@ -1,21 +1,19 @@
-// @flow
-import React from 'react'
-
+// @ts-expect-error
 import * as skillItemStyles from './skillItem.module.scss'
 
 type SkillProps = {
-  skillName: string,
-  starRate: string,
+  skillName: string
+  starRate: string
 }
 
 type SkillItemProps = {
-  iconClassName: string,
-  skillTitle: string,
+  iconClassName: string
+  skillTitle: string
   skills: Array<{
-    name: string,
-    star: string,
-  }>,
-  children: string,
+    name: string
+    star: string
+  }>
+  children: string
 }
 
 function Skill({ skillName, starRate }: SkillProps) {

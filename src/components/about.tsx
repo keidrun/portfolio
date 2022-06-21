@@ -1,8 +1,6 @@
-// @flow
-import React from 'react'
-
 import SocialBtnGroup from './common/socialBtnGroup'
 import useResize from './hooks/useResize'
+// @ts-expect-error
 import * as aboutStyles from './about.module.scss'
 
 function About() {

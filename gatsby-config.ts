@@ -1,23 +1,15 @@
-const path = require("path");
+import path from 'path'
 
-const plugins = [
-  'gatsby-plugin-flow',
-  'gatsby-plugin-react-helmet',
+const plugins: (string | object)[] = [
   'gatsby-plugin-sass',
+  'gatsby-plugin-react-helmet',
   {
     resolve: 'gatsby-plugin-eslint',
     options: {
-      rulePaths: [path.join(
-        process.cwd(),
-        'node_modules',
-        'gatsby',
-        'dist',
-        'utils',
-        'eslint-rules'
-      )],
+      rulePaths: [path.join(process.cwd(), 'node_modules', 'gatsby', 'dist', 'utils', 'eslint-rules')],
       stages: ['develop'],
-      extensions: ['js', 'jsx'],
-      exclude: ['node_modules', '.cache', 'public', '.husky', '.vscode', 'flow-typed'],
+      extensions: ['ts', 'tsx'],
+      exclude: ['node_modules', '.cache', 'public', '.husky', '.vscode'],
     },
   },
 ]
@@ -51,7 +43,7 @@ if (process.env.NODE_ENV === 'production') {
   })
 }
 
-module.exports = {
+export default {
   siteMetadata: {
     title: "Keid's Portfolio",
     siteUrl: 'https://keisukesasaki.com',

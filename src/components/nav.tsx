@@ -1,10 +1,10 @@
-// @flow
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap'
 import { ScrollspyNavLink } from 'reactstrap-scrollspy'
 import { AUTHOR_NAME } from '../config'
 
 import SocialBtnGroup from './common/socialBtnGroup'
+// @ts-expect-error
 import * as navStyles from './nav.module.scss'
 
 function NavComponent() {

@@ -12,7 +12,6 @@
   "dependencies": {
     "bootstrap": "^5.1.3",
     "gatsby": "^4.12.1",
-    "gatsby-plugin-flow": "^3.12.1",
     "gatsby-plugin-google-analytics": "^4.12.1",
     "gatsby-plugin-manifest": "^4.12.1",
     "gatsby-plugin-react-helmet": "^5.12.1",
@@ -27,23 +26,27 @@
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/eslint-parser": "^7.17.0",
-    "@babel/preset-flow": "^7.16.7",
     "@babel/preset-react": "^7.16.7",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-helmet": "^6.1.5",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.13.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-ft-flow": "^2.0.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
     "eslint-webpack-plugin": "^3.1.1",
-    "flow-bin": "^0.176.1",
-    "flow-typed": "^3.7.0",
     "gatsby-plugin-eslint": "^4.0.2",
     "hermes-eslint": "^0.6.0",
+    "http-server": "^14.1.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
@@ -51,7 +54,9 @@
     "stylelint": "^14.6.1",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.2.0"
+    "stylelint-scss": "^4.2.0",
+    "typed-scss-modules": "^6.5.0",
+    "typescript": "^4.7.4"
   },
   "husky": {
     "hooks": {
@@ -62,8 +67,8 @@
     "src/**/*.{s?css}": [
       "yarn stylelint"
     ],
-    "src/**/*.{jsx?}": [
-      "yarn flow-check",
+    "src/**/*.{tsx?}": [
+      "yarn type-check",
       "yarn eslint",
       "yarn format"
     ]
@@ -71,14 +76,15 @@
   "scripts": {
     "clean": "gatsby clean",
     "build": "gatsby build",
+    "serve": "http-server ./public",
     "develop": "gatsby develop",
     "start": "yarn develop",
     "serve": "gatsby serve",
     "format": "prettier --write '**/*.js'",
     "eslint": "eslint --fix src/**/*.js",
     "stylelint": "stylelint --fix src/**/*.scss",
-    "flow-check": "flow check",
-    "flow-typed-install": "flow-typed install --overwrite"
+    "typed-scss-modules": "typed-scss-modules src --outputFolder src/@types/__generated__",
+    "type-check": "tsc --noEmit"
   },
   "browserslist": [
     ">0.25%",

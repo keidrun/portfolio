@@ -1,7 +1,5 @@
-// @flow
-import React from 'react'
-
 import useResize from './hooks/useResize'
+// @ts-expect-error
 import * as careerStyles from './career.module.scss'
 
 function Career() {
