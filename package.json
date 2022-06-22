@@ -64,7 +64,7 @@
   },
   "lint-staged": {
     "src/**/*.{s?css}": [
-      "yarn stylelint"
+      "yarn stylelint-fix"
     ],
     "src/**/*.{tsx?}": [
       "yarn type-check",
@@ -82,10 +82,11 @@
     "prettier-write": "prettier --write '**/*.{js,jsx,ts,tsx}'",
     "eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "eslint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
-    "stylelint": "stylelint --fix src/**/*.scss",
+    "stylelint": "stylelint src/**/*.scss",
+    "stylelint-fix": "stylelint --fix src/**/*.scss",
     "typed-scss-modules": "typed-scss-modules src --outputFolder src/@types/__generated__",
     "type-check": "tsc --noEmit",
-    "ci:lint": "yarn type-check && yarn eslint && yarn prettier"
+    "ci:lint": "yarn type-check && yarn eslint && yarn prettier && yarn stylelint"
   },
   "browserslist": [
     ">0.25%",
