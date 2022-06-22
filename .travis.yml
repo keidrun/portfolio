@@ -1,19 +1,9 @@
 jobs:
   include:
-    - stage: build image
+    - stage: build and push image
       script:
       - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-      - docker image build -t web:latest -f Dockerfile.dev .
+      - docker image build -t web:latest -f Dockerfile .
       - docker images
       - docker tag web $DOCKER_USERNAME/portfolio:latest
       - docker push $DOCKER_USERNAME/portfolio:latest
-    - stage: lint
-      script:
-      - docker container run --rm $DOCKER_USERNAME/portfolio:latest yarn stylelint
-      - docker container run --rm $DOCKER_USERNAME/portfolio:latest yarn flow-check
-      - docker container run --rm $DOCKER_USERNAME/portfolio:latest yarn eslint
-    - stage: test build
-      script:
-      - docker container run -d --rm --name web $DOCKER_USERNAME/portfolio:latest yarn develop
-      - docker container exec -i web yarn build
-      - docker container cp web:/app/public .
