@@ -1,9 +1,0 @@
-jobs:
-  include:
-    - stage: build and push image
-      script:
-      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-      - docker image build -t web:latest -f Dockerfile .
-      - docker images
-      - docker tag web $DOCKER_USERNAME/portfolio:latest
-      - docker push $DOCKER_USERNAME/portfolio:latest
