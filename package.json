@@ -68,8 +68,8 @@
     ],
     "src/**/*.{tsx?}": [
       "yarn type-check",
-      "yarn eslint",
-      "yarn format"
+      "yarn eslint-fix",
+      "yarn prettier-write"
     ]
   },
   "scripts": {
@@ -78,11 +78,14 @@
     "serve": "gatsby serve",
     "develop": "gatsby develop",
     "start": "yarn develop",
-    "format": "prettier --write '**/*.js'",
-    "eslint": "eslint --fix src/**/*.js",
+    "prettier": "prettier --check '**/*.{js,jsx,ts,tsx}'",
+    "prettier-write": "prettier --write '**/*.{js,jsx,ts,tsx}'",
+    "eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "eslint-fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx}'",
     "stylelint": "stylelint --fix src/**/*.scss",
     "typed-scss-modules": "typed-scss-modules src --outputFolder src/@types/__generated__",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "ci:lint": "yarn type-check && yarn eslint && yarn prettier"
   },
   "browserslist": [
     ">0.25%",

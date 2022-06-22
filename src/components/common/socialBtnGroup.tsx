@@ -9,7 +9,7 @@ const LinkedinBtn = () => (
 // const TwitterBtn = () => <SocialBtn title="Twitter" link="https://twitter.com/xxxxx" target="_blank" />
 
 type Props = {
-  section?: string,
+  section?: string
 }
 
 function SocialBtnGroup({ section = 'nav' }: Props) {
