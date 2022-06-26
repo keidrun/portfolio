@@ -12,6 +12,16 @@ const plugins: (string | object)[] = [
       exclude: ['node_modules', '.cache', 'public', '.husky', '.vscode'],
     },
   },
+  'gatsby-plugin-image',
+  'gatsby-plugin-sharp',
+  'gatsby-transformer-sharp',
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'images',
+      path: `${__dirname}/src/images/`,
+    },
+  },
 ]
 
 if (process.env.NODE_ENV === 'production') {

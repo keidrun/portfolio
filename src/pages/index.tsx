@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet'
 import { Scrollspy } from 'reactstrap-scrollspy'
+
 // @ts-expect-error
 import favicon from '../../static/favicon.ico'
 
