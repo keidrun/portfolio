@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap'
+// @ts-expect-error
 import { ScrollspyNavLink } from 'reactstrap-scrollspy'
 import { AUTHOR_NAME } from '../config'
 

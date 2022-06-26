@@ -1,3 +1,4 @@
+import type { GatsbyConfig } from 'gatsby'
 import path from 'path'
 
 const plugins: (string | object)[] = [
@@ -22,6 +23,7 @@ const plugins: (string | object)[] = [
       path: `${__dirname}/src/images/`,
     },
   },
+  'gatsby-plugin-graphql-codegen',
 ]
 
 if (process.env.NODE_ENV === 'production') {
@@ -53,7 +55,7 @@ if (process.env.NODE_ENV === 'production') {
   })
 }
 
-export default {
+const config: GatsbyConfig = {
   siteMetadata: {
     title: "Keid's Portfolio",
     siteUrl: 'https://keisukesasaki.com',
@@ -61,3 +63,5 @@ export default {
   },
   plugins,
 }
+
+export default config

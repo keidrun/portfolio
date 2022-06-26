@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet'
+// @ts-expect-error
 import { Scrollspy } from 'reactstrap-scrollspy'
 
 // @ts-expect-error
