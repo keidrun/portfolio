@@ -1,10 +1,10 @@
-@import "../styles/variables";
-@import "../styles/modules";
+@import '../styles/variables';
+@import '../styles/modules';
 
 .header {
   padding-top: 33vh;
   background-color: $mainBlue;
-  background-image: linear-gradient(rgba($mainLightBlue, 0.5), rgba($mainLightBlue, 0.5)), url("/assets/hero.jpg");
+  background-image: linear-gradient(rgba($mainLightBlue, 0.5), rgba($mainLightBlue, 0.5)), url('../images/hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
