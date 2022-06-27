@@ -11,7 +11,7 @@ type Props = {
 export default function DynamicImage({ src, alt }: Props) {
   const data = useStaticQuery<GatsbyTypes.Query>(graphql`
     query ImagesQuery {
-      allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+      allFile(filter: { sourceInstanceName: { eq: "images" }, relativeDirectory: { eq: "optimized" } }) {
         edges {
           node {
             id

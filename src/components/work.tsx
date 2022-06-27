@@ -30,7 +30,7 @@ function Work() {
               <Card
                 title="Full-Stack Development"
                 subTitle="Spring MVC & Ajax & SQL"
-                src="skill2.jpg"
+                src="optimized/skill2.jpg"
                 renderModal={() => (
                   <WorkDetailModal title="Full-stack Development">
                     <h6>
@@ -90,7 +90,7 @@ function Work() {
               <Card
                 title="SaaS Development"
                 subTitle="ASP.NET MVC & Ajax & SQL"
-                src="skill1.jpg"
+                src="optimized/skill1.jpg"
                 renderModal={() => (
                   <WorkDetailModal title="SaaS Development">
                     <h6>
@@ -115,7 +115,7 @@ function Work() {
               <Card
                 title="Back-End Development"
                 subTitle="Node.js RESTful API & MongoDB"
-                src="skill3.jpg"
+                src="optimized/skill3.jpg"
                 renderModal={() => (
                   <WorkDetailModal title="Back-End Development">
                     <h6>API Gateway Development for customers in a convenience stores company</h6>
@@ -138,7 +138,7 @@ function Work() {
               <Card
                 title="Scrum Coaching"
                 subTitle="Scrum Master"
-                src="skill4.jpg"
+                src="optimized/skill4.jpg"
                 renderModal={() => (
                   <WorkDetailModal title="Scrum Coaching">
                     <h6>Web Front-end Replacement Project for customers in a convenience stores company</h6>
@@ -158,7 +158,7 @@ function Work() {
               <Card
                 title="Product Management"
                 subTitle="Product Owner for PoC with offshore teams"
-                src="skill5.jpg"
+                src="optimized/skill5.jpg"
                 renderModal={() => (
                   <WorkDetailModal title="Product Management">
                     <h6>
@@ -188,7 +188,7 @@ function Work() {
               <Card
                 title="Global Team Management"
                 subTitle="Team Lead to manage global teams"
-                src="skill6.jpg"
+                src="optimized/skill6.jpg"
                 renderModal={() => (
                   <WorkDetailModal title="Global Team Management">
                     <h6>Web Front-end Development for customers in a Japanese government office</h6>

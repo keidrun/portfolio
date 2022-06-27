@@ -26,10 +26,6 @@ function CardComponent({ title, subTitle, src, renderModal, children }: Props) {
         </CardSubtitle>
       </div>
       <DynamicImage src={src} alt={title} />
-      {/* <CardImg src={imgSrc} alt={title} /> */}
-      {/* <StaticImage src="../../images/skill2.jpg" alt={title} /> */}
-      {/* <StaticImage src={`../../images/${imageFileName}`} alt={title} /> */}
-      {/* <GatsbyImage image={getImage(data)} /> */}
       <div className={`card-block ${cardStyles.card__blockDecoration}`}>
         <CardText>{children}</CardText>
         {renderModal()}
@@ -37,15 +33,5 @@ function CardComponent({ title, subTitle, src, renderModal, children }: Props) {
     </Card>
   )
 }
-
-// export const query = graphql`
-//   query Query {
-//     skillImage: file(relativePath: { eq: "skill2.jpg" }) {
-//       childImageSharp {
-//         gatsbyImageData
-//       }
-//     }
-//   }
-// `
 
 export default CardComponent

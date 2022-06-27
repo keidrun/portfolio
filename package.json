@@ -10,7 +10,9 @@
   "private": true,
   "keywords": [],
   "dependencies": {
+    "@types/fs-extra": "^9.0.13",
     "bootstrap": "^5.1.3",
+    "fs-extra": "^10.1.0",
     "gatsby": "^4.17.1",
     "gatsby-plugin-google-analytics": "^4.12.1",
     "gatsby-plugin-graphql-codegen": "^3.1.1",
@@ -22,11 +24,13 @@
     "gatsby-plugin-sharp": "^4.17.0",
     "gatsby-source-filesystem": "^4.17.0",
     "gatsby-transformer-sharp": "^4.17.0",
+    "glob": "^8.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "reactstrap": "8.10.1",
-    "reactstrap-scrollspy": "^0.1.1"
+    "reactstrap-scrollspy": "^0.1.1",
+    "sharp": "^0.30.7"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -59,6 +63,7 @@
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0",
+    "ts-node": "^10.8.1",
     "typed-scss-modules": "^6.5.0",
     "typescript": "^4.7.4"
   },
@@ -91,6 +96,7 @@
     "stylelint:fix": "yarn stylelint --fix",
     "typed-scss-modules": "typed-scss-modules src --outputFolder types/__generated__",
     "type-check": "tsc --noEmit",
+    "preoptimize-images": "ts-node scripts/optimize.ts",
     "ci:lint": "yarn type-check && yarn eslint && yarn prettier && yarn stylelint"
   },
   "browserslist": [

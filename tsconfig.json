@@ -12,5 +12,5 @@
     // gatsby doesn't support 'baseUrl' and 'paths'
     // https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/#current-limitations
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*", "./scripts/**/*"]
 }
