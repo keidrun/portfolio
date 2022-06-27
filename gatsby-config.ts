@@ -3,7 +3,6 @@ import path from 'path'
 
 const plugins: (string | object)[] = [
   'gatsby-plugin-sass',
-  'gatsby-plugin-react-helmet',
   {
     resolve: 'gatsby-plugin-eslint',
     options: {
@@ -50,7 +49,7 @@ if (process.env.NODE_ENV === 'production') {
     resolve: 'gatsby-plugin-robots-txt',
     options: {
       host: 'https://keisukesasaki.com',
-      policy: [{ userAgent: '*', disallow: '/' }],
+      policy: [{ userAgent: '*', disallow: '/' }], // private
     },
   })
 }
@@ -58,8 +57,8 @@ if (process.env.NODE_ENV === 'production') {
 const config: GatsbyConfig = {
   siteMetadata: {
     title: "Keid's Portfolio",
-    siteUrl: 'https://keisukesasaki.com',
     description: "Keid's Portfolio",
+    siteUrl: 'https://keisukesasaki.com',
   },
   plugins,
 }

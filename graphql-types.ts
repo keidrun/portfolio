@@ -2909,10 +2909,15 @@ export type ImageSharpSortInput = {
   order?: InputMaybe<Array<InputMaybe<SortOrderEnum>>>;
 };
 
-export type ImagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+export type SeoQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type ImagesQueryQuery = { allFile: { edges: Array<{ node: { id: string, name: string, extension: string, relativePath: string, childrenImageSharp?: Array<{ gatsbyImageData: any } | null> | null } }> } };
+export type SeoQuery = { site?: { siteMetadata?: { siteUrl?: string | null, defaultTitle?: string | null, defaultDescription?: string | null } | null } | null };
+
+export type ImagesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type ImagesQuery = { allFile: { edges: Array<{ node: { id: string, name: string, extension: string, relativePath: string, childrenImageSharp?: Array<{ gatsbyImageData: any } | null> | null } }> } };
 
 export type GatsbyImageSharpFixedFragment = { base64?: string | null, width: number, height: number, src: string, srcSet: string };
 

@@ -1,31 +1,33 @@
 import { useMemo } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage, ImageDataLike } from 'gatsby-plugin-image'
-import * as GatsbyTypes from '../../../graphql-types'
+import * as Types from '../../../graphql-types'
+
+const query = graphql`
+  query Images {
+    allFile(filter: { sourceInstanceName: { eq: "images" }, relativeDirectory: { eq: "optimized" } }) {
+      edges {
+        node {
+          id
+          name
+          extension
+          relativePath
+          childrenImageSharp {
+            gatsbyImageData(quality: 70, layout: FULL_WIDTH)
+          }
+        }
+      }
+    }
+  }
+`
 
 type Props = {
   src: string
   alt: string
 }
 
-export default function DynamicImage({ src, alt }: Props) {
-  const data = useStaticQuery<GatsbyTypes.Query>(graphql`
-    query ImagesQuery {
-      allFile(filter: { sourceInstanceName: { eq: "images" }, relativeDirectory: { eq: "optimized" } }) {
-        edges {
-          node {
-            id
-            name
-            extension
-            relativePath
-            childrenImageSharp {
-              gatsbyImageData(quality: 70, layout: FULL_WIDTH)
-            }
-          }
-        }
-      }
-    }
-  `)
+function DynamicImage({ src, alt }: Props) {
+  const data = useStaticQuery<Types.ImagesQuery>(query)
 
   const edge = useMemo(() => data.allFile.edges.find((e) => e.node.relativePath === src), [data, src])
   if (
@@ -43,3 +45,5 @@ export default function DynamicImage({ src, alt }: Props) {
 
   return <GatsbyImage image={image} alt={alt} />
 }
+
+export default DynamicImage
