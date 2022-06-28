@@ -11,7 +11,7 @@ function About() {
       <div className="container">
         <div className="col-md-6">
           <div className={aboutStyles.about__text}>
-            <h3>About me</h3>
+            <h2>About me</h2>
             <p className="lead">
               I&#39;m seeking opportunities of a full-stack web developer job in Tokyo, San Francisco Bay Area,
               Vancouver or any interesting city in the world. If you&#39;re looking for a developer like Full-Stack Web
@@ -38,7 +38,7 @@ function About() {
               Blockchain come into being recently and I&#39;d like to be involved in a project that use them. Finally, I
               would provide value to any company from my committed work to achieve any project&#39;s aim.
             </p>
-            <h5>Feel free to contact me!</h5>
+            <h3>Feel free to contact me!</h3>
             <SocialBtnGroup section="about" />
           </div>
         </div>

@@ -28,7 +28,7 @@ function Portfolio() {
   return (
     <section id="portfolio" className={portfolioStyles.portfolio}>
       <div className="container">
-        <h3>Portfolio</h3>
+        <h2>Portfolio</h2>
         <p className="lead">
           I&#39;m driving my own projects. I show you some my featured projects that you can enjoy.
           <br />

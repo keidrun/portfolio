@@ -19,10 +19,10 @@ function CardComponent({ title, subTitle, src, renderModal, children }: Props) {
     <Card>
       <div className={`card-block ${cardStyles.card__blockDecoration}`}>
         <CardTitle>
-          <h4>{title}</h4>
+          <h3>{title}</h3>
         </CardTitle>
         <CardSubtitle>
-          <h6>{subTitle}</h6>
+          <h4>{subTitle}</h4>
         </CardSubtitle>
       </div>
       <DynamicImage src={src} alt={title} />

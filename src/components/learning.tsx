@@ -10,7 +10,7 @@ function Learning() {
       <div className="container">
         <div className="col-md-6 mr-auto">
           <div className={learningStyles.learning__text}>
-            <h3>Learning</h3>
+            <h2>Learning</h2>
             <p className="lead">
               I absolutely love to learn new technologies. Recently, I&#39;m learning Next.js, GraphQL, gRPC, Kubernetes
               and DApps.

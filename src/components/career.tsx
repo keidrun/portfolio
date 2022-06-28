@@ -10,7 +10,7 @@ function Career() {
       <div className="container">
         <div className="col-md-6 ms-auto">
           <div className={careerStyles.career__text}>
-            <h3>Career</h3>
+            <h2>Career</h2>
             <p className="lead">
               I got a master&#39;s degree of computer science in a Japanese university. After I graduated from the
               university, I&#39;ve worked in a Japanese tech companey as a full-stack web developer and a project leader
