@@ -23,17 +23,7 @@ const plugins: (string | object)[] = [
     },
   },
   'gatsby-plugin-graphql-codegen',
-]
-
-if (process.env.NODE_ENV === 'production') {
-  plugins.unshift({
-    resolve: `gatsby-plugin-google-analytics`,
-    options: {
-      trackingId: 'UA-47218093-3',
-      head: true,
-    },
-  })
-  plugins.unshift({
+  {
     resolve: `gatsby-plugin-manifest`,
     options: {
       name: "Keid's Portfolio",
@@ -42,7 +32,17 @@ if (process.env.NODE_ENV === 'production') {
       background_color: '#3bc6ce',
       theme_color: '#3bc6ce',
       display: 'standalone',
-      icons: [],
+      icon: 'src/images/favicon.png',
+    },
+  },
+]
+
+if (process.env.NODE_ENV === 'production') {
+  plugins.unshift({
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: 'UA-47218093-3',
+      head: true,
     },
   })
   plugins.unshift({

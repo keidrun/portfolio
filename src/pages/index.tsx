@@ -19,9 +19,11 @@ function IndexPage() {
         <html lang="en" />
         <meta charSet="utf-8" />
         <meta name="robots" content="noindex,nofollow" />
-        <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,300,300i,500,500i" rel="stylesheet" />
-        <link href="/assets/fonts/et-line-font/et-line-font.css" rel="stylesheet" />
+        <link
+          href={`https://fonts.googleapis.com/css?family=Raleway:100,100i,300,300i,500,500i${'&'}display=swap`}
+          rel="stylesheet"
+        />
+        <link href="assets/fonts/et-line-font/et-line-font.css" rel="stylesheet" />
       </SEO>
       <Layout>
         <Scrollspy names={['header', 'portfolio', 'about', 'skills', 'learning', 'work', 'career']}>

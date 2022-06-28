@@ -6,7 +6,7 @@ import path from 'path'
 const OUTPUT_DIR = path.resolve(__dirname, '..', 'src', 'images', 'optimized')
 
 const matches = glob.sync(`${__dirname}/../src/images/**/*.{png,jpg,jpeg}`, {
-  ignore: [`${OUTPUT_DIR}/**/*.{png,jpg,jpeg}`],
+  ignore: ['**/src/images/optimized/**/*.{png,jpg,jpeg}', '**/*/favicon.png'],
 })
 
 const MAX_WIDTH = 1800
