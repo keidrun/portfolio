@@ -1,5 +1,5 @@
-@import "../styles/variables";
-@import "../styles/modules";
+@import '../styles/variables';
+@import '../styles/modules';
 
 .portfolio {
   margin-top: -5rem;
@@ -71,7 +71,7 @@
         &::after {
           position: absolute;
           display: block;
-          content: "";
+          content: '';
           height: 100%;
           width: 100%;
           top: 0;

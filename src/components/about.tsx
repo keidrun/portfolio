@@ -38,7 +38,7 @@ function About() {
               Blockchain come into being recently and I&#39;d like to be involved in a project that use them. Finally, I
               would provide value to any company from my committed work to achieve any project&#39;s aim.
             </p>
-            <h3>Feel free to contact me!</h3>
+            <h3 className="fs-4">Feel free to contact me!</h3>
             <SocialBtnGroup section="about" />
           </div>
         </div>
