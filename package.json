@@ -71,7 +71,8 @@
   },
   "lint-staged": {
     "src/**/*.s?css": [
-      "yarn stylelint:fix"
+      "yarn stylelint:fix",
+      "yarn prettier:write"
     ],
     "src/**/*.{jsx?,tsx?}": [
       "yarn type-check",
@@ -86,16 +87,17 @@
     "serve": "gatsby serve",
     "develop": "gatsby develop",
     "start": "yarn develop",
-    "prettier": "prettier --check 'src/**/*.{js,jsx,ts,tsx}'",
+    "prettier": "prettier 'src/**/*.{js,jsx,ts,tsx,css,scss}'",
+    "prettier:check": "yarn prettier --check",
     "prettier:write": "yarn prettier --write",
     "eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "eslint:fix": "yarn eslint --fix",
-    "stylelint": "stylelint src/**/*.scss",
+    "stylelint": "stylelint src/**/*.{css,scss}",
     "stylelint:fix": "yarn stylelint --fix",
     "typed-scss-modules": "typed-scss-modules src --outputFolder types/__generated__",
     "type-check": "tsc --noEmit",
     "preoptimize-images": "ts-node scripts/optimize.ts",
-    "ci:lint": "yarn type-check && yarn eslint && yarn prettier && yarn stylelint"
+    "ci:lint": "yarn type-check && yarn eslint && yarn stylelint && yarn prettier:check"
   },
   "browserslist": [
     ">0.25%",
