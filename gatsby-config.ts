@@ -39,10 +39,12 @@ const plugins: (string | object)[] = [
 
 if (process.env.NODE_ENV === 'production') {
   plugins.unshift({
-    resolve: `gatsby-plugin-google-analytics`,
+    resolve: 'gatsby-plugin-google-gtag',
     options: {
-      trackingId: 'UA-47218093-3',
-      head: true,
+      trackingIds: ['G-1XKDX2T7BF'],
+      pluginConfig: {
+        head: true,
+      },
     },
   })
   plugins.unshift({
