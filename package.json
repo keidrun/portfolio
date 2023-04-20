@@ -19,7 +19,7 @@
     "gatsby-plugin-manifest": "^5.2.0",
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^6.2.0",
-    "gatsby-plugin-sharp": "^5.2.0",
+    "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-source-filesystem": "^5.2.0",
     "gatsby-transformer-sharp": "^5.2.0",
     "glob": "^8.0.3",
